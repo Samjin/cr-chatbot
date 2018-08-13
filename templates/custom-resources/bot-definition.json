@@ -27,7 +27,7 @@
       }
     ],
     "locale": "en-US",
-    "name": "OrderFlowers",
+    "name": "CR_chatbot",
     "voiceId": "Salli"
   },
   "intents": [

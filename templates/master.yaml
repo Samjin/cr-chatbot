@@ -126,7 +126,7 @@ Parameters:
     WebAppConfBotInitialText:
         Type: String
         Default: >
-            You can ask me for help ordering flowers. Just type "Buy
+            You can ask me for help look up cross border fees. Just type "Buy
             flowers" or click on the mic and say it.
         Description: First bot message displayed in the chatbot UI
 

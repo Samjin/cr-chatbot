@@ -9,7 +9,7 @@ export BOOTSTRAP_BUCKET_PATH ?= aws-bigdata-blog/artifacts/aws-lex-web-ui/artifa
 
 # S3 bucket hosting the web application
 # The Makefile in the root dir can sync the local files to it
-export WEBAPP_BUCKET ?= $()
+export WEBAPP_BUCKET ?= cr-chatbot
 
 # AWS cli env variables used when running/building
 # Override by setting it in the environment before running make
@@ -17,9 +17,9 @@ export AWS_DEFAULT_PROFILE ?= default
 export AWS_DEFAULT_REGION ?= us-east-1
 
 # lex-web-ui config variables
-export BOT_NAME ?= OrderFlowers
+export BOT_NAME ?= CR_chatbot
 # set to empty if not present in environment
-export POOL_ID ?= $()
+export POOL_ID ?= us-east-1:7bd01f8a-a4c8-400c-9787-56f6a9b96bc3
 
 export BOT_INITIAL_TEXT ?= $()
 export BOT_INITIAL_SPEECH ?= $()

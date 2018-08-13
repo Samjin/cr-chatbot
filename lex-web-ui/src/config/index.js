@@ -60,17 +60,17 @@ const configDefault = {
 
   lex: {
     // Lex bot name
-    botName: 'WebUiOrderFlowers',
+    botName: 'CR_chatbot',
 
     // Lex bot alias/version
     botAlias: '$LATEST',
 
     // instruction message shown in the UI
-    initialText: 'You can ask me for help ordering flowers. ' +
-      'Just type "order flowers" or click on the mic and say it.',
+    initialText: 'You can ask me for help look up cross border fees. ' +
+      'Just type "cross border fees" or click on the mic and say it.',
 
     // instructions spoken when mic is clicked
-    initialSpeechInstruction: 'Say "Order Flowers" to get started',
+    initialSpeechInstruction: 'Say "cross border fees" to get started',
 
     // Lex initial sessionAttributes
     sessionAttributes: {},
@@ -112,7 +112,7 @@ const configDefault = {
   ui: {
     // TODO may want to move pageTitle out to LexApp or Page component
     // title of HTML page added dynamically to index.html
-    pageTitle: 'Order Flowers Bot',
+    pageTitle: 'Policy Lookup Bot',
 
     // when running as an embedded iframe, this will be used as the
     // be the parent origin used to send/receive messages
@@ -129,7 +129,7 @@ const configDefault = {
     toolbarColor: 'red',
 
     // chat window title
-    toolbarTitle: 'Order Flowers',
+    toolbarTitle: 'Policy Lookup',
 
     // logo used in toolbar - also used as favicon not specificied
     toolbarLogo: '',
