@@ -60,7 +60,7 @@ const configDefault = {
 
   lex: {
     // Lex bot name
-    botName: 'WebUiOrderFlowers',
+    botName: 'CR_chatbot',
 
     // Lex bot alias/version
     botAlias: '$LATEST',

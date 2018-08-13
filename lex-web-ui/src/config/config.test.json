@@ -1,19 +1,19 @@
 {
   "cognito": {
-    "poolId": ""
+    "poolId": "us-east-1:7bd01f8a-a4c8-400c-9787-56f6a9b96bc3"
   },
   "lex": {
-    "botName": "WebUiOrderFlowers",
-    "initialText": "You can ask me for help ordering flowers. Just type \"order flowers\" or click on the mic and say it.",
-    "initialSpeechInstruction": "Say 'Order Flowers' to get started."
+    "botName": "CR_chatbot",
+    "initialText": "You can ask me for help look up cross border fees. Just type \"cross border fees\" or click on the mic and say it.",
+    "initialSpeechInstruction": "Say 'cross border fees' to get started."
   },
   "polly": {
     "voiceId": "Salli"
   },
   "ui": {
     "parentOrigin": "http://localhost:8080",
-    "pageTitle": "Order Flowers Bot",
-    "toolbarTitle": "Order Flowers"
+    "pageTitle": "Policy Lookup Bot",
+    "toolbarTitle": "Policy Lookup"
   },
   "recorder": {
     "preset": "speech_recognition"

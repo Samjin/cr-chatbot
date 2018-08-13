@@ -21,7 +21,7 @@ Parameters:
             This is an optional parameter. If left empty, a Bot based
             on the OrderFlowers sample will be automatically created.
         Type: String
-        Default: ''
+        Default: CR_chatbot
         MaxLength: 50
         AllowedPattern: '(^$|^[a-zA-Z]+((_[a-zA-Z]+)*|([a-zA-Z]+_)*|_))'
         ConstraintDescription: >

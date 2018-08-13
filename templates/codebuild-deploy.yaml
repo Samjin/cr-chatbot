@@ -75,20 +75,20 @@ Parameters:
     WebAppConfBotInitialText:
         Type: String
         Default: >
-            You can ask me for help ordering flowers. Just type "Buy
-            flowers" or click on the mic and say it.
+            You can ask me for help look up cross border fees. Just type
+            "cross border fees" or click on the mic and say it.
         Description: First bot message displayed in the chatbot UI
 
     WebAppConfBotInitialSpeech:
         Type: String
-        Default: Say 'Buy Flowers' to get started.
+        Default: Say 'Cross browser fees' to get started.
         Description: >
             Message spoken by bot when the microphone is first pressed
             in a conversation
 
     WebAppConfToolbarTitle:
         Type: String
-        Default: Order Flowers
+        Default: Policy Lookup
         Description: Title displayed in the chatbot UI toobar
 
 Conditions:
