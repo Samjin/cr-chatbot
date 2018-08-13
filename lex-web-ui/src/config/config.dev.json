@@ -12,8 +12,8 @@
   },
   "ui": {
     "parentOrigin": "http://localhost:8080",
-    "pageTitle": "PolicyLookup Bot",
-    "toolbarTitle": "PolicyLookup"
+    "pageTitle": "Policy Lookup Bot",
+    "toolbarTitle": "Policy Lookup"
   },
   "recorder": {
     "preset": "speech_recognition"
