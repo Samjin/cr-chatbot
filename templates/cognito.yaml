@@ -8,7 +8,7 @@ Parameters:
     CognitoIdentityPoolName:
         Type: String
         Description: Cognito identity pool name.
-        Default: identity pool
+        Default: chatbot
         MinLength: 1
         MaxLength: 128
         AllowedPattern: '^[\w ]+$'
@@ -17,7 +17,7 @@ Parameters:
     LexBotName:
         Type: String
         Description: Lex bot name used to build IAM policy
-        Default: OrderFlowers
+        Default: CR_chatbot
 
 Resources:
     CognitoIdentityPool:
