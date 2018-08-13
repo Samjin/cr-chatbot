@@ -1,17 +1,17 @@
 {
   "cognito": {
-    "poolId": ""
+    "poolId": "us-east-1:7bd01f8a-a4c8-400c-9787-56f6a9b96bc3"
   },
   "lex": {
-    "botName": "OrderFlowers",
-    "initialText": "You can ask me for help ordering flowers. Just type \"Buy flowers\" or click on the mic and say it.",
-    "initialSpeechInstruction": "Say 'Buy Flowers' to get started."
+    "botName": "CR_chatbot",
+    "initialText": "You can ask me for help look up cross border fees. Just type \"cross border fees\" or click on the mic and say it.",
+    "initialSpeechInstruction": "Say 'cross border fees' to get started."
   },
   "ui": {
     "parentOrigin": "",
-    "toolbarTitle": "Order Flowers",
+    "toolbarTitle": "Policy Lookup",
     "toolbarLogo": "",
-    "pushInitialTextOnRestart": false
+    "pushInitialTextOnRestart": true
   },
   "polly": {
     "voiceId": "Salli"
