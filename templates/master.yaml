@@ -16,7 +16,7 @@ Parameters:
       parameter. If left empty, a Bot based on the OrderFlowers sample will be
       automatically created.
     Type: String
-    Default: ''
+    Default: CR_chatbot
     MaxLength: 50
     AllowedPattern: '(^$|^[a-zA-Z]+((_[a-zA-Z]+)*|([a-zA-Z]+_)*|_))'
     ConstraintDescription: |
@@ -48,7 +48,7 @@ Parameters:
     Description: >
       Name of the CodeBuild project to be created. Used to configure and
       directly deploy the web app to S3. Must be unique per region
-    Default: lex-web-ui
+    Default: cr-chatbot
     MinLength: 2
     MaxLength: 255
     AllowedPattern: '^[A-Za-z0-9][A-Za-z0-9\-_]{1,254}$'
@@ -72,7 +72,7 @@ Parameters:
       left empty, a Cognito Identity Pool will be automatically created. The
       pool ID is used by the web ui to get AWS credentials for making calls to
       Lex and Polly.
-    Default: ''
+    Default: us-east-1:7bd01f8a-a4c8-400c-9787-56f6a9b96bc3
     AllowedPattern: '(^$|^[\w-]+:[0-9a-f-]+$)'
     ConstraintDescription: Empty or a valid Cognito Identity Pool ID
   CognitoIdentityPoolName:
@@ -81,7 +81,7 @@ Parameters:
       Name of Cognito identity pool to be created to provide AWS credentials to
       the web ui. Only used if the CognitoIdentityPoolId parameter is left empty
       (default).
-    Default: Lex Web UI
+    Default: chatbot
     MinLength: 1
     MaxLength: 128
     AllowedPattern: '^[\w ]+$'
@@ -109,18 +109,18 @@ Parameters:
   WebAppConfBotInitialText:
     Type: String
     Default: >
-      You can ask me for help ordering flowers. Just type "Buy flowers" or click
+      You can ask me for help ordering flowers. Just type "Cross border fees" or click
       on the mic and say it.
     Description: First bot message displayed in the chatbot UI
   WebAppConfBotInitialSpeech:
     Type: String
-    Default: Say 'Buy Flowers' to get started.
+    Default: Say 'Cross border fees' to get started.
     Description: >
       Message spoken by bot when the microphone is first pressed in a
       conversation
   WebAppConfToolbarTitle:
     Type: String
-    Default: Order Flowers
+    Default: Policy Lookup
     Description: Title displayed in the chatbot UI toobar
 Metadata:
   'AWS::CloudFormation::Interface':
