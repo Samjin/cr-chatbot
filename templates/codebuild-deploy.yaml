@@ -81,7 +81,7 @@ Parameters:
 
     WebAppConfBotInitialSpeech:
         Type: String
-        Default: Say 'Cross browser fees' to get started.
+        Default: Say 'Cross border fees' to get started.
         Description: >
             Message spoken by bot when the microphone is first pressed
             in a conversation
