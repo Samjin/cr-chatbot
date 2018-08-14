@@ -112,7 +112,7 @@ const configDefault = {
   ui: {
     // TODO may want to move pageTitle out to LexApp or Page component
     // title of HTML page added dynamically to index.html
-    pageTitle: 'Policy lookup Bot',
+    pageTitle: 'Policy Lookup Bot',
 
     // when running as an embedded iframe, this will be used as the
     // be the parent origin used to send/receive messages
