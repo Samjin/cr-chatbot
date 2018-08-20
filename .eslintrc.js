@@ -1,15 +1,79 @@
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
-  },
-  env: {
-    browser: true,
-  },
-  extends: 'airbnb-base',
-  rules: {
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
-  }
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "globals": {
+        "$": true,
+        "module": false,
+        "document": false
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "rules": { //please attempt to keep these in alphabetical order for easier maintenance
+        // allow debugger during development
+        'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+        "block-scoped-var": "error",
+        "class-methods-use-this": "error",
+        "comma-spacing": "error",
+        "comma-style": "error",
+        "curly": "error",
+        "func-call-spacing": "error",
+        "id-blacklist": ["error"],
+        "no-alert": "error",
+        "no-console": "off",
+        "no-else-return": "error",
+        "no-empty-function": "error",
+        "no-eq-null": "error",
+        "no-eval": "error",
+        "no-extend-native": "error",
+        "no-extra-bind": "error",
+        "no-floating-decimal": "error",
+        "no-global-assign": "error",
+        "no-implicit-coercion": ["error", {"allow": ["!!"]}],
+        "no-implicit-globals": "error",
+        "no-implied-eval": "error",
+        "no-lone-blocks": "error",
+        "no-lonely-if": "error",
+        "no-loop-func": "error",
+        "no-mixed-operators": "error",
+        "no-multi-spaces": ["error", {"ignoreEOLComments": true}],
+        "no-multi-str": "error",
+        "no-multiple-empty-lines": "error",
+        "no-nested-ternary": "error",
+        "no-octal-escape": "error",
+        "no-proto": "error",
+        "no-return-assign": ["error", "always"],
+        "no-self-compare": "error",
+        "no-sequences": "error",
+        "no-shadow-restricted-names": "error",
+        "no-undef-init": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-unneeded-ternary": "error",
+        "no-unsafe-negation": "error",
+        "no-unused-vars": ["error", {
+            "vars": "all",
+            "args": "all",
+            "ignoreRestSiblings": false,
+            "argsIgnorePattern": "^(store|headers|type|cause|event|process|key|message|model|item)$"
+        }],
+        "no-useless-concat": "error",
+        "no-useless-escape": "error",
+        "no-useless-return": "error",
+        "no-void": "error",
+        "no-with": "error",
+        "semi": "error",
+        "semi-spacing": "error",
+        "semi-style": "error",
+        "space-infix-ops": "error",
+        "space-unary-ops": ["error", {"words": true, "nonwords": false}],
+        "strict": "error",
+        "wrap-iife": "error",
+        "yoda": "error"
+    }
 }

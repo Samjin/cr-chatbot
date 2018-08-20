@@ -5,13 +5,13 @@
  */
 module.exports = function mergeConfig(baseConfig, srcConfig) {
   function isEmpty(data) {
-    if(typeof(data) === 'number' || typeof(data) === 'boolean') {
+    if (typeof data === 'number' || typeof data === 'boolean') {
       return false;
     }
-    if(typeof(data) === 'undefined' || data === null) {
+    if (typeof data === 'undefined' || data === null) {
       return true;
     }
-    if(typeof(data.length) !== 'undefined') {
+    if (typeof data.length !== 'undefined') {
       return data.length === 0;
     }
     return Object.keys(data).length === 0;
@@ -19,25 +19,19 @@ module.exports = function mergeConfig(baseConfig, srcConfig) {
 
   // use the baseConfig first level keys as the base for merging
   return Object.keys(baseConfig)
-    .map(function (key) {
+    .map(function(key) {
       let mergedConfig = {};
       let value = baseConfig[key];
       // merge from source if its value is not empty
       if (key in srcConfig && !isEmpty(srcConfig[key])) {
-        value = (typeof(baseConfig[key]) === 'object') ?
+        value = (typeof baseConfig[key] === 'object') ?
           // recursively merge sub-objects in both directions
-          Object.assign(
-            mergeConfig(srcConfig[key], baseConfig[key]),
-            mergeConfig(baseConfig[key], srcConfig[key]),
-          ) :
-          srcConfig[key];
+          Object.assign(mergeConfig(srcConfig[key], baseConfig[key]), mergeConfig(baseConfig[key], srcConfig[key]) ) : srcConfig[key];
       }
       mergedConfig[key] = value;
       return mergedConfig;
     })
-    .reduce(function (merged, configItem) {
-        return Object.assign({}, merged, configItem);
-      },
-      {}
-    );
+    .reduce(function(merged, configItem) {
+      return Object.assign({}, merged, configItem);
+    }, {});
 };
