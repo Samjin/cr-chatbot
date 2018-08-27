@@ -29,22 +29,22 @@ exports.handler = (event, context, callback) => {
           throw new Error('Error ' + err);
         }
         policyList = JSON.parse(data.Body.toString('ascii'));
-        ready();
+        ready(event, callback);
       });
     } else {
-      ready();
-    }
-
-    function ready() {
-      if (!handlers[event.currentIntent.name]) {
-        throw new Error(`Intent ${event.currentIntent.name} not supported`);
-      }
-      handlers[event.currentIntent.name](event, (response) => callback(null, response));
+      ready(event, callback);
     }
   } catch (err) {
     callback(err);
   }
 };
+
+function ready(event, callback) {
+  if (!handlers[event.currentIntent.name]) {
+    throw new Error(`Intent ${event.currentIntent.name} not supported`);
+  }
+  handlers[event.currentIntent.name](event, (response) => callback(null, response));
+}
 
 
 const handlers = {
