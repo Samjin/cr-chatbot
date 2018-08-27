@@ -12,7 +12,11 @@
         "name": "PolicyLookup",
         "version": "6",
         "fulfillmentActivity": {
-          "type": "ReturnIntent"
+          "type": "ReturnIntent",
+          "codeHook": {
+            "uri": "arn:aws:lambda:us-east-1:551680877684:function:CRCrossBorder",
+            "messageVersion": "1.0"
+          }
         },
         "sampleUtterances": [
           "What are the cross border fees",
@@ -22,7 +26,8 @@
           "tell me the cross border fees for {supplier}",
           "list the cross border fees for {supplier}",
           "what are the cross border fess for {supplier} in {country}",
-          "list the cross border fees for {supplier} in {country}"
+          "list the cross border fees for {supplier} in {country}",
+          "tell me the cross border fees for {supplier} in {country}"
         ],
         "slots": [
           {
