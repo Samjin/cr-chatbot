@@ -24,7 +24,7 @@ exports.handler = (event, context, callback) => {
 
     // Make sure policy list is loaded
     if (!policyList) {
-      s3.getObject({Bucket: 'cr-chatbot', Key: 'fees.json'}, (err, data) => {
+      s3.getObject({Bucket: 'cr-chatbot-codebuilddeploy-17o0gzebg-webappbucket-cu246regyepf', Key: 'fees.json'}, (err, data) => {
         if (!data) {
           throw new Error('Error ' + err);
         }
