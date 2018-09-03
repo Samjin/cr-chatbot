@@ -7,7 +7,7 @@ Parameters:
     CodeBuildName:
         Type: String
         Description: CodeBuild project used to configure and deploy the Lex Web UI
-        Default: lex-web-ui-conf-deploy
+        Default: cr-chatbot
         MinLength: 2
         MaxLength: 255
         AllowedPattern: '^[A-Za-z0-9][A-Za-z0-9\-_]{1,254}$'
