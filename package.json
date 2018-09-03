@@ -5,7 +5,7 @@
   "main": "dist/lex-web-ui.min.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/awslabs/aws-lex-web-ui.git"
+    "url": "git+https://github.com/Samjin/aws-lex-web-ui.git"
   },
   "keywords": [
     "aws",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/awslabs/aws-lex-web-ui/issues"
   },
-  "homepage": "https://github.com/awslabs/aws-lex-web-ui#readme",
+  "homepage": "https://github.com/Samjin/aws-lex-web-ui#readme",
   "scripts": {
     "build-prod": "webpack -p --env production",
     "build-dev": "webpack --hide-modules",
