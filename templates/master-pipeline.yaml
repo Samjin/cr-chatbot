@@ -122,7 +122,7 @@ Parameters:
             Name of Cognito identity pool to be created to provide
             AWS credentials to the web ui. Only used if the
             CognitoIdentityPoolId parameter is left empty (default).
-        Default: Lex Web UI
+        Default: cr_chatbot_pool
         MinLength: 1
         MaxLength: 128
         AllowedPattern: '^[\w ]+$'
