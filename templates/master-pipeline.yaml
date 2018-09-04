@@ -145,7 +145,7 @@ Parameters:
     # See the README.md file for instructions on how to use your own bucket.
     BootstrapBucket:
         Type: String
-        Default: aws-bigdata-blog
+        Default: cr-chatbot
         Description: >
             S3 bucket containing pre-staged nested templates and source artifacts
     BootstrapPrefix:

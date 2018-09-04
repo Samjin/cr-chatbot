@@ -95,7 +95,7 @@ Parameters:
     CustomResourceCodeBucket:
         Type: String
         Description: S3 bucket name for custom resource Lambda bundle
-        Default: aws-bigdata-blog
+        Default: cr-chatbot
 
     CustomResourceCodeObject:
         Type: String

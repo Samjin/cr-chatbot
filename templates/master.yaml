@@ -98,7 +98,7 @@ Parameters:
       False, S3 buckets will be retained.
   BootstrapBucket:
     Type: String
-    Default: aws-bigdata-blog
+    Default: cr-chatbot
     Description: |
       S3 bucket containing pre-staged nested templates and source artifacts
   BootstrapPrefix:
