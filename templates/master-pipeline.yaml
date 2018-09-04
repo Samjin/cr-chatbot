@@ -150,7 +150,7 @@ Parameters:
             S3 bucket containing pre-staged nested templates and source artifacts
     BootstrapPrefix:
         Type: String
-        Default: artifact
+        Default: artifacts
         Description: >
             S3 prefix where the templates and source are stored under
 
