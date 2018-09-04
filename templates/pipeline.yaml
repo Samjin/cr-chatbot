@@ -43,7 +43,7 @@ Parameters:
         Description: >
             CodeBuild project to be created. Used for building the web app with
             the pipeline.
-        Default: lex-web-ui
+        Default: cr-chatbot
         MinLength: 2
         MaxLength: 255
         AllowedPattern: '^[A-Za-z0-9][A-Za-z0-9\-_]{1,254}$'

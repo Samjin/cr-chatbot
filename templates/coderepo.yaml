@@ -17,7 +17,7 @@ Parameters:
     CodeBuildName:
         Type: String
         Description: CodeBuild project used to initialize the code repo
-        Default: lex-web-ui-init
+        Default: cr-chatbot
         MinLength: 2
         MaxLength: 255
         AllowedPattern: '^[A-Za-z0-9][A-Za-z0-9\-_]{1,254}$'
