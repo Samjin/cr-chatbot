@@ -1,3 +1,12 @@
 1. original codebuildname default is lex-web-ui-conf-deploy in codebuild-deploy.yaml
-2. original prefix artifacts/aws-lex-web-ui/artifacts
+2. original bucketPrefix artifacts/aws-lex-web-ui/artifacts
 role for all cr-chatbot stack operation arn:aws:iam::890935858104:role/cr-chatbot-role
+
+cd build
+export BUCKET=cr-chatbot
+./release.sh
+./upload-bootstrap.sh
+
+The release.sh will perform a full build and then upload-bootstrap.sh will upload the artifacts to YOUR_S3_BUCKET_NAME/artifacts location.
+
+Then you can try running cloudformation again using the master.yml with a new stack in either the us-east-1 or us-west-2 regions. You would adjust the BootstrapBucket to be your bucket name and the BootstrapPrefix to be artifacts.
