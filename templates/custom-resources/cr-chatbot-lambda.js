@@ -50,7 +50,7 @@ const handlers = {
     if (!slots.supplier || !slots.country) {
       throw new Error('Need supplier and country for PolicyLookup');
     }
-    callback(buildTextResponse(getPolicy(slots.supplier, slots.country)));
+    callback(null, buildTextResponse(getPolicy(slots.supplier, slots.country))); //null means success
   },
 };
 

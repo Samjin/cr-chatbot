@@ -30,7 +30,7 @@ install-deps:
 # for using the prebuilt/dist libraries
 # Expected values: full || dist
 # If empty, probably this is being run locally or from an external script
-BUILD_TYPE ?= $()
+BUILD_TYPE ?= dist
 
 # updates the config files with values from the environment
 UPDATE_CONFIG_SCRIPT := $(BUILD_DIR)/update-lex-web-ui-config.js
