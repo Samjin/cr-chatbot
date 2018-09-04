@@ -101,7 +101,7 @@ Parameters:
         Type: String
         Description: >
             S3 object zip file containing Lambda custom resource functions
-        Default: artifacts/aws-lex-web-ui/artifacts/custom-resources.zip
+        Default: artifacts/custom-resources.zip
 
 Conditions:
     NeedsParentOrigin: !Equals [!Ref ParentOrigin, '']

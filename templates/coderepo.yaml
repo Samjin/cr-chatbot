@@ -33,13 +33,13 @@ Parameters:
     SourceObject:
         Description: S3 object zip file containing the project source
         Type: String
-        Default: artifacts/aws-lex-web-ui/artifacts/src.zip
+        Default: artifacts/src.zip
 
     CustomResourceCodeObject:
         Type: String
         Description: >
             S3 object zip file containing Lambda custom resource functions
-        Default: artifacts/aws-lex-web-ui/artifacts/custom-resources.zip
+        Default: artifacts/custom-resources.zip
 
     CognitoIdentityPoolId:
         Type: String

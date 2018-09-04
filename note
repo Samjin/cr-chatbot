@@ -1,3 +1,3 @@
 1. original codebuildname default is lex-web-ui-conf-deploy in codebuild-deploy.yaml
-
+2. original prefix artifacts/aws-lex-web-ui/artifacts
 role for all cr-chatbot stack operation arn:aws:iam::890935858104:role/cr-chatbot-role
