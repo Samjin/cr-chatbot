@@ -1,9 +1,4 @@
-const AWS = require('aws-sdk');
-const s3 = new AWS.S3({apiVersion: '2006-03-01'});
-
-// Load the policy list in a global
-// So it stays loaded as long as Lambda function is still hot
-let policyList;
+const fees = require('./fees.json');
 
 // Route the incoming request based on intent.
 // The JSON body of the request is provided in the event slot.
@@ -19,18 +14,7 @@ exports.handler = (event, context, callback) => {
       callback('Invalid Bot Name');
     }
 
-    // Make sure policy list is loaded
-    if (!policyList) {
-      s3.getObject({Bucket: 'cr-chatbot', Key: 'fees.json'}, (err, data) => {
-        if (!data) {
-          throw new Error('Error ' + err);
-        }
-        policyList = JSON.parse(data.Body.toString('ascii'));
-        ready(event, callback);
-      });
-    } else {
-      ready(event, callback);
-    }
+    ready(event, callback);
   } catch (err) {
     callback(err);
   }
@@ -40,9 +24,8 @@ function ready(event, callback) {
   if (!handlers[event.currentIntent.name]) {
     throw new Error(`Intent ${event.currentIntent.name} not supported`);
   }
-  handlers[event.currentIntent.name](event, (response) => callback(null, response));
+  handlers[event.currentIntent.name](event, (response) => callback(null, response));  //null means success
 }
-
 
 const handlers = {
   'PolicyLookup': function(intentRequest, callback) {
@@ -50,7 +33,7 @@ const handlers = {
     if (!slots.supplier || !slots.country) {
       throw new Error('Need supplier and country for PolicyLookup');
     }
-    callback(null, buildTextResponse(getPolicy(slots.supplier, slots.country))); //null means success
+    callback(buildTextResponse(getPolicy(slots.supplier, slots.country)));
   },
 };
 
@@ -99,8 +82,8 @@ function getPolicy(supplier, country) {
   const supplierUpper = supplier.toUpperCase();
   const countryUpper = country.toUpperCase();
 
-  if (policyList[supplierUpper] && policyList[supplierUpper][countryUpper]) {
-    return policyList[supplierUpper][countryUpper];
+  if (fees[supplierUpper] && fees[supplierUpper][countryUpper]) {
+    return fees[supplierUpper][countryUpper];
   }
 
   return 'Crossing International Borders is not permitted.';
