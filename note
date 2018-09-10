@@ -15,8 +15,7 @@ Doesn't update 'artifacts' files.
 artifact file
 /build
     ./release.sh             :  Perform a full build and copy files to /dist folder
-    make upload              :  Build zip files to /out folder and upload to artifacts
-    make                     :  same as 'make upload'
+    make                     :  Build zip files to /out folder and upload to artifacts
 
     ./upload-bootstrap.sh    :  Upload to 'artifacts' path in S3 bucket manually. Intended for testing - use the Makefile for prod
 

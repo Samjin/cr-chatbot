@@ -12,7 +12,7 @@
         "name": "PolicyLookup",
         "version": "6",
         "fulfillmentActivity": {
-          "type": "ReturnIntent",
+          "type": "CodeHook",
           "codeHook": {
             "uri": "arn:aws:lambda:us-east-1:890935858104:function:cross-border-fees",
             "messageVersion": "1.0"
@@ -44,7 +44,7 @@
               ],
               "maxAttempts": 2
             },
-            "priority": 2,
+            "priority": 1,
             "sampleUtterances": []
           },
           {
@@ -61,7 +61,7 @@
               ],
               "maxAttempts": 2
             },
-            "priority": 1,
+            "priority": 2,
             "sampleUtterances": []
           }
         ]
