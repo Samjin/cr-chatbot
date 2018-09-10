@@ -2,8 +2,8 @@
 2. original bucketPrefix artifacts/aws-lex-web-ui/artifacts
 
 /root
-    make build        : Build both dev and prod env files
-    make sync-website : Can also be used to easily copy local changes to a bucket
+    make all          : Build both dev and prod env files and as well as sample applications
+    make sync-website : Copy local changes to a S3 bucket. This is also used in AWSCodeBuild serivce if CFN stack is used.
 
 /build
     export BUCKET=cr-chatbot :  //this is already hardcode in config file but left here for notice
