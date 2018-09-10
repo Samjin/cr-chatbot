@@ -12,8 +12,9 @@ These command lines only upload public file (CodeBuild process) files instead of
 /build
     export BUCKET=cr-chatbot :  This is already hardcode in config file but left here for notice
     ./release.sh             :  Perform a full build
-    ./upload-bootstrap.sh    :  Upload to 'artifacts' path in S3 bucket manually. Intended for testing - use the Makefile for prod
+    make upload              :  Build zip files to /out and upload to artifacts
 
+    ./upload-bootstrap.sh    :  Upload to 'artifacts' path in S3 bucket manually. Intended for testing - use the Makefile for prod
 
 /dist
     make all : copy bundle, build loader and make a zip file (lex-web-ui-mobile-hub.zip)
