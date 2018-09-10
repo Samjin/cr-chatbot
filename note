@@ -1,11 +1,25 @@
-1. original codebuildname default is lex-web-ui-conf-deploy in codebuild-deploy.yaml
-2. original bucketPrefix artifacts/aws-lex-web-ui/artifacts
+These command lines only upload public file (CodeBuild process) files instead of files for whole CI/CD which uploads most of project to S3.
 
 /root
     make all          : Build both dev and prod env files and as well as sample applications
-    make sync-website : Copy local changes to a S3 bucket. This is also used in AWSCodeBuild serivce if CFN stack is used.
+    make sync-website : Copy local changes to a S3 bucket. Also used in AWSCodeBuild serivce if CFN stack.
+                        Example:
+                            dist/,
+                            src/website/,
+                            src/config/aws-config.js
+                            src/config/lex-web-ui-loader-config.json
 
 /build
-    export BUCKET=cr-chatbot :  //this is already hardcode in config file but left here for notice
+    export BUCKET=cr-chatbot :  This is already hardcode in config file but left here for notice
     ./release.sh             :  Perform a full build
-    ./upload-bootstrap.sh    :  Upload to 'artifacts' path in S3 bucket.
+    ./upload-bootstrap.sh    :  Upload to 'artifacts' path in S3 bucket manually. Intended for testing - use the Makefile for prod
+
+
+/dist
+    make all : copy bundle, build loader and make a zip file (lex-web-ui-mobile-hub.zip)
+
+
+
+//Original settings backup.
+1. original codebuildname default is lex-web-ui-conf-deploy in codebuild-deploy.yaml
+2. original bucketPrefix artifacts/aws-lex-web-ui/artifacts
