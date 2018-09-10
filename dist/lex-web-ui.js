@@ -922,7 +922,7 @@ var configDefault = {
   cognito: {
     // Cognito pool id used to obtain credentials
     // e.g. poolId: 'us-east-1:deadbeef-cac0-babe-abcd-abcdef01234',
-    poolId: 'us-east-1:7bd01f8a-a4c8-400c-9787-56f6a9b96bc3'
+    poolId: 'us-east-1:c9872cdc-d9c4-421e-be6c-4764ab18501c'
   },
 
   lex: {
@@ -6584,19 +6584,19 @@ webpackContext.id = 157;
 /* 158 */
 /***/ (function(module, exports) {
 
-module.exports = {"cognito":{"poolId":"us-east-1:7bd01f8a-a4c8-400c-9787-56f6a9b96bc3"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me for help look up cross border fees. Just type \"cross border fees\" or click on the mic and say it.","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"Policy Lookup"},"recorder":{"preset":"speech_recognition"}}
+module.exports = {"cognito":{"poolId":"us-east-1:c9872cdc-d9c4-421e-be6c-4764ab18501c"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me for help look up cross border fees. Just type \"cross border fees\" or click on the mic and say it.","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"Policy Lookup"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
 /* 159 */
 /***/ (function(module, exports) {
 
-module.exports = {"cognito":{"poolId":"us-east-1:7bd01f8a-a4c8-400c-9787-56f6a9b96bc3"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me for help look up cross border fees. Just type \"cross border fees\" or click on the mic and say it.","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"","pageTitle":"Policy Lookup Bot","toolbarTitle":"Policy Lookup"},"recorder":{"preset":"speech_recognition"}}
+module.exports = {"cognito":{"poolId":"us-east-1:c9872cdc-d9c4-421e-be6c-4764ab18501c"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me for help look up cross border fees. Just type \"cross border fees\" or click on the mic and say it.","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"","pageTitle":"Policy Lookup Bot","toolbarTitle":"Policy Lookup"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
 /* 160 */
 /***/ (function(module, exports) {
 
-module.exports = {"cognito":{"poolId":"us-east-1:7bd01f8a-a4c8-400c-9787-56f6a9b96bc3"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me for help look up cross border fees. Just type \"cross border fees\" or click on the mic and say it.","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"Policy Lookup"},"recorder":{"preset":"speech_recognition"}}
+module.exports = {"cognito":{"poolId":"us-east-1:c9872cdc-d9c4-421e-be6c-4764ab18501c"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me for help look up cross border fees. Just type \"cross border fees\" or click on the mic and say it.","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"Policy Lookup"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
 /* 161 */

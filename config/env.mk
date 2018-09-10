@@ -19,7 +19,7 @@ export AWS_DEFAULT_REGION ?= us-east-1
 # lex-web-ui config variables
 export BOT_NAME ?= CR_chatbot
 # set to empty if not present in environment
-export POOL_ID ?= us-east-1:7bd01f8a-a4c8-400c-9787-56f6a9b96bc3
+export POOL_ID ?= us-east-1:c9872cdc-d9c4-421e-be6c-4764ab18501c
 
 export BOT_INITIAL_TEXT ?= $()
 export BOT_INITIAL_SPEECH ?= $()

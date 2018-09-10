@@ -1,7 +1,10 @@
 These command lines only upload public file (CodeBuild process) files instead of files for whole CI/CD which uploads most of project to S3.
 
+For local development before release, these root commands are suitable.
+Doesn't update 'artifacts' files.
 /root
-    make all          : Build both dev and prod env files and as well as sample applications
+    make all          : Build loader js and css files for both dev and prod env.
+                        SAME AS ./release.sh, but doesn't include latest src files.
     make sync-website : Copy local changes to a S3 bucket. Also used in AWSCodeBuild serivce if CFN stack.
                         Example:
                             dist/,
@@ -9,15 +12,13 @@ These command lines only upload public file (CodeBuild process) files instead of
                             src/config/aws-config.js
                             src/config/lex-web-ui-loader-config.json
 
+artifact file
 /build
-    export BUCKET=cr-chatbot :  This is already hardcode in config file but left here for notice
-    ./release.sh             :  Perform a full build
-    make upload              :  Build zip files to /out and upload to artifacts
+    ./release.sh             :  Perform a full build and copy files to /dist folder
+    make upload              :  Build zip files to /out folder and upload to artifacts
+    make                     :  same as 'make upload'
 
     ./upload-bootstrap.sh    :  Upload to 'artifacts' path in S3 bucket manually. Intended for testing - use the Makefile for prod
-
-/dist
-    make all : copy bundle, build loader and make a zip file (lex-web-ui-mobile-hub.zip)
 
 
 
