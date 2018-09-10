@@ -1,7 +1,7 @@
-const fees = require('./fees.json');
+const fees = require('./fees'); //To parse and cache content in whole file structure.
 
 // Route the incoming request based on intent.
-// The JSON body of the request is provided in the event slot.
+// Request is provided in the event slot.
 exports.handler = (event, context, callback) => {
   console.log(event, context, callback);
   try {
@@ -24,7 +24,7 @@ function ready(event, callback) {
   if (!handlers[event.currentIntent.name]) {
     throw new Error(`Intent ${event.currentIntent.name} not supported`);
   }
-  handlers[event.currentIntent.name](event, (response) => callback(null, response));  //null means success
+  handlers[event.currentIntent.name](event, callback);
 }
 
 const handlers = {
@@ -33,10 +33,9 @@ const handlers = {
     if (!slots.supplier || !slots.country) {
       throw new Error('Need supplier and country for PolicyLookup');
     }
-    callback(buildTextResponse(getPolicy(slots.supplier, slots.country)));
+    callback(null, buildTextResponse(getPolicy(slots.supplier, slots.country)));
   },
 };
-
 
 function mapSlots(intent) {
   const slots = {};
@@ -63,28 +62,32 @@ function mapSlots(intent) {
   return slots;
 }
 
-
 function buildTextResponse(text) {
   return {
-    type: "Close",
-    fulfillmentState: "Fulfilled",
     dialogAction: {
-      message: {
-        contentType: 'PlainText',
-        content: text
-      },
+      "type": "Close",
+      "fulfillmentState": "Fulfilled",
+      "message": {
+        "contentType": "PlainText",
+        "content": text
+      }
     }
   };
 }
 
-
 function getPolicy(supplier, country) {
-  const supplierUpper = supplier.toUpperCase();
-  const countryUpper = country.toUpperCase();
+  let feeDetails;
 
-  if (fees[supplierUpper] && fees[supplierUpper][countryUpper]) {
-    return fees[supplierUpper][countryUpper];
+  for (let i = 0; i < fees.length; i++) {
+    let policyObj = fees[i]['Supplier'];
+    let supplierName = policyObj.toLowerCase().includes(supplier.toLowerCase());
+    let countryName = policyObj.toLowerCase().includes(country.toLowerCase());
+    if( supplierName && countryName) {
+      feeDetails = fees[i]['Cross Border Details'];
+      break;
+    }
   }
 
+  if (feeDetails) {return feeDetails;}
   return 'Crossing International Borders is not permitted.';
 }

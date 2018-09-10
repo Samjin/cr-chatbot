@@ -1,26 +1,37 @@
 These command lines only upload public file (CodeBuild process) files instead of files for whole CI/CD which uploads most of project to S3.
 
-For local development before release, these root commands are suitable.
 Doesn't update 'artifacts' files.
 /root
     make all          : Build loader js and css files for both dev and prod env.
                         SAME AS ./release.sh, but doesn't include latest src files.
-    make sync-website : Copy local changes to a S3 bucket. Also used in AWSCodeBuild serivce if CFN stack.
+
+    make sync-website : Copy local changes to a S3 bucket. Also used in AWSCodeBuild service if CFN is used.
+                        Current it only sync to cr-chatbot rather than codebuild s3.
                         Example:
                             dist/,
                             src/website/,
                             src/config/aws-config.js
                             src/config/lex-web-ui-loader-config.json
 
-artifact file
+
+Upload artifacts path and we can use CodeBuild to update lambda
 /build
     ./release.sh             :  Perform a full build and copy files to /dist folder
-    make                     :  Build zip files to /out folder and upload to artifacts
+    make                     :  Build zip files to /out folder and upload to 'ARTIFACTS'
 
-    ./upload-bootstrap.sh    :  Upload to 'artifacts' path in S3 bucket manually. Intended for testing - use the Makefile for prod
+    ./upload-bootstrap.sh    :  Upload to 'ARTIFACTS' path in S3 bucket manually. Intended for testing - use the Makefile for prod
 
 
 
 //Original settings backup.
 1. original codebuildname default is lex-web-ui-conf-deploy in codebuild-deploy.yaml
 2. original bucketPrefix artifacts/aws-lex-web-ui/artifacts
+
+
+//File structure
+/lex-web-ui :   UI widget used with webpack
+/src:           UI-Loader files for connecting iframe and widget. Referred as 'Libaray' for loaders
+/src/websites:  Sample site for local base development.
+/src/config:    configuration for UI loader
+/templates:     Custom s3 object and CFN stack templates
+/dist:
