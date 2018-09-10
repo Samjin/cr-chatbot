@@ -1,12 +1,13 @@
 1. original codebuildname default is lex-web-ui-conf-deploy in codebuild-deploy.yaml
 2. original bucketPrefix artifacts/aws-lex-web-ui/artifacts
-role for all cr-chatbot stack operation arn:aws:iam::890935858104:role/cr-chatbot-role
 
-//This might be process needed for updating
-cd build
-export BUCKET=cr-chatbot //this is already hardcode in config
-./release.sh
-./upload-bootstrap.sh
 
-The release.sh will perform a full build and then upload-bootstrap.sh will upload the artifacts to YOUR_S3_BUCKET_NAME/artifacts location.
+/root
+    make build        : Build both dev and prod env files
+    make sync-website : Can also be used to easily copy local changes to a bucket
 
+
+/build
+    export BUCKET=cr-chatbot :  //this is already hardcode in config file but left here for notice
+    ./release.sh             :  Perform a full build
+    ./upload-bootstrap.sh    :  Upload to 'artifacts' path in S3 bucket.
