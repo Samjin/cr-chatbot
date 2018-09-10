@@ -1,11 +1,9 @@
 1. original codebuildname default is lex-web-ui-conf-deploy in codebuild-deploy.yaml
 2. original bucketPrefix artifacts/aws-lex-web-ui/artifacts
 
-
 /root
     make build        : Build both dev and prod env files
     make sync-website : Can also be used to easily copy local changes to a bucket
-
 
 /build
     export BUCKET=cr-chatbot :  //this is already hardcode in config file but left here for notice
