@@ -55,7 +55,7 @@ const configDefault = {
   cognito: {
     // Cognito pool id used to obtain credentials
     // e.g. poolId: 'us-east-1:deadbeef-cac0-babe-abcd-abcdef01234',
-    poolId: 'us-east-1:c9872cdc-d9c4-421e-be6c-4764ab18501c',
+    poolId: 'us-east-1:302ac988-e268-4a21-be13-23cf8b3c8441',
   },
 
   lex: {
