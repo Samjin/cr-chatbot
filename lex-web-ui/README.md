@@ -48,7 +48,7 @@ You can import the library as a module and use it in your code:
   const lexWebUi = new LexWebUi({
     // pass your own configuration
     cognito: {
-      poolId: 'us-east-1:deadbeef-fade-babe-cafe-0123456789ab',
+      poolId: 'us-east-1:xxx',
     },
     lex: {
       initialText: 'How can I help you?',
@@ -105,7 +105,7 @@ in your application:
   Vue.use(Vuex);
   Vue.use(Vuetify);
 
-  const poolId = 'us-east-1:deadbeef-cac0-babe-abcd-abcdef01234';
+  const poolId = 'us-east-1:xxx';
   const region = 'us-east-1';
   const credentials = new CognitoIdentityCredentials(
     { IdentityPoolId: poolId },
@@ -193,8 +193,8 @@ NOTE: browsers may require the application to be served using HTTPS for
 the WebRTC API to work. Make sure to serve the application from an HTTPS
 enabled server or if hosting on S3 or CloudFront, use https in the URL.
 
-## Markdown and HTML Support 
-The chatbot UI supports HTML and Markdown in bot responses. Markdown is rendered to HTML using [marked](https://www.npmjs.com/package/marked) and then displayed to the user. To do this you must configure the chat UI and have your bot place the HTML and/or Markdown messages the response message's session attributes 
+## Markdown and HTML Support
+The chatbot UI supports HTML and Markdown in bot responses. Markdown is rendered to HTML using [marked](https://www.npmjs.com/package/marked) and then displayed to the user. To do this you must configure the chat UI and have your bot place the HTML and/or Markdown messages the response message's session attributes
 
 First, set the `ui.AllowSuperDangerousHTMLInMessage` config field to `true`. __WARNING__: Enabling this feature increases the risk of XSS. Make sure that the HTML/Markdown message has been properly escaped/encoded/filtered in the Lex Handler Lambda function. For more information on XSS see [here](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))
 
@@ -222,7 +222,7 @@ or this for html messages:
 }
 ```
 
-If both Markdown and HTML are present then the HTML answer will be rendered. The message returned from lex will not be shown if an alternative answer is found. 
+If both Markdown and HTML are present then the HTML answer will be rendered. The message returned from lex will not be shown if an alternative answer is found.
 
 ## Configuration and Customization
 The chatbot UI requires configuration parameters pointing to external
@@ -286,7 +286,7 @@ Here's an example of the `config.dev.json` file:
 ```
 {
   "cognito": {
-    "poolId": "us-east-1:deadbeef-cac0-babe-abcd-abcdef01234",
+    "poolId": "us-east-1:xxx",
   },
   "lex": {
     "bot": "MyLexBotName",

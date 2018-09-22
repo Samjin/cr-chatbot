@@ -1,4 +1,4 @@
-const fees = require('./fees'); //To parse and cache content in whole file structure.
+// const fees = require('./fees'); //To parse and cache content in whole file structure.
 
 // Route the incoming request based on intent.
 // Request is provided in the event slot.

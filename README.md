@@ -417,7 +417,7 @@ and Lex Bot name. For example, set the appropriate values in the
 ```JSON
   ...
   cognito: {
-    "poolId": "us-east-1:deadbeef-fade-babe-cafe-0123456789ab"
+    "poolId": "us-east-1:xxx"
   },
   lex: {
     "botName": "myHelpBot"

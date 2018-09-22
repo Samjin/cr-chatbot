@@ -72,7 +72,7 @@ Parameters:
       left empty, a Cognito Identity Pool will be automatically created. The
       pool ID is used by the web ui to get AWS credentials for making calls to
       Lex and Polly.
-    Default: us-east-1:c9872cdc-d9c4-421e-be6c-4764ab18501c
+    Default: us-east-1:5d350da1-897e-47aa-8c62-be35e6778919
     AllowedPattern: '(^$|^[\w-]+:[0-9a-f-]+$)'
     ConstraintDescription: Empty or a valid Cognito Identity Pool ID
   CognitoIdentityPoolName:
@@ -88,7 +88,7 @@ Parameters:
     ConstraintDescription: Alphanumeric and spaces.
   CleanupBuckets:
     Type: String
-    Default: true
+    Default: false
     AllowedValues:
       - true
       - false

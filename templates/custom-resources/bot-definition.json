@@ -1,24 +1,49 @@
 {
-  "metadata": {
-    "schemaVersion": "1.0",
-    "importType": "LEX",
-    "importFormat": "JSON"
-  },
-  "resource": {
-    "name": "CR_chatbot",
-    "version": "1",
+  "bot": {
+    "abortStatement": {
+      "messages": [
+        {
+          "content": "Sorry, I'm not able to assist at this time",
+          "contentType": "PlainText"
+        }
+      ]
+    },
+    "childDirected": false,
+    "clarificationPrompt": {
+      "maxAttempts": 2,
+      "messages": [
+        {
+          "content": "Sorry, can you please repeat that?",
+          "contentType": "PlainText"
+        }
+      ]
+    },
+    "description": "Bot to look up cross border fees.",
+    "idleSessionTTLInSeconds": 600,
     "intents": [
       {
-        "name": "PolicyLookup",
-        "version": "6",
-        "fulfillmentActivity": {
+        "intentName": "PolicyLookup",
+        "intentVersion": "$LATEST"
+      }
+    ],
+    "locale": "en-US",
+    "name": "CR_chatbot",
+    "voiceId": "Salli"
+  },
+  "intents": [
+    {
+      "description": "Intent to look up cross border fees.",
+      "fulfillmentActivity": {
           "type": "CodeHook",
+          "version": "$LATEST",
           "codeHook": {
             "uri": "arn:aws:lambda:us-east-1:890935858104:function:cross-border-fees",
             "messageVersion": "1.0"
           }
-        },
-        "sampleUtterances": [
+      },
+      "name": "PolicyLookup",
+      "sampleUtterances": [
+          "booking number",
           "fees",
           "What are the cross border fees",
           "tell me the cross border fees",
@@ -29,7 +54,7 @@
           "what are the cross border fess for {supplier} in {country}",
           "list the cross border fees for {supplier} in {country}",
           "tell me the cross border fees for {supplier} in {country}"
-        ],
+      ],
         "slots": [
           {
             "name": "country",
@@ -65,49 +90,27 @@
             "sampleUtterances": []
           }
         ]
-      }
-    ],
-    "slotTypes": [
-      {
-        "name": "SUPPLIER_LIST",
-        "version": "1",
-        "enumerationValues": [
-          {
-            "value": "Autoclick Rent a Car",
-            "synonyms": []
-          },
-          {
-            "value": "AirAuto",
-            "synonyms": []
-          },
-          {
-            "value": "Alamo",
-            "synonyms": []
-          }
-        ],
-        "valueSelectionStrategy": "ORIGINAL_VALUE"
-      }
-    ],
-    "voiceId": "Salli",
-    "childDirected": false,
-    "locale": "en-US",
-    "idleSessionTTLInSeconds": 300,
-    "clarificationPrompt": {
-      "messages": [
+    }
+  ],
+  "slot_types": [
+    {
+      "name": "SUPPLIER_LIST",
+      "version": "1",
+      "enumerationValues": [
         {
-          "contentType": "PlainText",
-          "content": "Sorry, can you please repeat that?"
+          "value": "Autoclick Rent a Car",
+          "synonyms": []
+        },
+        {
+          "value": "AirAuto",
+          "synonyms": []
+        },
+        {
+          "value": "Alamo",
+          "synonyms": []
         }
       ],
-      "maxAttempts": 5
-    },
-    "abortStatement": {
-      "messages": [
-        {
-          "contentType": "PlainText",
-          "content": "Sorry, I could not understand. Goodbye."
-        }
-      ]
+      "valueSelectionStrategy": "ORIGINAL_VALUE"
     }
-  }
+  ]
 }

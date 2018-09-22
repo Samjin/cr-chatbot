@@ -15,6 +15,7 @@
 """ CodeBuild Starter
 
 CloudFormation Custom Resource Lambda Function
+This file runs CodeBuild while creating CFN
 """
 
 import logging

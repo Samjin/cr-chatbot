@@ -1,26 +1,46 @@
 These command lines only upload public file (CodeBuild process) files instead of files for whole CI/CD which uploads most of project to S3.
 
-Doesn't update 'artifacts' files.
+THIS TWO COMMANDS DOESN'T UPDATE 'ARTIFACTS' FILES.
+THE MAIN PURPOSE FOR THESE COMMANDS IS TO UPLOAD PUBLIC APP FILES.
 /root
-    make all          : Build loader js and css files for both dev and prod env.
-                        Similar to ./release.sh, but doesn't include latest src files.
+    make              : Build loader js and css files for both dev and prod env.
+                        Similar to ./release.sh, but doesn't include latest src files to Artifacts folder.
 
-    make sync-website : Copy local changes to a S3 bucket. Also used in AWSCodeBuild service if CFN is used.
-                        Current it only sync to cr-chatbot rather than codebuild s3.
-                        Example:
+    make sync-website : Only upload webApp files to customized bucket.
+                        Codebuild also use this command for building webapp.
+                        To Skip CodeBuild UI build, we can just this in command and it will upload pre-build files to S3 webapp.
+                        Example resource files include:
                             dist/,
                             src/website/,
                             src/config/aws-config.js
                             src/config/lex-web-ui-loader-config.json
 
 
-Upload artifacts path and we can use CodeBuild to update lambda
+BUILD AND UPLOAD ARTIFACTS FILES. WE CAN USE CODEBUILD TO UPDATE LAMBDA
 /build
-    ./release.sh             :  Perform a full build and copy files to /dist folder
-    make                     :  Only build src.zip file to /out folder and upload to 'ARTIFACTS' as src.zip
+    ./release.sh(optional)   :  Perform a full build as "/root make" does. But also copy files to /dist folder
 
-    ./upload-bootstrap.sh    :  Upload to 'ARTIFACTS' path in S3 bucket manually. Intended for testing - use the Makefile for prod
+    make                     :  build and upload to cr-chatbot/artifacts as long as files are saved.
+                                For example: save fees.json, then both src.zip and custom-resource will be recreated and upload. But if you save master.yaml, all files in templates will upload to artifacts.
+                                    1. custom-resource.zip
+                                    2. src.zip
 
+The only manual command that would upload Templates to artifacts, instead of select which files to update based on save/changes, it will upload everything that's prebuild locally.
+Used for manual testing. Bucket is hard coded in the .sh file
+/build
+    ./upload-bootstrap.sh    :  build and upload all content to cr-chatbot/artifacts
+
+INSTRUCTION FOR CREATING CLOUDFORMATION STACK.
+To delete and rebuild Cloudformation, make sure to use
+1. Delete Cognito unauthenticate and authenticate roles from IAM console first.
+2. Create a new pool with new roles (Cognito_cr_chatbot_poolAuth_Role, Cognito_cr_chatbot_poolUnauth_Role).
+2. Replace all existing cognito pool id through in the projects.
+3. ./release.sh
+4. ./upload-bootstrap.sh
+5. Copy the last line in your command log which is S3 url for master template.
+6. Use the master template URL in New template field to create Cloudformation.
+7. Make sure to click a checkbox while creating CFN so it can automatically create related Roles for different services if necessary.
+8. Check parent URL and see if Chatbot is working.
 
 
 //Original settings backup.
