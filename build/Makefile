@@ -9,6 +9,10 @@ include $(CONFIG_ENV)
 TEMPLATES_DIR := ../templates
 TEMPLATES := $(wildcard $(TEMPLATES_DIR)/*.yaml)
 
+# custom lambda functions
+# CROSS-BORDER-FEES_DIR := ../lambda/cross-border-fees
+# CROSS_BORDER_FEES_TEMPLATE := $(wildcard $(CROSS-BORDER-FEES_DIR)/*)
+
 # build output directory
 OUT := out
 # put output dir in VPATH to simplify finding dependencies
@@ -18,7 +22,7 @@ VPATH := $(OUT)
 
 # upload files to bootstrap bucket
 # NOTE: files uploaded with public read permissions
-upload: upload-templates upload-custom-resources-zip upload-src-zip \
+upload: upload-cross-border-fees-zip upload-templates upload-custom-resources-zip upload-src-zip \
 	upload-response-card-image
 .PHONY: upload
 
@@ -40,7 +44,7 @@ upload-templates: $(TEMPLATES) | $(OUT)
 CUSTOM_RESOURCES_DIR := $(TEMPLATES_DIR)/custom-resources
 
 # zip cfn custom resource lambda files
-BOT_DEFINITION_FILE := $(CUSTOM_RESOURCES_DIR)/bot-definition.json
+# BOT_DEFINITION_FILE := $(CUSTOM_RESOURCES_DIR)/bot-definition.json
 CUSTOM_RESOURCES_ZIP := custom-resources.zip
 CUSTOM_RESOURCES_FILES := $(wildcard $(CUSTOM_RESOURCES_DIR)/*.py)
 CUSTOM_RESOURCES_FILES += $(wildcard $(CUSTOM_RESOURCES_DIR)/*.js)
@@ -77,6 +81,30 @@ upload-response-card-image: $(RESPONSE_CARD_IMAGE) | $(OUT)
 		"$(RESPONSE_CARD_IMAGE)" "s3://$(BOOTSTRAP_BUCKET_PATH)/flowers.jpeg" \
 		| tee -a "$(OUT)/$(@)"
 
+# CUSTOM zip files: zip lambda folder content
+# update zip file recursively to zip_directory with all files and folder
+CROSS_BORDER_FEES_DIR := ../lambda/cross-border-fees
+CROSS_BORDER_FEES_ZIP_DIR := ../../build/$(OUT)
+CROSS_BORDER_FEES_ZIP := cross-border-fees.zip
+CROSS_BORDER_FEES_CONTENT := *
+cross-border-fees.zip: $(CROSS_BORDER_FEES_CONTENT) | $(OUT)
+	@echo "[INFO] Creating cross border fees zip file"
+	cd $(CROSS_BORDER_FEES_DIR); \
+	zip -u -r $(CROSS_BORDER_FEES_ZIP_DIR)/$(@) $(CROSS_BORDER_FEES_CONTENT)
+
+upload-cross-border-fees-zip: $(CROSS_BORDER_FEES_ZIP) | $(OUT)
+	@echo "[INFO] Uploading cross-border-fees.zip to S3 and update Lambda"
+	aws s3 cp --acl public-read \
+		"$(OUT)/$(CROSS_BORDER_FEES_ZIP)" \
+		"s3://$(BOOTSTRAP_BUCKET_PATH)/$(CROSS_BORDER_FEES_ZIP)" \
+		| tee -a "$(OUT)/$(@)"
+	aws lambda update-function-code \
+	--function-name "cross-border-fees" \
+	--zip-file "fileb://./out/cross-border-fees.zip" \
+	--region "us-east-1"
+
+
+
 clean:
-	-rm -f $(OUT)/*
+	-rm -rf $(OUT)/*
 .PHONY: clean

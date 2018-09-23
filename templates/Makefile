@@ -1,3 +1,5 @@
+# This file is for template validation and cleaning /out
+
 TEMPLATES := $(wildcard *.json *.yml *.yaml)
 
 # build output directory

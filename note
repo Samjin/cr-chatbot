@@ -1,14 +1,11 @@
 These command lines only upload public file (CodeBuild process) files instead of files for whole CI/CD which uploads most of project to S3.
 
-THIS TWO COMMANDS DOESN'T UPDATE 'ARTIFACTS' FILES.
-THE MAIN PURPOSE FOR THESE COMMANDS IS TO UPLOAD PUBLIC APP FILES.
+THESE COMMANDS CREATE and UPLOAD PUBLIC APP FILES(dist folder files).
 /root
-    make              : Build loader js and css files for both dev and prod env.
+    make              : Build static public files.
                         Similar to ./release.sh, but doesn't include latest src files to Artifacts folder.
 
-    make sync-website : Only upload webApp files to customized bucket.
-                        Codebuild also use this command for building webapp.
-                        To Skip CodeBuild UI build, we can just this in command and it will upload pre-build files to S3 webapp.
+    make sync-website : Only upload static files to auto generated S3 from CFN.
                         Example resource files include:
                             dist/,
                             src/website/,
@@ -18,12 +15,13 @@ THE MAIN PURPOSE FOR THESE COMMANDS IS TO UPLOAD PUBLIC APP FILES.
 
 BUILD AND UPLOAD ARTIFACTS FILES. WE CAN USE CODEBUILD TO UPDATE LAMBDA
 /build
-    ./release.sh(optional)   :  Perform a full build as "/root make" does. But also copy files to /dist folder
+    ./release.sh(optional)   :  Perform a full build including "/root make" and "" does. But also copy files to /dist folder
+    make                     :  Create all zip files and upload to S3
+                                1. custom-resource.zip
+                                2. src.zip
+                                3. templates/out/
+                                For example: save fees.json, then both src.zip and custom-resource will be recreated and upload. All templates will upload to artifacts if master.yaml is saved or updated.
 
-    make                     :  build and upload to cr-chatbot/artifacts as long as files are saved.
-                                For example: save fees.json, then both src.zip and custom-resource will be recreated and upload. But if you save master.yaml, all files in templates will upload to artifacts.
-                                    1. custom-resource.zip
-                                    2. src.zip
 
 The only manual command that would upload Templates to artifacts, instead of select which files to update based on save/changes, it will upload everything that's prebuild locally.
 Used for manual testing. Bucket is hard coded in the .sh file

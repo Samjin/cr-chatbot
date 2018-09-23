@@ -1,0 +1,3 @@
+This folder containts lambda functions.
+Each lambda function package has its own dependencies that will be used on lambda site.
+Each lambdea function will be zipped and uploaded to S3 and update lambda function on aws as well.
