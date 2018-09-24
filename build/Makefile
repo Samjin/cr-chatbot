@@ -9,10 +9,6 @@ include $(CONFIG_ENV)
 TEMPLATES_DIR := ../templates
 TEMPLATES := $(wildcard $(TEMPLATES_DIR)/*.yaml)
 
-# custom lambda functions
-# CROSS-BORDER-FEES_DIR := ../lambda/cross-border-fees
-# CROSS_BORDER_FEES_TEMPLATE := $(wildcard $(CROSS-BORDER-FEES_DIR)/*)
-
 # build output directory
 OUT := out
 # put output dir in VPATH to simplify finding dependencies
@@ -87,8 +83,8 @@ CROSS_BORDER_FEES_DIR := ../lambda/cross-border-fees
 CROSS_BORDER_FEES_ZIP_DIR := ../../build/$(OUT)
 CROSS_BORDER_FEES_ZIP := cross-border-fees.zip
 CROSS_BORDER_FEES_CONTENT := *
-cross-border-fees.zip: $(CROSS_BORDER_FEES_CONTENT) | $(OUT)
-	@echo "[INFO] Creating cross border fees zip file"
+cross-border-fees-zip: $(CROSS_BORDER_FEES_CONTENT) | $(OUT)
+	@echo "[INFO] Creating cross border fees.zip file"
 	cd $(CROSS_BORDER_FEES_DIR); \
 	zip -u -r $(CROSS_BORDER_FEES_ZIP_DIR)/$(@) $(CROSS_BORDER_FEES_CONTENT)
 
@@ -101,6 +97,27 @@ upload-cross-border-fees-zip: $(CROSS_BORDER_FEES_ZIP) | $(OUT)
 	aws lambda update-function-code \
 	--function-name "cross-border-fees" \
 	--zip-file "fileb://./out/cross-border-fees.zip" \
+	--region "us-east-1"
+
+
+SEND_EMAIL_DIR := ../lambda/send-email
+SEND_EMAIL_ZIP_DIR := ../../build/$(OUT)
+SEND_EMAIL_ZIP := send-email.zip
+SEND_EMAIL_CONTENT := *
+send-email-zip: $(SEND_EMAIL_CONTENT) | $(OUT)
+	@echo "[INFO] Creating send-email.zip"
+	cd $(SEND_EMAIL_DIR); \
+	zip -u -r $(SEND_EMAIL_ZIP_DIR)/$(@) $(SEND_EMAIL_CONTENT)
+
+upload-send-email-zip: $(SEND_EMAIL_ZIP) | $(OUT)
+	@echo "[INFO] Uploading send-email.zip to S3 and update Lambda"
+	aws s3 cp --acl public-read \
+		"$(OUT)/$(SEND_EMAIL_ZIP)" \
+		"s3://$(BOOTSTRAP_BUCKET_PATH)/$(SEND_EMAIL_ZIP)" \
+		| tee -a "$(OUT)/$(@)"
+	aws lambda update-function-code \
+	--function-name "send-email" \
+	--zip-file "fileb://./out/send-email.zip" \
 	--region "us-east-1"
 
 

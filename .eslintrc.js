@@ -67,7 +67,7 @@ module.exports = {
         "no-useless-return": "error",
         "no-void": "error",
         "no-with": "error",
-        "semi": "error",
+        // "semi": "error",
         "semi-spacing": "error",
         "semi-style": "error",
         "space-infix-ops": "error",

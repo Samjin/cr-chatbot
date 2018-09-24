@@ -20,6 +20,7 @@ BUILD AND UPLOAD ARTIFACTS FILES. WE CAN USE CODEBUILD TO UPDATE LAMBDA
                                 1. custom-resource.zip
                                 2. src.zip
                                 3. templates/out/
+                                4. cross-border-fees lambda function
                                 For example: save fees.json, then both src.zip and custom-resource will be recreated and upload. All templates will upload to artifacts if master.yaml is saved or updated.
 
 

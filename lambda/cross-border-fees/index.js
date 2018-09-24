@@ -34,7 +34,7 @@ const handlers = {
       throw new Error('Need supplier and country for PolicyLookup');
     }
     callback(null, buildTextResponse(getPolicy(slots.supplier, slots.country)));
-  },
+  }
 };
 
 function mapSlots(intent) {
@@ -63,6 +63,8 @@ function mapSlots(intent) {
 }
 
 function buildTextResponse(text) {
+
+
   return {
     dialogAction: {
       "type": "Close",
