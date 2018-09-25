@@ -63,8 +63,6 @@ function mapSlots(intent) {
 }
 
 function buildTextResponse(text) {
-
-
   return {
     dialogAction: {
       "type": "Close",

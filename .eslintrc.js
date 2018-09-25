@@ -23,7 +23,7 @@ module.exports = {
         "comma-spacing": "error",
         "comma-style": "error",
         "curly": "error",
-        "func-call-spacing": "error",
+        "func-call-spacing": "off",
         "id-blacklist": ["error"],
         "no-alert": "error",
         "no-console": "off",
@@ -67,13 +67,14 @@ module.exports = {
         "no-useless-return": "error",
         "no-void": "error",
         "no-with": "error",
-        // "semi": "error",
+        "semi": "off",
         "semi-spacing": "error",
         "semi-style": "error",
         "space-infix-ops": "error",
         "space-unary-ops": ["error", {"words": true, "nonwords": false}],
         "strict": "error",
         "wrap-iife": "error",
-        "yoda": "error"
+        "yoda": "error",
+        "indent": "off",
     }
 }

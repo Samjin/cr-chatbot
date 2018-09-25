@@ -85,6 +85,7 @@ export default {
   watch: {
     // emit lex state on changes
     lexState() {
+      // console.info(this.lexState, 'lexState==========================');
       this.$emit('updateLexState', this.lexState);
     },
   },
@@ -157,10 +158,13 @@ export default {
           break;
         case 'toggleMinimizeUi':
           this.$store.dispatch('toggleIsUiMinimized')
-            .then(() => evt.ports[0].postMessage({
-              event: 'resolve', type: evt.data.event,
-            }));
-          break;
+            .then(() => {
+              evt.ports[0].postMessage({
+                event: 'resolve',
+                type: evt.data.event,
+              })
+            });
+        break;
         case 'postText':
           if (!evt.data.message) {
             evt.ports[0].postMessage({

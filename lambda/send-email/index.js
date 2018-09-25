@@ -1,6 +1,6 @@
 //TODO: this needs to e added to Makefile
 var AWS = require('aws-sdk')
-AWS.config.region = 'us-west-2';
+AWS.config.update({region: 'us-east-1'});
 var ses = new AWS.SES()
 
 var RECEIVER = 'sjin@carrentals.com'
@@ -17,7 +17,10 @@ function sendEmail (event, done) {
     Destination: {
       ToAddresses: [
         RECEIVER
-      ]
+      ],
+      CcAddresses: [
+        'bezhang@carrentals.com',
+      ],
     },
     Message: {
       Body: {
@@ -27,7 +30,7 @@ function sendEmail (event, done) {
         }
       },
       Subject: {
-        Data: 'Youtube AWS Lambda https://www.youtube.com/user/kaihendry',
+        Data: 'Policy Lookup: cross border fees',
         Charset: 'UTF-8'
       }
     },

@@ -46,6 +46,8 @@ or in the "license" file accompanying this file. This file is distributed on an 
 BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, express or implied. See the
 License for the specific language governing permissions and limitations under the License.
 */
+import axios from 'axios';
+
 export default {
   name: 'toolbar-container',
   data() {
@@ -74,8 +76,36 @@ export default {
       this.shouldShowTooltip = false;
     },
     toggleMinimize() {
+      this.getAndSendTranscript();
       this.onInputButtonHoverLeave();
       this.$emit('toggleMinimizeUi');
+    },
+    getAndSendTranscript() {
+      if (!this.isUiMinimized) {
+        let transcript = [];
+        this.$store.state.messages.forEach((message, i) => {
+          if (i === 0) {
+            transcript.push(
+              `date: ${message.date}`,
+              `initial question: ${message.text}`,
+            )
+          } else {
+            transcript.push(`text_${i}: ${message.text}`);
+          }
+        });
+        this.callEmailApi(transcript);
+      }
+    },
+    callEmailApi(transcript) {
+      if (!this.isUiMinimized) {
+        axios.post('https://wc4p5hrrp2.execute-api.us-east-1.amazonaws.com/cr-chatbot-prod', transcript)
+          .then(() => {
+            console.info('successfully send email');
+          })
+          .catch((err) => {
+            console.info(err);
+          });
+      }
     },
   },
 };

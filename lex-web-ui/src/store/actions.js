@@ -468,6 +468,7 @@ export default {
   },
   lexPostText(context, text) {
     context.commit('setIsLexProcessing', true);
+    // const messageText = context.state.lex.message;
     const session = context.state.lex.sessionAttributes;
     delete session.appContext;
     return context.dispatch('getCredentials')
