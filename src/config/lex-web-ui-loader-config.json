@@ -4,7 +4,7 @@
   },
   "lex": {
     "botName": "CR_chatbot",
-    "initialText": "You can ask me for help look up cross border fees. Just type \"cross border fees\" or click on the mic and say it.",
+    "initialText": "You can ask me to look up cross border fees. Please type \"cross border fees\" to start. ",
     "initialSpeechInstruction": "Say 'cross border fees' to get started."
   },
   "ui": {

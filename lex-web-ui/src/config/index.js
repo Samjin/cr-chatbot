@@ -67,7 +67,7 @@ const configDefault = {
 
     // instruction message shown in the UI
     initialText: 'You can ask me for help look up cross border fees. ' +
-      'You can ask me for help look up cross border fees. Just type "cross border fees" or click on the mic and say it.',
+      'You can ask me for help look up cross border fees. Please type "cross border fees" to start.',
 
     // instructions spoken when mic is clicked
     initialSpeechInstruction: 'Say "cross border fees" to get started',
