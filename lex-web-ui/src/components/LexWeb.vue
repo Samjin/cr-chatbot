@@ -50,6 +50,12 @@ export default {
     MessageList,
     InputContainer,
   },
+  data() {
+    return {
+      userIsLeaving: false,
+      transcripts: [],
+    };
+  },
   computed: {
     initialSpeechInstruction() {
       return this.$store.state.config.lex.initialSpeechInstruction;
@@ -85,8 +91,11 @@ export default {
   watch: {
     // emit lex state on changes
     lexState() {
-      // console.info(this.lexState, 'lexState==========================');
       this.$emit('updateLexState', this.lexState);
+    },
+    userIsLeaving() {
+      console.info(this.userIsLeaving, 'WATCHER==========================');
+      this.saveTranscripts();
     },
   },
   created() {
@@ -147,13 +156,15 @@ export default {
       switch (evt.data.event) {
         case 'ping':
           console.info('pong - ping received from parent');
-          evt.ports[0].postMessage({
-            event: 'resolve',
-            type: evt.data.event,
-          });
+          evt.ports[0].postMessage({ event: 'resolve', type: evt.data.event });
           break;
         // received when the parent page has loaded the iframe
         case 'parentReady':
+          evt.ports[0].postMessage({ event: 'resolve', type: evt.data.event });
+          break;
+        // received when user is leaving or refresh the site
+        case 'sendEmailNotifier':
+          this.userIsLeaving = true;
           evt.ports[0].postMessage({ event: 'resolve', type: evt.data.event });
           break;
         case 'toggleMinimizeUi':
@@ -232,6 +243,35 @@ export default {
         ))
         .then(() => this.logRunningMode());
     },
+    saveTranscripts() {
+      // Don't save messages if user haven't ask any question
+      if (this.$store.state.messages.length > 1) {
+        this.$store.state.messages.forEach((message, i) => {
+          if (i === 0) {
+            this.transcripts.push(
+              `date: ${message.date}`,
+              `Bot initial question: ${message.text}`,
+              )
+          } else {
+            let messageType = message.type === 'bot' ? 'Bot' : 'User';
+            this.transcripts.push(`${messageType}: ${message.text}`);
+          }
+        });
+        this.sendEmail();
+      }
+    },
+    sendEmail() {
+      console.info(this.transcripts);
+      let xhr = new XMLHttpRequest();
+      // Use sync post so chrome can process the ajax before session is closed
+      xhr.open('POST', 'https://wc4p5hrrp2.execute-api.us-east-1.amazonaws.com/cr-chatbot-prod', false);
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      xhr.onload = () => {
+        console.info(this.responseText);
+      };
+      xhr.send(JSON.stringify(this.transcripts));
+    },
+
   },
 };
 </script>

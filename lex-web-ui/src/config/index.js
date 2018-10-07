@@ -135,7 +135,7 @@ const configDefault = {
     toolbarLogo: '',
 
     // fav icon
-    favIcon: '',
+    favIcon: 'https://www.carrentals.com/favicon.ico',
 
     // controls if the Lex initialText will be pushed into the message
     // list after the bot dialog is done (i.e. fail or fulfilled)
@@ -160,7 +160,7 @@ const configDefault = {
     showMessageDate: true,
 
     // bot avatar image URL
-    avatarImageUrl: '',
+    avatarImageUrl: 'https://www.carrentals.com/favicon.ico',
 
     // Show the diaglog state icon, check or alert, in the text bubble
     showDialogStateIcon: true,
@@ -184,7 +184,7 @@ const configDefault = {
   recorder: {
     // if set to true, voice interaction would be enabled on supported browsers
     // set to false if you don't want voice enabled
-    enable: true,
+    enable: false,
 
     // maximum recording time in seconds
     recordingTimeMax: 10,

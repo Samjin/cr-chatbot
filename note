@@ -5,7 +5,7 @@ THESE COMMANDS CREATE and UPLOAD PUBLIC APP FILES(dist folder files).
     make              : Build static public files.
                         Similar to ./release.sh, but doesn't include latest src files to Artifacts folder.
 
-    make sync-website : Only upload static files to auto generated S3 from CFN.
+    make sync-website : Only upload static UI related files to auto generated S3 from CFN.
                         Example resource files include:
                             dist/,
                             src/website/,

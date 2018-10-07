@@ -18,8 +18,8 @@ VPATH := $(OUT)
 
 # upload files to bootstrap bucket
 # NOTE: files uploaded with public read permissions
-upload: upload-templates upload-custom-resources-zip upload-src-zip \
-	upload-response-card-image upload-send-email-zip upload-cross-border-fees-zip
+upload: upload-templates upload-send-email-zip upload-cross-border-fees-zip \
+	upload-custom-resources-zip upload-src-zip upload-response-card-image
 .PHONY: upload
 
 # create the output directory for tracking dependencies
@@ -77,13 +77,15 @@ upload-response-card-image: $(RESPONSE_CARD_IMAGE) | $(OUT)
 		"$(RESPONSE_CARD_IMAGE)" "s3://$(BOOTSTRAP_BUCKET_PATH)/flowers.jpeg" \
 		| tee -a "$(OUT)/$(@)"
 
+
+
 # CUSTOM zip files: zip lambda folder content
 # update zip file recursively to zip_directory with all files and folder
 CROSS_BORDER_FEES_DIR := ../lambda/cross-border-fees
 CROSS_BORDER_FEES_ZIP_DIR := ../../build/$(OUT)
 CROSS_BORDER_FEES_ZIP := cross-border-fees.zip
 CROSS_BORDER_FEES_CONTENT := *
-cross-border-fees.zip: $(CROSS_BORDER_FEES_CONTENT) | $(OUT)
+$(CROSS_BORDER_FEES_ZIP): $(CROSS_BORDER_FEES_CONTENT) | $(OUT)
 	@echo "[INFO] Creating cross border fees.zip file"
 	cd $(CROSS_BORDER_FEES_DIR); zip -u -r $(CROSS_BORDER_FEES_ZIP_DIR)/$(@) $(CROSS_BORDER_FEES_CONTENT)
 
@@ -101,11 +103,10 @@ upload-cross-border-fees-zip: $(CROSS_BORDER_FEES_ZIP) | $(OUT)
 SEND_EMAIL_DIR := ../lambda/send-email
 SEND_EMAIL_ZIP_DIR := ../../build/$(OUT)
 SEND_EMAIL_ZIP := send-email.zip
-SEND_EMAIL_CONTENT := *
-send-email.zip: $(SEND_EMAIL_CONTENT) | $(OUT)
+$(SEND_EMAIL_ZIP): $(SEND_EMAIL_CONTENT) | $(OUT)
 	@echo "[INFO] Creating send-email.zip"
 	cd $(SEND_EMAIL_DIR); \
-	zip -u -r $(SEND_EMAIL_ZIP_DIR)/$(@) $(SEND_EMAIL_CONTENT)
+	zip -u -r "$(SEND_EMAIL_ZIP_DIR)/$(@)" *
 
 upload-send-email-zip: $(SEND_EMAIL_ZIP) | $(OUT)
 	@echo "[INFO] Uploading send-email.zip to S3 and update Lambda"

@@ -1,3 +1,4 @@
+# yamllint disable rule:line-length rule:indentation rule:document-start
 AWSTemplateFormatVersion: 2010-09-09
 Description: |
   Master Lex Web UI CloudFormation template.
@@ -109,7 +110,8 @@ Parameters:
   WebAppConfBotInitialText:
     Type: String
     Default: >
-      You can ask me for help look up cross border fees. Please type "Cross border fees" to start.
+      You can ask me for help look up cross border fees.
+      Please type "Cross border fees" to start.
     Description: First bot message displayed in the chatbot UI
   WebAppConfBotInitialSpeech:
     Type: String

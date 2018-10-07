@@ -12,6 +12,7 @@ exports.handler = function (event, context) {
   })
 }
 
+// 'bezhang@carrentals.com',
 function sendEmail (event, done) {
   var params = {
     Destination: {
@@ -19,7 +20,6 @@ function sendEmail (event, done) {
         RECEIVER
       ],
       CcAddresses: [
-        'bezhang@carrentals.com',
       ],
     },
     Message: {

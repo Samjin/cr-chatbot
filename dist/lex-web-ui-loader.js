@@ -71,7 +71,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0c0407f56b4410bc8729"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "dcdab360f94abd3e4104"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -5325,6 +5325,46 @@ var IframeComponentLoader = exports.IframeComponentLoader = function () {
         document.dispatchEvent(new CustomEvent('lexWebUiReady'));
       });
     }
+
+    /**
+     * Send a message to the iframe using postMessage
+     */
+    // sendEmailEventToIframe() {
+    //   this.api = {
+    //     sendEmailEvent: () => this.sendMessageToIframe({ event: 'userIsLeaving' }),
+    //   };
+    //   if (
+    //     !this.iframeElement ||
+    //     !('contentWindow' in this.iframeElement) ||
+    //     !('postMessage' in this.iframeElement.contentWindow)
+    //   ) {
+    //     return Promise.reject(new Error('invalid iframe element'));
+    //   }
+
+    //   const { iframeOrigin } = this.config.iframe;
+    //   if (!iframeOrigin) {
+    //     return Promise.reject(new Error('invalid iframe origin'));
+    //   }
+
+    //   return new Promise((resolve, reject) => {
+    //     const messageChannel = new MessageChannel();
+    //     messageChannel.port1.onmessage = (evt) => {
+    //       messageChannel.port1.close();
+    //       messageChannel.port2.close();
+    //       if (evt.data.event === 'resolve') {
+    //         resolve(evt.data);
+    //       } else {
+    //         reject(new Error(`iframe failed to handle message - ${evt.data.error}`));
+    //       }
+    //     };
+    //     this.iframeElement.contentWindow.postMessage(
+    //       true,
+    //       iframeOrigin,
+    //       [messageChannel.port2],
+    //     );
+    //   });
+    // }
+
   }], [{
     key: 'validateConfig',
     value: function validateConfig(config) {

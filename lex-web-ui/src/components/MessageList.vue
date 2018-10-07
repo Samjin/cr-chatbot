@@ -40,6 +40,11 @@ export default {
     Message,
     MessageLoading,
   },
+  data() {
+    return {
+      transcripts: [],
+    };
+  },
   computed: {
     messages() {
       return this.$store.state.messages;

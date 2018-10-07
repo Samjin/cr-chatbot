@@ -1,3 +1,4 @@
+# yamllint disable rule:line-length rule:indentation rule:document-start
 AWSTemplateFormatVersion: 2010-09-09
 Description: |
     Master Pipeline Lex Web UI CloudFormation template.

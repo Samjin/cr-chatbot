@@ -47,6 +47,11 @@ renderer.link = function link(href, title, text) {
 export default {
   name: 'message-text',
   props: ['message'],
+  data() {
+    return {
+      createArray: [],
+    };
+  },
   computed: {
     shouldConvertUrlToLinks() {
       return this.$store.state.config.ui.convertUrlToLinksInBotMessages;
@@ -77,6 +82,12 @@ export default {
       const messageText = this.stripTagsFromMessage(this.message.text);
       const messageWithLinks = this.botMessageWithLinks(messageText);
       return messageWithLinks;
+    },
+    fufillmentTextArray() {
+      if (this.message.text.includes('<br>')) {
+        return this.message.text.split('<br>');
+      }
+      return this.message.text;
     },
   },
   methods: {

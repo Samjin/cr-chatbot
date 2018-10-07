@@ -13,7 +13,7 @@
   "ui": {
     "parentOrigin": "http://localhost:8080",
     "pageTitle": "Policy Lookup Bot",
-    "toolbarTitle": "Policy Lookup"
+    "toolbarTitle": "DEV: Policy Lookup"
   },
   "recorder": {
     "preset": "speech_recognition"

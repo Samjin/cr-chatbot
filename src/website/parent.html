@@ -119,7 +119,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- bootstrap used as part of thie example - not required by lex-web-ui -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <!--
       Loader script tag
 
@@ -219,6 +218,15 @@
           .then(function () { console.log('message succesfully sent'); })
           .catch(function (err) { console.error('error sending message ', err); });
       }
+
+      function sendEmailNotifier() {
+        return Promise.resolve()
+          .then(function () {
+            return iframeLoader.api.sendEmailNotifier();
+          })
+          .then(function () { console.log('message succesfully sent'); })
+          .catch(function (err) { console.error('error sending message ', err); });
+      }
     </script>
 
     <!--
@@ -281,6 +289,17 @@
           sendUtterance('Cross border fees');
         });
 
+        // setup here so
+        window.onbeforeunload = userIsLeaving; //work only for Chrome
+        window.unload = userIsLeaving; //work only for other Browsers
+        function userIsLeaving() {
+          var event = new CustomEvent(
+            'lexWebUiMessage',
+            { detail: {message: {event: 'sendEmailNotifier'} } }
+            );
+          document.dispatchEvent(event);
+          console.info('User is leaving from parent site,', '==========================');
+        }
 
         // bot update event handler
         // In this example, the parent page is updated based on the state
@@ -302,6 +321,7 @@
             console.warn('updatelexstate event is missing slot or dialogState field');
             return;
           }
+
           $('#dialog-state').text(dialogState);
           $('#intent-name').text(intentName);
           $('#session-attributes').text(JSON.stringify(sessionAttributes, null, 2));
