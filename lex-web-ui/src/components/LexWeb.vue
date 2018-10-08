@@ -94,7 +94,6 @@ export default {
       this.$emit('updateLexState', this.lexState);
     },
     userIsLeaving() {
-      console.info(this.userIsLeaving, 'WATCHER==========================');
       this.saveTranscripts();
     },
   },
@@ -257,7 +256,21 @@ export default {
             this.transcripts.push(`${messageType}: ${message.text}`);
           }
         });
+        this.mutateTranscript();
         this.sendEmail();
+      }
+    },
+    mutateTranscript() {
+      // Insert booking number to index 1
+      let bookingQuestion = "Bot: What's your booking number? ";
+      let lastIndexNum = this.transcripts.lastIndexOf(bookingQuestion);
+      if (lastIndexNum > -1) {
+        for (let i = 0; i < this.transcripts.length; i++) {
+          if (this.transcripts[lastIndexNum + 1].length > 0) {
+            this.transcripts.splice(1, 0, `Booking-number: ${this.transcripts[lastIndexNum + 1].replace('User: ', '')}`);
+            break;
+          }
+        }
       }
     },
     sendEmail() {

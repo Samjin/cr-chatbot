@@ -43,6 +43,7 @@ module.exports = {
     "array-callback-return": 0,
     "prefer-const": 0,
     "object-curly-spacing": 0,
-    "consistent-return": 0
+    "consistent-return": 0,
+    "no-plusplus": 0,
   }
 }

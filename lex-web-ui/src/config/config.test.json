@@ -13,7 +13,7 @@
   "ui": {
     "parentOrigin": "http://localhost:8080",
     "pageTitle": "Policy Lookup Bot",
-    "toolbarTitle": "TEST: Policy Lookup"
+    "toolbarTitle": "TEST: Cross border fee lookup"
   },
   "recorder": {
     "preset": "speech_recognition"

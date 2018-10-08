@@ -73,7 +73,7 @@ export default {
   data() {
     return {
       favIcon: getFavIcon(),
-      pageTitle: 'Policy Lookup Bot',
+      pageTitle: 'Cross border fee lookup',
     };
   },
 };
