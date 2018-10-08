@@ -112,7 +112,7 @@ const configDefault = {
   ui: {
     // TODO may want to move pageTitle out to LexApp or Page component
     // title of HTML page added dynamically to index.html
-    pageTitle: 'Policy Lookup Bot',
+    pageTitle: 'CarRentals Chatbot for Cross Border Fee',
 
     // when running as an embedded iframe, this will be used as the
     // be the parent origin used to send/receive messages
@@ -129,7 +129,7 @@ const configDefault = {
     toolbarColor: 'red',
 
     // chat window title
-    toolbarTitle: 'Policy Lookup',
+    toolbarTitle: 'Cross border fee lookup',
 
     // logo used in toolbar - also used as favicon not specificied
     toolbarLogo: '',
