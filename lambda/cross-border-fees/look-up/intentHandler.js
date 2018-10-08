@@ -1,5 +1,5 @@
-const validateDialogs = require('./validateDialogs');
-const validateFullfilment = require('./validateFullfilment');
+const validateDialog = require('./validateDialog');
+const fulfillment = require('./fulfillment');
 const utility = require('../utility');
 
 module.exports = {
@@ -8,11 +8,11 @@ module.exports = {
     const source = intentRequest.invocationSource;
 
     if (source === 'DialogCodeHook') {
-      return validateDialogs(intentRequest, slots, callback);
+      return validateDialog(intentRequest, slots);
     }
 
     if (source === 'FulfillmentCodeHook') {
-      return validateFullfilment(slots, callback);
+      return fulfillment(slots, callback);
     }
   }
 };

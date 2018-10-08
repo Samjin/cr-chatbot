@@ -1,4 +1,3 @@
-//TODO: this needs to e added to Makefile
 var AWS = require('aws-sdk')
 AWS.config.update({region: 'us-east-1'});
 var ses = new AWS.SES()

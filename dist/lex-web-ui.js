@@ -978,7 +978,7 @@ var configDefault = {
   ui: {
     // TODO may want to move pageTitle out to LexApp or Page component
     // title of HTML page added dynamically to index.html
-    pageTitle: 'Policy Lookup Bot',
+    pageTitle: 'CarRentals Chatbot for Cross Border Fee',
 
     // when running as an embedded iframe, this will be used as the
     // be the parent origin used to send/receive messages
@@ -995,7 +995,7 @@ var configDefault = {
     toolbarColor: 'red',
 
     // chat window title
-    toolbarTitle: 'Policy Lookup',
+    toolbarTitle: 'Cross border fee lookup',
 
     // logo used in toolbar - also used as favicon not specificied
     toolbarLogo: '',
@@ -1705,7 +1705,6 @@ License for the specific language governing permissions and limitations under th
       this.$emit('updateLexState', this.lexState);
     },
     userIsLeaving: function userIsLeaving() {
-      console.info(this.userIsLeaving, 'WATCHER==========================');
       this.saveTranscripts();
     }
   },
@@ -1839,7 +1838,21 @@ License for the specific language governing permissions and limitations under th
             _this3.transcripts.push(messageType + ': ' + message.text);
           }
         });
+        this.mutateTranscript();
         this.sendEmail();
+      }
+    },
+    mutateTranscript: function mutateTranscript() {
+      // Insert booking number to index 1
+      var bookingQuestion = "Bot: What's your booking number? ";
+      var lastIndexNum = this.transcripts.lastIndexOf(bookingQuestion);
+      if (lastIndexNum > -1) {
+        for (var i = 0; i < this.transcripts.length; i++) {
+          if (this.transcripts[lastIndexNum + 1].length > 0) {
+            this.transcripts.splice(1, 0, 'Booking-number: ' + this.transcripts[lastIndexNum + 1].replace('User: ', ''));
+            break;
+          }
+        }
       }
     },
     sendEmail: function sendEmail() {
@@ -4067,7 +4080,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_104__;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LexWeb_vue__ = __webpack_require__(62);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e177baa_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1d444db9_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__ = __webpack_require__(137);
 function injectStyle (ssrContext) {
   __webpack_require__(106)
 }
@@ -4087,7 +4100,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LexWeb_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e177baa_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1d444db9_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -6666,19 +6679,19 @@ webpackContext.id = 159;
 /* 160 */
 /***/ (function(module, exports) {
 
-module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me to look up cross border fees. Please type \"cross border fees\" to start. ","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"DEV: Policy Lookup"},"recorder":{"preset":"speech_recognition"}}
+module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me to look up cross border fees. Please type \"cross border fees\" to start. ","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"DEV: Cross border fee lookup"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
 /* 161 */
 /***/ (function(module, exports) {
 
-module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me to look up cross border fees. Please type \"cross border fees\" to start. ","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"","pageTitle":"Policy Lookup Bot","toolbarTitle":"Policy Lookup"},"recorder":{"preset":"speech_recognition"}}
+module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me to look up cross border fees. Please type \"cross border fees\" to start. ","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"","pageTitle":"Policy Lookup Bot","toolbarTitle":"Cross border fee lookup"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
 /* 162 */
 /***/ (function(module, exports) {
 
-module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me to look up cross border fees. Please type \"cross border fees\" to start. ","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"TEST: Policy Lookup"},"recorder":{"preset":"speech_recognition"}}
+module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"You can ask me to look up cross border fees. Please type \"cross border fees\" to start. ","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"TEST: Cross border fee lookup"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
 /* 163 */

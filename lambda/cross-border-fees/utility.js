@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
     mapSlots: function (intent) {
         const slots = {};
         let slot;
@@ -23,7 +23,7 @@ module.export = {
 
         return slots;
     },
-    availableGroup: function (fees, item) {
+    availableGroup: function (fees) {
         let availableGroup = {
             supplier: [],
             pickup: [],
