@@ -29,7 +29,7 @@ module.exports = {
         "no-console": "off",
         "no-else-return": "error",
         "no-empty-function": "error",
-        "no-eq-null": ["error", "always", {"null": "ignore"}],
+        "no-eq-null": ["error"],
         "no-eval": "error",
         "no-extend-native": "error",
         "no-extra-bind": "error",
