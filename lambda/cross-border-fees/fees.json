@@ -2,7 +2,7 @@
   {
     "Supplier": "0 - Any Supplier not shown below",
     "Supplier ID": "",
-    "Cross Border Details": "Crossing International Borders is not permitted."
+    "Cross Border Details": "I’m sorry, but travel to this location is not permitted by the local car rental company."
   },
   {
     "Supplier": "AIRAUTO.Portugal",
@@ -82,7 +82,7 @@
   {
     "Supplier": "ALAMO.Switzerland",
     "Supplier ID": 627570,
-    "Cross Border Details": "Travel to these countries is permitted free of charge: Germany ,Austria ,Belgium ,Spain ,Czech republic ,France ,Greece ,Hungary ,Italy ,Luxembourg ,Netherlands ,Norway ,Poland ,Portugal ,Slovakia ,Slovenia ,Sweden.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel to these countries is permitted free of charge: Germany ,Austria ,Belgium ,Spain ,Czech republic ,France ,Greece ,Hungary ,Italy ,Luxembourg ,Netherlands ,Norway ,Poland ,Portugal ,Slovakia ,Slovenia ,Sweden.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "ALAMO.United Kingdom",
@@ -117,7 +117,7 @@
   {
     "Supplier": "AVIS.Finland",
     "Supplier ID": 2819,
-    "Cross Border Details": "Travel to these countries is permitted free of charge: Denmark ,Norway ,Sweden.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel to these countries is permitted free of charge: Denmark ,Norway ,Sweden.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "AVIS.Roumanie",
@@ -162,7 +162,7 @@
   {
     "Supplier": "BUDGET.DANEMARK",
     "Supplier ID": 78695,
-    "Cross Border Details": "Travel within these countries is not permitted: Albania ,Bosnia and herzegovina ,Bulgaria ,Croatia ,Czech republic ,Estonia ,Greece ,Hungary ,Latvia ,Lithuania ,Macedonia ,Republic of moldova ,Poland ,Romania ,Slovakia ,Slovenia ,Turkey ,Russian federation.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel within these countries is not permitted: Albania ,Bosnia and herzegovina ,Bulgaria ,Croatia ,Czech republic ,Estonia ,Greece ,Hungary ,Latvia ,Lithuania ,Macedonia ,Republic of moldova ,Poland ,Romania ,Slovakia ,Slovenia ,Turkey ,Russian federation.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "BUDGET.finland",
@@ -212,7 +212,7 @@
   {
     "Supplier": "DOLLAR.Switzerland",
     "Supplier ID": 556893,
-    "Cross Border Details": "Travel to these countries is permitted free of charge: Germany ,Austria ,Belgium ,Spain ,France ,Italy ,Luxembourg ,Netherlands ,Portugal.\nTravel within these countries is not permitted: Albania ,Bosnia and herzegovina ,Bulgaria ,Cyprus ,Estonia ,Greece ,Iceland ,Israel ,Latvia ,Lithuania ,Macedonia ,Montenegro ,Romania ,Serbia ,Tunisia ,Turkey.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel to these countries is permitted free of charge: Germany ,Austria ,Belgium ,Spain ,France ,Italy ,Luxembourg ,Netherlands ,Portugal.\nTravel within these countries is not permitted: Albania ,Bosnia and herzegovina ,Bulgaria ,Cyprus ,Estonia ,Greece ,Iceland ,Israel ,Latvia ,Lithuania ,Macedonia ,Montenegro ,Romania ,Serbia ,Tunisia ,Turkey.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "DRIVEONHOLIDAYS.Portugal",
@@ -237,7 +237,7 @@
   {
     "Supplier": "ENTERPRISE.Denmark",
     "Supplier ID": 589509,
-    "Cross Border Details": "Travel to these countries is permitted free of charge: Norway ,Sweden.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel to these countries is permitted free of charge: Norway ,Sweden.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "ENTERPRISE.Estonia",
@@ -267,7 +267,7 @@
   {
     "Supplier": "EUROPCAR ATLANTIQUE.France",
     "Supplier ID": 645664,
-    "Cross Border Details": "Travel to these countries is permitted free of charge: Germany ,Austria ,Belgium ,Spain ,Denmark ,Finland ,Greece ,Ireland ,Italy ,Luxembourg ,Netherlands ,Norway ,Portugal ,Sweden ,Switzerland.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel to these countries is permitted free of charge: Germany ,Austria ,Belgium ,Spain ,Denmark ,Finland ,Greece ,Ireland ,Italy ,Luxembourg ,Netherlands ,Norway ,Portugal ,Sweden ,Switzerland.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "EUROPCAR.argentina",
@@ -277,12 +277,12 @@
   {
     "Supplier": "EUROPCAR.bulgaria",
     "Supplier ID": 9541,
-    "Cross Border Details": "Travel within these countries is not permitted: Albania ,Ireland ,Turkey ,United kingdom ,Russian federation ,Kosovo.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel within these countries is not permitted: Albania ,Ireland ,Turkey ,United kingdom ,Russian federation ,Kosovo.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "EUROPCAR.Canada",
     "Supplier ID": 620307,
-    "Cross Border Details": "Travel to these countries is permitted free of charge: United states.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel to these countries is permitted free of charge: United states.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "EUROPCAR.germany",
@@ -292,7 +292,7 @@
   {
     "Supplier": "EUROPCAR.irlande",
     "Supplier ID": 14793,
-    "Cross Border Details": "Travel within these countries is not permitted: United kingdom.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel within these countries is not permitted: United kingdom.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "EUROPCAR.south-africa",
@@ -302,12 +302,12 @@
   {
     "Supplier": "EUROPCAR.switzerland",
     "Supplier ID": 9506,
-    "Cross Border Details": "Travel to these countries is permitted free of charge: Germany ,Austria ,Belgium ,Spain ,Denmark ,Finland ,France ,Ireland ,Italy ,Luxembourg ,Netherlands ,Norway ,Portugal ,Sweden ,Switzerland ,United kingdom.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel to these countries is permitted free of charge: Germany ,Austria ,Belgium ,Spain ,Denmark ,Finland ,France ,Ireland ,Italy ,Luxembourg ,Netherlands ,Norway ,Portugal ,Sweden ,Switzerland ,United kingdom.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "EUROPCAR.United States",
     "Supplier ID": 603960,
-    "Cross Border Details": "Travel to these countries is permitted free of charge: Canada.\nTravel within these countries is not permitted: Mexico.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel to these countries is permitted free of charge: Canada.\nTravel within these countries is not permitted: Mexico.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "FIREFLY FF.Spain",
@@ -542,7 +542,7 @@
   {
     "Supplier": "SIXT.Denmark",
     "Supplier ID": 557826,
-    "Cross Border Details": "Travel within these countries is not permitted: Albania ,Bosnia and herzegovina ,Bulgaria ,Croatia ,Cyprus ,Czech republic ,Estonia ,Corsica ,Hungary ,Iceland ,Israel ,Latvia ,Lithuania ,Macedonia ,Malta ,Republic of moldova ,Morocco ,Montenegro ,Poland ,Romania ,Serbia ,Slovakia ,Slovenia ,Tunisia ,Turkey ,United kingdom ,Russian federation ,Belarus.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel within these countries is not permitted: Albania ,Bosnia and herzegovina ,Bulgaria ,Croatia ,Cyprus ,Czech republic ,Estonia ,Corsica ,Hungary ,Iceland ,Israel ,Latvia ,Lithuania ,Macedonia ,Malta ,Republic of moldova ,Morocco ,Montenegro ,Poland ,Romania ,Serbia ,Slovakia ,Slovenia ,Tunisia ,Turkey ,United kingdom ,Russian federation ,Belarus.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "STERNRENT.Pays-Bas",
@@ -582,7 +582,7 @@
   {
     "Supplier": "TRUCHE-LOCATION.France",
     "Supplier ID": 447458,
-    "Cross Border Details": "Travel to these countries is permitted free of charge: Germany ,Belgium ,Spain ,Denmark ,France ,Greece ,Ireland ,Italy ,Luxembourg ,Netherlands ,Portugal ,United kingdom ,Monaco.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel to these countries is permitted free of charge: Germany ,Belgium ,Spain ,Denmark ,France ,Greece ,Ireland ,Italy ,Luxembourg ,Netherlands ,Portugal ,United kingdom ,Monaco.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "TURISPRIME.Portugal",
@@ -592,7 +592,7 @@
   {
     "Supplier": "VEO.France",
     "Supplier ID": 681422,
-    "Cross Border Details": "Travel within these countries is not permitted: Albania ,Bosnia and herzegovina ,Bulgaria ,Czech republic ,Hungary ,Poland ,Romania ,Serbia ,Slovakia ,Ukraine ,Russian federation ,Belarus.\nCrossing international borders is not permitted.."
+    "Cross Border Details": "Travel within these countries is not permitted: Albania ,Bosnia and herzegovina ,Bulgaria ,Czech republic ,Hungary ,Poland ,Romania ,Serbia ,Slovakia ,Ukraine ,Russian federation ,Belarus.\nI’m sorry, but travel to this location is not permitted by the local car rental company.."
   },
   {
     "Supplier": "GOLDCAR EUROPA FF.CROATIA",

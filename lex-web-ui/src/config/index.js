@@ -66,11 +66,11 @@ const configDefault = {
     botAlias: '$LATEST',
 
     // instruction message shown in the UI
-    initialText: 'You can ask me for help look up cross border fees. ' +
-      'You can ask me for help look up cross border fees. Please type "cross border fees" to start.',
+    initialText: 'Hi, I’m Brian the CarRentals Bot. You can ask me to' +
+    'look up cross border fees for existing bookings.',
 
     // instructions spoken when mic is clicked
-    initialSpeechInstruction: 'Say "cross border fees" to get started',
+    initialSpeechInstruction: 'Please say "cross border fees" to get started',
 
     // Lex initial sessionAttributes
     sessionAttributes: {},
@@ -126,10 +126,10 @@ const configDefault = {
     // chat window text placeholder
     textInputPlaceholder: 'Type here or click on the mic',
 
-    toolbarColor: 'red',
+    toolbarColor: '',
 
     // chat window title
-    toolbarTitle: 'Cross border fee lookup',
+    toolbarTitle: 'CarRentals Bot',
 
     // logo used in toolbar - also used as favicon not specificied
     toolbarLogo: '',

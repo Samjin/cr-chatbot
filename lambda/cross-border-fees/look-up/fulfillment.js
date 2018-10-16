@@ -31,7 +31,7 @@ function getPolicy(supplier, pickupCountry, dropoffCountry) {
   }
 
   if (feeDetails) {return feeDetails;}
-  return 'Crossing International Borders is not permitted.';
+  return 'I’m sorry, but travel to this location is not permitted by the local car rental company.';
 }
 
 module.exports = function(slots, callback) {

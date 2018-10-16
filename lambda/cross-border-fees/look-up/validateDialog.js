@@ -6,9 +6,9 @@ const availableSupplier = utility.availableGroup(fees).supplier;
 const availablePickup = utility.availableGroup(fees).pickup;
 const availableDropoff = utility.availableGroup(fees).dropoff;
 
-function hasNumber(myString) {
-  return /\d/.test(myString);
-}
+// function hasNumber(myString) {
+//   return /\d/.test(myString);
+// }
 
 function buildValidationResult(isValid, violatedSlot, messageContent) {
   if (!messageContent) {
@@ -37,18 +37,18 @@ function validateDialog(bookingNumber, supplier, pickupCountry, dropoffCountry) 
   // }
 
   if (supplier && availableSupplier.indexOf(supplier.toLowerCase()) === -1) {
-    return buildValidationResult(false, 'supplier', `We cannot find the supplier. Please type correct supplier name.`);
+    return buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
   }
 
   if (pickupCountry && availablePickup.indexOf(pickupCountry.toLowerCase()) === -1) {
-    return buildValidationResult(false, 'pickupCountry', `We cannot find the pick up country. Please type correct country name.`);
+    return buildValidationResult(false, 'pickupCountry', `We cannot find the pick up country. Please make sure country name is correct.`);
   }
 
   if (dropoffCountry && availableDropoff.indexOf(dropoffCountry.toLowerCase()) === -1) {
-    return buildValidationResult(false, 'dropoffCountry', `We cannot find the drop off country. Please type correct country name.`);
+    return buildValidationResult(false, 'dropoffCountry', `We cannot find the drop off country. Please make sure country name is correct.`);
   }
 
-  return buildValidationResult(true, null, '');
+  return buildValidationResult(true, null, null);
 }
 
 module.exports = function(intentRequest, slots) {

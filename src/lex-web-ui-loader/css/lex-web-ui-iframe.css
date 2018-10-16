@@ -4,7 +4,8 @@
   display: none; /* hidden by default changed once iframe is loaded */
   margin-bottom: 0px;
   margin-left: 2px;
-  margin-right: 5vw;
+  margin-right: 32vw;
+  /* margin-right: 5vw; */
   margin-top: 2px;
   max-width: 66vw;
   height: 66vh; /* dynamically changed on iframe maximize/minimize */

@@ -81,3 +81,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  /* toolbar color */
+  .application .theme--dark.toolbar,
+  .theme--dark .toolbar {
+    background-color: #f37121;
+  }
+</style>

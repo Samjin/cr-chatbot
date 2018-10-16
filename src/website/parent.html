@@ -3,15 +3,52 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+    <link rel="icon" type="image/png" href="https://www.carrentals.com/favicon.ico">
     <title>Chatbot UI iFrame Example</title>
     <!--  bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css" media="screen">
+      .section-bg {
+        background-image: url('https://www.carrentals.com/pictures/566/show/CR-home-background3.jpg?sh=90a70ca7adc0132f');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: calc(100vh - 140px);
+        opacity: 0.8;
+      }
+      .headerbar {
+        height: 140px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        margin: 0;
+        margin-left: 30px;
+      }
+      .parent-bot-logo {
+        height: 58px;
+      }
+    </style>
   </head>
   <body>
     <!-- main container -->
     <div class="container-fluid">
-      <h1>CarRentals Chatbot for Cross Border Fee (UAT)</h1>
+
+      <div class="headerbar">
+        <img class="parent-bot-logo" src="https://s3-us-west-2.amazonaws.com/whichmatch-temp/Images/Car_Rentals_new_logo.svg">
+        <h1>CarRentals Chatbot for Cross Border Fee (UAT)</h1>
+      </div>
+
+      <div class="row section-bg">
+        <div class="col-md-12"></div>
+      </div>
+
 <!--       <p class="lead">
         Use the chatbot UI to drive your bot. This page will dynamically
         update using the associated Lex variables as the bot dialog progresses.

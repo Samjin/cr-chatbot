@@ -36,7 +36,7 @@ module.exports = {
     // (https://github.com/webpack/css-loader#sourcemaps)
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
-    cssSourceMap: false
+    cssSourceMap: false,
   },
   // lex-web-ui: added to create a distributable bundle in a single file
   dist: {

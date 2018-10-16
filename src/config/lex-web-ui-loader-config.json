@@ -4,12 +4,12 @@
   },
   "lex": {
     "botName": "CR_chatbot",
-    "initialText": "You can ask me to look up cross border fees. Please type \"cross border fees\" to start. ",
+    "initialText": "Hi, I’m Brian the CarRentals Bot. You can ask me to look up cross border fees for existing bookings ",
     "initialSpeechInstruction": "Say 'cross border fees' to get started."
   },
   "ui": {
     "parentOrigin": "",
-    "toolbarTitle": "Cross border fee lookup",
+    "toolbarTitle": "CarRentals Bot",
     "toolbarLogo": "",
     "pushInitialTextOnRestart": true
   },
@@ -22,6 +22,6 @@
   "iframe": {
     "iframeOrigin": "",
     "iframeSrcPath": "/index.html#/?lexWebUiEmbed=true",
-    "shouldLoadIframeMinimized": true
+    "shouldLoadIframeMinimized": false
   }
 }

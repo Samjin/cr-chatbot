@@ -73,7 +73,7 @@ export default {
   data() {
     return {
       favIcon: getFavIcon(),
-      pageTitle: 'Cross border fee lookup',
+      pageTitle: 'CarRentals Bot',
     };
   },
 };

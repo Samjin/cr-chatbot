@@ -75,8 +75,8 @@ Parameters:
     WebAppConfBotInitialText:
         Type: String
         Default: >
-            You can ask me for help look up cross border fees. Just type
-            "cross border fees" or click on the mic and say it.
+            Hi, I’m Brian the CarRentals Bot. You can ask me to look up
+            cross border fees for existing bookings.
         Description: First bot message displayed in the chatbot UI
 
     WebAppConfBotInitialSpeech:
