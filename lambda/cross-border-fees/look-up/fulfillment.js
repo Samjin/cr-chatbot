@@ -1,23 +1,5 @@
-const csvFilePath = 'fees.csv'
-const csv = require('csvtojson');
+const fees = require('../fees');
 const dialogActions = require('../dialogActions');
-let fees;
-csv().fromFile(csvFilePath).then((jsonObj)=>{
-  fees = jsonObj;
-})
-
-// function buildTextResponse(text) {
-//   return {
-//     dialogAction: {
-//       "type": "Close",
-//       "fulfillmentState": "Fulfilled",
-//       "message": {
-//         "contentType": "PlainText",
-//         "content": text
-//       }
-//     }
-//   };
-// }
 
 function getPolicyMessage(supplier, pickupCountry, dropoffCountry) {
   let feeAnswer;
@@ -26,12 +8,26 @@ function getPolicyMessage(supplier, pickupCountry, dropoffCountry) {
     let pickupCountryName = fees[i]['Pickup Location'].toLowerCase().includes(pickupCountry.toLowerCase());
     let dropoffCountryName = fees[i]['Destination'].toLowerCase().includes(dropoffCountry.toLowerCase());
     if( supplierName && pickupCountryName && dropoffCountryName ) {
+      let feeAmount = fees[i]['Fee'];
+      let feeAtCounter = false;
+
+      // If fee is Free of charge
+      if (feeAmount.toLowerCase().includes('free of charge')) {
+        feeAmount.toLowerCase();
+      } else
+      // If fee can only get at pickup counter.
+      if (feeAmount.toLowerCase().includes('please enquire')) {
+        feeAtCounter = true;
+      }
+
+      // Build general response
       feeAnswer = [
-        `The cross border fee is ${fees[i]['Fee']}. `,
+        feeAtCounter ? `${feeAmount}. ` : `The cross border fee is ${feeAmount}. `,
         `${fees[i]['Notes 1']} `,
-        `${fees[i]['Notes 2']}`,
+        `${fees[i]['Notes 2']} `,
         `Thank you.`
       ].join(' ');
+
       break;
     }
   }
@@ -39,10 +35,13 @@ function getPolicyMessage(supplier, pickupCountry, dropoffCountry) {
   return 'I’m sorry, but travel to this location is not permitted by the local car rental company.';
 }
 
-module.exports = function(intentRequest, slots, callback) {
+module.exports = async function(intentRequest, slots, callback) {
     if (!slots.bookingNumber || !slots.supplier || !slots.pickupCountry || !slots.dropoffCountry) {
       throw new Error('Need bookingNumber, or supplier or pick up country and dropoff country');
     }
-    let message = getPolicyMessage(slots.supplier, slots.pickupCountry, slots.dropoffCountry);
-    callback(null, dialogActions.close(intentRequest.sessionAttributes, 'Fulfilled', message));
+  let message = {
+    contentType: 'PlainText',
+    content: getPolicyMessage(slots.supplier, slots.pickupCountry, slots.dropoffCountry)
+  }
+  callback(null, dialogActions.close(intentRequest.sessionAttributes, 'Fulfilled', message));
 };

@@ -1,4 +1,4 @@
-const fees = require('../fees2');
+const fees = require('../fees');
 const utility = require('../utility');
 const dialogActions = require('../dialogActions');
 

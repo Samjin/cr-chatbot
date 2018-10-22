@@ -15,7 +15,7 @@ THESE COMMANDS CREATE and UPLOAD PUBLIC APP FILES(dist folder files).
 
 BUILD AND UPLOAD ARTIFACTS FILES. WE CAN USE CODEBUILD TO UPDATE LAMBDA
 /build
-    ./release.sh(optional)   :  Perform a full build including "/root make" and "" does. But also copy files to /dist folder
+    ./release.sh(optional)   :  Perform a full build including by copying files to /dist folder
     make                     :  Create all zip files and upload to S3
                                 1. custom-resource.zip
                                 2. src.zip

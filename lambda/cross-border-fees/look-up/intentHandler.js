@@ -12,7 +12,7 @@ module.exports = {
     }
 
     if (source === 'FulfillmentCodeHook') {
-      return fulfillment(slots, callback);
+      return fulfillment(intentRequest, slots, callback);
     }
   }
 };
