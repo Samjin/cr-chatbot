@@ -2,8 +2,8 @@ var AWS = require('aws-sdk')
 AWS.config.update({region: 'us-east-1'});
 var ses = new AWS.SES()
 
-var RECEIVER = 'sjin@carrentals.com'
-var SENDER = 'sjin@carrentals.com'
+var RECEIVER = 'bezhang@carrentals.com'
+var SENDER = 'criteng@expedia.com'
 
 exports.handler = function (event, context) {
   sendEmail(event, function (err, data) {
@@ -18,7 +18,7 @@ function sendEmail (event, done) {
       ToAddresses: [
         RECEIVER
       ],
-      CcAddresses: [
+      BccAddresses: [
       ],
     },
     Message: {
@@ -29,7 +29,7 @@ function sendEmail (event, done) {
         }
       },
       Subject: {
-        Data: 'Policy Lookup: cross border fees',
+        Data: 'Carrentals chatbot: cross border fees',
         Charset: 'UTF-8'
       }
     },

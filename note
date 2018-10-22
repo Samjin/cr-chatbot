@@ -54,3 +54,6 @@ To delete and rebuild Cloudformation, make sure to use
 /src/config:    configuration for UI loader
 /templates:     Custom s3 object and CFN stack templates
 /dist:
+
+
+What is difference between saving small chunk of json data inside lambda folder vs s3 bucket?

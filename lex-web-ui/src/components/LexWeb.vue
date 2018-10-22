@@ -262,7 +262,8 @@ export default {
     },
     mutateTranscript() {
       // Insert booking number to index 1
-      let bookingQuestion = "Bot: What's your booking number? ";
+      // TODO: this needs to be dynamic
+      let bookingQuestion = "Bot: What’s the number of the booking you’d like me to look up a fee for? ";
       let lastIndexNum = this.transcripts.lastIndexOf(bookingQuestion);
       if (lastIndexNum > -1) {
         for (let i = 0; i < this.transcripts.length; i++) {
