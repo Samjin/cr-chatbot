@@ -20,7 +20,6 @@ function getPolicyMessage(supplier, pickupCountry, dropoffCountry) {
         feeAtCounter = true;
       }
 
-      // Build general response
       feeAnswer = [
         feeAtCounter ? `${feeAmount}. ` : `The cross border fee is ${feeAmount}. `,
         `${fees[i]['Notes 1']} `,
