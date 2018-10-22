@@ -1,24 +1,25 @@
 const csvFilePath = 'fees.csv'
 const csv = require('csvtojson');
+const dialogActions = require('../dialogActions');
 let fees;
 csv().fromFile(csvFilePath).then((jsonObj)=>{
   fees = jsonObj;
 })
 
-function buildTextResponse(text) {
-  return {
-    dialogAction: {
-      "type": "Close",
-      "fulfillmentState": "Fulfilled",
-      "message": {
-        "contentType": "PlainText",
-        "content": text
-      }
-    }
-  };
-}
+// function buildTextResponse(text) {
+//   return {
+//     dialogAction: {
+//       "type": "Close",
+//       "fulfillmentState": "Fulfilled",
+//       "message": {
+//         "contentType": "PlainText",
+//         "content": text
+//       }
+//     }
+//   };
+// }
 
-function getPolicy(supplier, pickupCountry, dropoffCountry) {
+function getPolicyMessage(supplier, pickupCountry, dropoffCountry) {
   let feeAnswer;
   for (let i = 0; i < fees.length; i++) {
     let supplierName = fees[i]['Pickup Supplier'].toLowerCase().includes(supplier.toLowerCase());
@@ -29,7 +30,7 @@ function getPolicy(supplier, pickupCountry, dropoffCountry) {
         `The cross border fee is ${fees[i]['Fee']}. `,
         `${fees[i]['Notes 1']} `,
         `${fees[i]['Notes 2']}`,
-        `Thank you`
+        `Thank you.`
       ].join(' ');
       break;
     }
@@ -38,9 +39,10 @@ function getPolicy(supplier, pickupCountry, dropoffCountry) {
   return 'I’m sorry, but travel to this location is not permitted by the local car rental company.';
 }
 
-module.exports = function(slots, callback) {
+module.exports = function(intentRequest, slots, callback) {
     if (!slots.bookingNumber || !slots.supplier || !slots.pickupCountry || !slots.dropoffCountry) {
       throw new Error('Need bookingNumber, or supplier or pick up country and dropoff country');
     }
-    callback(null, buildTextResponse(getPolicy(slots.supplier, slots.pickupCountry, slots.dropoffCountry)));
+    let message = getPolicyMessage(slots.supplier, slots.pickupCountry, slots.dropoffCountry);
+    callback(null, dialogActions.close(intentRequest.sessionAttributes, 'Fulfilled', message));
 };
