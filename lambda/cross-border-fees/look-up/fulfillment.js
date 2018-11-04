@@ -1,5 +1,5 @@
 const fees = require('../fees');
-const dialogActions = require('../dialogActions');
+const dialogActions = require('./dialogActions');
 
 function getPolicyMessage(supplier, pickupCountry, dropoffCountry) {
   let feeAnswer;
