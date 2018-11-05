@@ -39,21 +39,5 @@ module.exports = {
     hasNumber: function(string) {
         return /\d/.test(string);
     },
-    buildValidationResult: function(isValid, violatedSlot, messageContent) {
-        if (!messageContent) {
-            return {
-                isValid,
-                violatedSlot,
-            };
-        }
-        return {
-            isValid,
-            violatedSlot,
-            message: {
-                contentType: 'PlainText',
-                content: messageContent
-            },
-        };
-    },
 
 }

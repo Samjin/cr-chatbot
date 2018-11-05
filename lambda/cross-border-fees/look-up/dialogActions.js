@@ -1,11 +1,11 @@
 // https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html
 
-module.exports.elicitIntent = function(sessionAttributes, slots) {
+module.exports.elicitIntent = function(sessionAttributes, message) {
   return {
     sessionAttributes,
     dialogAction: {
-      type: 'Delegate',
-      slots
+      type: 'ElicitIntent',
+      message
     }
   };
 };

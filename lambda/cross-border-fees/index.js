@@ -1,5 +1,4 @@
 const intentHandler = require('./look-up/intentHandler');
-const utility = require('./utility');
 
 exports.handler = (event, context, callback) => {
   console.log(event, context, callback);
@@ -12,8 +11,8 @@ exports.handler = (event, context, callback) => {
     if (intentHandler[intentName]) {
       return intentHandler[intentName](event, callback)
     }
-    return utility.buildValidationResult(false, 'intentName', `I am sorry. I don't understand your question. Please type 'cross border feees' as starting question.`);
 
+    throw new Error(`Intent with name ${intentName} not supported`);
   } catch (err) {
     callback(err);
   }
