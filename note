@@ -1,6 +1,7 @@
 These command lines only upload public file (CodeBuild process) files instead of files for whole CI/CD which uploads most of project to S3.
 
 THESE COMMANDS CREATE and UPLOAD PUBLIC APP FILES(dist folder files).
+
 /root
     make              : Build static public files.
                         Similar to ./release.sh, but doesn't include latest src files to Artifacts folder.
