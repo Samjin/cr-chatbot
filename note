@@ -1,7 +1,6 @@
 These command lines only upload public file (CodeBuild process) files instead of files for whole CI/CD which uploads most of project to S3.
 
 THESE COMMANDS CREATE and UPLOAD PUBLIC APP FILES(dist folder files).
-
 /root
     make              : Build static public files.
                         Similar to ./release.sh, but doesn't include latest src files to Artifacts folder.
@@ -16,7 +15,7 @@ THESE COMMANDS CREATE and UPLOAD PUBLIC APP FILES(dist folder files).
 
 BUILD AND UPLOAD ARTIFACTS FILES. WE CAN USE CODEBUILD TO UPDATE LAMBDA
 /build
-    ./release.sh(optional)   :  Perform a full build including by copying files to /dist folder
+    ./release.sh(optional)   :  Perform a full build including copy files to /dist folder
     make                     :  Create all zip files and upload to S3
                                 1. custom-resource.zip
                                 2. src.zip

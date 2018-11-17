@@ -112,6 +112,7 @@ Parameters:
     Default: >
       Hi, I’m Brian the CarRentals Bot. You can ask me
       to look up cross border fees for existing bookings.
+      Please type 'cbf' or 'cross border fees' to get started.
     Description: First bot message displayed in the chatbot UI
   WebAppConfBotInitialSpeech:
     Type: String

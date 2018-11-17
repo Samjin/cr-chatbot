@@ -933,10 +933,10 @@ var configDefault = {
     botAlias: '$LATEST',
 
     // instruction message shown in the UI
-    initialText: 'Hi, I’m Brian the CarRentals Bot. You can ask me to' + 'look up cross border fees for existing bookings.',
+    initialText: '',
 
     // instructions spoken when mic is clicked
-    initialSpeechInstruction: 'Please say "cross border fees" to get started',
+    initialSpeechInstruction: '',
 
     // Lex initial sessionAttributes
     sessionAttributes: {},
@@ -1020,7 +1020,7 @@ var configDefault = {
     stripTagsFromBotMessages: true,
 
     // controls whether detailed error messages are shown in bot responses
-    showErrorDetails: false,
+    showErrorDetails: true,
 
     // show date when message was received on buble focus/selection
     showMessageDate: true,
@@ -1716,7 +1716,6 @@ License for the specific language governing permissions and limitations under th
     if (!this.isMobile) {
       document.documentElement.style.overflowY = 'hidden';
     }
-
     this.initConfig().then(function () {
       return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.all([_this.$store.dispatch('initCredentials', _this.$lexWebUi.awsConfig.credentials), _this.$store.dispatch('initRecorder'), _this.$store.dispatch('initBotAudio', window.Audio ? new Audio() : null)]);
     }).then(function () {
@@ -1839,7 +1838,9 @@ License for the specific language governing permissions and limitations under th
           }
         });
         this.mutateTranscript();
-        this.sendEmail();
+        if (window.location.host.indexOf('local') !== 0) {
+          this.sendEmail();
+        }
       }
     },
     mutateTranscript: function mutateTranscript() {
@@ -4081,7 +4082,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_104__;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LexWeb_vue__ = __webpack_require__(62);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a6114b76_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1652824e_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__ = __webpack_require__(138);
 function injectStyle (ssrContext) {
   __webpack_require__(106)
 }
@@ -4101,7 +4102,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LexWeb_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a6114b76_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1652824e_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -6689,19 +6690,19 @@ webpackContext.id = 160;
 /* 161 */
 /***/ (function(module, exports) {
 
-module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"Hi, I’m Brian the CarRentals Bot. You can ask me to look up cross border fees for existing bookings ","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"DEV: CarRentals Bot"},"recorder":{"preset":"speech_recognition"}}
+module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"DEV: CarRentals Bot"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
 /* 162 */
 /***/ (function(module, exports) {
 
-module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"Hi, I’m Brian the CarRentals Bot. You can ask me to look up cross border fees for existing bookings ","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"","pageTitle":"Policy Lookup Bot","toolbarTitle":"CarRentals Bot"},"recorder":{"preset":"speech_recognition"}}
+module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"","pageTitle":"Policy Lookup Bot","toolbarTitle":"CarRentals Bot"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
 /* 163 */
 /***/ (function(module, exports) {
 
-module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"Hi, I’m Brian the CarRentals Bot. You can ask me to look up cross border fees for existing bookings ","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"TEST: CarRentals Bot"},"recorder":{"preset":"speech_recognition"}}
+module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"TEST: CarRentals Bot"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
 /* 164 */

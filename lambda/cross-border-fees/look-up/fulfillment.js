@@ -34,7 +34,7 @@ function getPolicyMessage(supplier, pickupCountry, dropoffCountry) {
   return 'I’m sorry, but travel to this location is not permitted by the local car rental company.';
 }
 
-module.exports = async function(intentRequest, slots, callback) {
+module.exports = function(intentRequest, slots, callback) {
     if (!slots.bookingNumber || !slots.supplier || !slots.pickupCountry || !slots.dropoffCountry) {
       throw new Error('Need bookingNumber, or supplier or pick up country and dropoff country');
     }

@@ -103,7 +103,6 @@ export default {
     if (!this.isMobile) {
       document.documentElement.style.overflowY = 'hidden';
     }
-
     this.initConfig()
       .then(() => Promise.all([
         this.$store.dispatch(
@@ -257,7 +256,9 @@ export default {
           }
         });
         this.mutateTranscript();
-        this.sendEmail();
+        if (window.location.host.indexOf('local') !== 0) {
+          this.sendEmail();
+        }
       }
     },
     mutateTranscript() {

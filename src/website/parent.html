@@ -42,7 +42,7 @@
 
       <div class="headerbar">
         <img class="parent-bot-logo" src="https://s3-us-west-2.amazonaws.com/whichmatch-temp/Images/Car_Rentals_new_logo.svg">
-        <h1>CarRentals Chatbot for Cross Border Fee (UAT)</h1>
+        <h1>CarRentals Chatbot for Cross Border Fee</h1>
       </div>
 
       <div class="row section-bg">
@@ -202,16 +202,19 @@
       var chatbotUiconfig = {
       // if the iframe page is hosted on a different site,
       // you should configure the parentOrigin and iframeOrigin
-      /*
+
         ui: {
           // origin of the parent site where you are including the chatbot UI
-          parentOrigin: 'https://mysite.example.org'
+          // parentOrigin: 'https://mysite.example.org'
+          parentOrigin: window.location.origin
         },
         iframe: {
           // origin hosting the HTML file that will be embedded in the iframe
-          iframeOrigin: 'https://iframe-host.example.org'
+          // iframeOrigin: 'https://iframe-host.example.org'
+          iframeOrigin: window.location.origin,
+          shouldLoadIframeMinimized: false //must set here when used iframe. 
         }
-        */
+
       };
 
       // load the iframe

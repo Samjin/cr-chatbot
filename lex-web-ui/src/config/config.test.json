@@ -4,7 +4,7 @@
   },
   "lex": {
     "botName": "CR_chatbot",
-    "initialText": "Hi, I’m Brian the CarRentals Bot. You can ask me to look up cross border fees for existing bookings ",
+    "initialText": "",
     "initialSpeechInstruction": "Say 'cross border fees' to get started."
   },
   "polly": {

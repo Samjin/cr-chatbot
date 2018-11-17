@@ -37,6 +37,9 @@ function buildValidationResult(isValid, violatedSlot, messageContent) {
 }*/
 
 function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry) {
+  if (bookingNumber.trim().indexOf(' ') > -1) {
+    return buildValidationResult(false, 'bookingNumber', `Booking number should not contain space or special characters. Please type correct number again.`);
+  }
   if (supplier && availableSupplier.indexOf(supplier.toLowerCase()) === -1) {
     return buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
   }

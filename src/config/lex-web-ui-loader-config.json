@@ -4,14 +4,13 @@
   },
   "lex": {
     "botName": "CR_chatbot",
-    "initialText": "Hi, I’m Brian the CarRentals Bot. You can ask me to look up cross border fees for existing bookings ",
+    "initialText": "Hi, I’m Brian the CarRentals Bot. You can ask me to look up cross border fees for existing bookings. Please type 'cbf' or 'cross border fees' to start.",
     "initialSpeechInstruction": "Say 'cross border fees' to get started."
   },
   "ui": {
     "parentOrigin": "",
     "toolbarTitle": "CarRentals Bot",
-    "toolbarLogo": "",
-    "pushInitialTextOnRestart": true
+    "toolbarLogo": ""
   },
   "polly": {
     "voiceId": "Salli"

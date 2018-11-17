@@ -66,11 +66,10 @@ const configDefault = {
     botAlias: '$LATEST',
 
     // instruction message shown in the UI
-    initialText: 'Hi, I’m Brian the CarRentals Bot. You can ask me to' +
-    'look up cross border fees for existing bookings.',
+    initialText: '',
 
     // instructions spoken when mic is clicked
-    initialSpeechInstruction: 'Please say "cross border fees" to get started',
+    initialSpeechInstruction: '',
 
     // Lex initial sessionAttributes
     sessionAttributes: {},
@@ -154,7 +153,7 @@ const configDefault = {
     stripTagsFromBotMessages: true,
 
     // controls whether detailed error messages are shown in bot responses
-    showErrorDetails: false,
+    showErrorDetails: true,
 
     // show date when message was received on buble focus/selection
     showMessageDate: true,
