@@ -14,5 +14,5 @@ module.exports = {
     if (source === 'FulfillmentCodeHook') {
       return fulfillment(intentRequest, slots, callback);
     }
-  }
+  },
 };

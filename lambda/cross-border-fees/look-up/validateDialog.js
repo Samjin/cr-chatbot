@@ -7,20 +7,20 @@ const availablePickup = utility.availableGroup(fees).pickup;
 const availableDropoff = utility.availableGroup(fees).dropoff;
 
 function buildValidationResult(isValid, violatedSlot, messageContent) {
-    if (!messageContent) {
-        return {
-            isValid,
-            violatedSlot,
-        };
-    }
+  if (!messageContent) {
     return {
-        isValid,
-        violatedSlot,
-        message: {
-            contentType: 'PlainText',
-            content: messageContent
-        },
+      isValid,
+      violatedSlot,
     };
+  }
+  return {
+    isValid,
+    violatedSlot,
+    message: {
+      contentType: 'PlainText',
+      content: messageContent
+    },
+  };
 }
 
 /*// Wait until booking number api is available
@@ -55,9 +55,16 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry) {
   return buildValidationResult(true, null, null);
 }
 
-module.exports = function(intentRequest, slots) {
+module.exports = function (intentRequest, slots) {
+  // Get original booking number to catch free text instead
+  // of validated text from lex.
+  let bookingNumberTranscript = null;
+  if (slots.bookingNumber && intentRequest.inputTranscript) {
+    bookingNumberTranscript = intentRequest.inputTranscript;
+  }
+
   const validationResult = validateSlots(
-    slots.bookingNumber,
+    bookingNumberTranscript,
     slots.supplier,
     slots.pickupCountry,
     slots.dropoffCountry
@@ -72,8 +79,8 @@ module.exports = function(intentRequest, slots) {
         slots,
         validationResult.violatedSlot,
         validationResult.message,
-        )
-      );
+      )
+    );
   }
   return Promise.resolve(dialogActions.delegate(intentRequest.sessionAttributes, slots));
 };

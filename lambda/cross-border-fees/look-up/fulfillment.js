@@ -35,12 +35,29 @@ function getPolicyMessage(supplier, pickupCountry, dropoffCountry) {
 }
 
 module.exports = function(intentRequest, slots, callback) {
-    if (!slots.bookingNumber || !slots.supplier || !slots.pickupCountry || !slots.dropoffCountry) {
-      throw new Error('Need bookingNumber, or supplier or pick up country and dropoff country');
-    }
+  if (!slots.bookingNumber || !slots.supplier || !slots.pickupCountry || !slots.dropoffCountry) {
+    throw new Error('Need bookingNumber, supplier, pick up country and drop off country');
+  }
+
   let message = {
     contentType: 'PlainText',
-    content: getPolicyMessage(slots.supplier, slots.pickupCountry, slots.dropoffCountry)
+    content: getPolicyMessage(slots.supplier, slots.pickupCountry, slots.dropoffCountry),
   }
-  callback(null, dialogActions.close(intentRequest.sessionAttributes, 'Fulfilled', message));
+
+  // responseCard prop
+  let genericAttachments = {
+    title: 'Can I help you to lookup another cross border fee?',
+    imageUrl: null,
+    subTitle: null,
+    attachmentLinkUrl: null,
+    buttons: [{
+      "text": "Yes",
+      "value": "cross border fees",
+    }, {
+      "text": "No",
+      "value": "trigger stop intent",
+    }],
+  }
+
+  callback(null, dialogActions.close(intentRequest.sessionAttributes, 'Fulfilled', message, genericAttachments));
 };

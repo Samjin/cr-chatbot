@@ -36,8 +36,13 @@ module.exports = {
         });
         return availableGroup;
     },
-    hasNumber: function(string) {
+    hasNumber: function (string) {
         return /\d/.test(string);
     },
-
+    getResponseCard: function (genericAttachments) {
+        return {
+            contentType: 'application/vnd.amazonaws.card.generic',
+            genericAttachments: [genericAttachments],
+        };
+    },
 }
