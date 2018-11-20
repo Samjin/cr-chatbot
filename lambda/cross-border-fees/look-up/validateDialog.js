@@ -57,7 +57,7 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry) {
     if (!utility.findCountryName(countries, dropoffCountry)) {
       return buildValidationResult(false, 'dropoffCountry', `We cannot find the pick up country. Please make sure country name is correct.`);
     }
-    return buildValidationResult(false, 'dropoffCountry', `We do not have cross border fee defined for this pick up country.`);
+    return buildValidationResult(false, 'dropoffCountry', `We do not have cross border fee defined for this drop off country.`);
   }
 
   // Same pickup and dropoff country
