@@ -1,5 +1,5 @@
 const fees = require('../fees');
-const countries = require('../countries');
+const countries = require('../countries'); // Modified from https://fabian7593.github.io/CountryAPI/
 const utility = require('../utility');
 const dialogActions = require('./dialogActions');
 
