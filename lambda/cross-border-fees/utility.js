@@ -53,7 +53,8 @@ module.exports = {
       let isNameValid = [
         item.Name.toLowerCase(),
         item.Alpha2Code.toLowerCase(),
-        item.Alpha3Code.toLowerCase()
+        item.Alpha3Code.toLowerCase(),
+        item.NativeName.toLowerCase()
       ].includes(name.toLowerCase().trim());
 
       if (isNameValid) {
