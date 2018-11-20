@@ -47,14 +47,14 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry) {
   }
 
   if (pickupCountry && availablePickup.indexOf(pickupCountry.toLowerCase()) === -1) {
-    if (!utility.findCountryName(pickupCountry)) {
+    if (!utility.findCountryName(countries, pickupCountry)) {
       return buildValidationResult(false, 'pickupCountry', `We cannot find the pick up country. Please make sure country name is correct.`);
     }
     return buildValidationResult(false, 'pickupCountry', `We do not have cross border fee defined for this pick up country.`);
   }
 
   if (dropoffCountry && availableDropoff.indexOf(dropoffCountry.toLowerCase()) === -1) {
-    if (!utility.findCountryName(dropoffCountry)) {
+    if (!utility.findCountryName(countries, dropoffCountry)) {
       return buildValidationResult(false, 'dropoffCountry', `We cannot find the pick up country. Please make sure country name is correct.`);
     }
     return buildValidationResult(false, 'dropoffCountry', `We do not have cross border fee defined for this pick up country.`);
