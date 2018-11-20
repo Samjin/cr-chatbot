@@ -1005,7 +1005,7 @@ var configDefault = {
 
     // controls if the Lex initialText will be pushed into the message
     // list after the bot dialog is done (i.e. fail or fulfilled)
-    pushInitialTextOnRestart: false,
+    pushInitialTextOnRestart: true,
 
     // controls if the Lex sessionAttributes should be re-initialized
     // to the config value (i.e. lex.sessionAttributes)

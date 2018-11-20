@@ -45,4 +45,10 @@ module.exports = {
             genericAttachments: [genericAttachments],
         };
     },
+    findCountryName: function (countries, name) {
+        if (!name) { return false }
+        countries.Response.forEach((item) => {
+            return [item.Name, item.Alpha2Code, item.Alpha3Code].includes(name.toLowerCase().trim());
+        })
+    },
 }
