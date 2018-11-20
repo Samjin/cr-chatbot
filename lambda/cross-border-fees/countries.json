@@ -7,1749 +7,1749 @@
         "Alpha3Code": "AFG",
         "NativeName": "افغانستان",
         "Region": "Asia",
-        "SubRegion": "Southern Asia",
+        "SubRegion": "Southern Asia"
     }, {
         "Name": "Åland Islands",
         "Alpha2Code": "AX",
         "Alpha3Code": "ALA",
         "NativeName": "Åland",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Albania",
         "Alpha2Code": "AL",
         "Alpha3Code": "ALB",
         "NativeName": "Shqipëria",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Algeria",
         "Alpha2Code": "DZ",
         "Alpha3Code": "DZA",
         "NativeName": "الجزائر",
         "Region": "Africa",
-        "SubRegion": "Northern Africa",
+        "SubRegion": "Northern Africa"
     }, {
         "Name": "American Samoa",
         "Alpha2Code": "AS",
         "Alpha3Code": "ASM",
         "NativeName": "American Samoa",
         "Region": "Oceania",
-        "SubRegion": "Polynesia",
+        "SubRegion": "Polynesia"
     }, {
         "Name": "Andorra",
         "Alpha2Code": "AD",
         "Alpha3Code": "AND",
         "NativeName": "Andorra",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Angola",
         "Alpha2Code": "AO",
         "Alpha3Code": "AGO",
         "NativeName": "Angola",
         "Region": "Africa",
-        "SubRegion": "Middle Africa",
+        "SubRegion": "Middle Africa"
     }, {
         "Name": "Anguilla",
         "Alpha2Code": "AI",
         "Alpha3Code": "AIA",
         "NativeName": "Anguilla",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Antarctica",
         "Alpha2Code": "AQ",
         "Alpha3Code": "ATA",
         "NativeName": "Antarctica",
         "Region": "Polar",
-        "SubRegion": "",
+        "SubRegion": ""
     }, {
         "Name": "Antigua and Barbuda",
         "Alpha2Code": "AG",
         "Alpha3Code": "ATG",
         "NativeName": "Antigua and Barbuda",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Argentina",
         "Alpha2Code": "AR",
         "Alpha3Code": "ARG",
         "NativeName": "Argentina",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Armenia",
         "Alpha2Code": "AM",
         "Alpha3Code": "ARM",
         "NativeName": "Հայաստան",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Aruba",
         "Alpha2Code": "AW",
         "Alpha3Code": "ABW",
         "NativeName": "Aruba",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Australia",
         "Alpha2Code": "AU",
         "Alpha3Code": "AUS",
         "NativeName": "Australia",
         "Region": "Oceania",
-        "SubRegion": "Australia and New Zealand",
+        "SubRegion": "Australia and New Zealand"
     }, {
         "Name": "Austria",
         "Alpha2Code": "AT",
         "Alpha3Code": "AUT",
         "NativeName": "Österreich",
         "Region": "Europe",
-        "SubRegion": "Western Europe",
+        "SubRegion": "Western Europe"
     }, {
         "Name": "Azerbaijan",
         "Alpha2Code": "AZ",
         "Alpha3Code": "AZE",
         "NativeName": "Azərbaycan",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Bahamas",
         "Alpha2Code": "BS",
         "Alpha3Code": "BHS",
         "NativeName": "Bahamas",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Bahrain",
         "Alpha2Code": "BH",
         "Alpha3Code": "BHR",
         "NativeName": "‏البحرين",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Bangladesh",
         "Alpha2Code": "BD",
         "Alpha3Code": "BGD",
         "NativeName": "Bangladesh",
         "Region": "Asia",
-        "SubRegion": "Southern Asia",
+        "SubRegion": "Southern Asia"
     }, {
         "Name": "Barbados",
         "Alpha2Code": "BB",
         "Alpha3Code": "BRB",
         "NativeName": "Barbados",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Belarus",
         "Alpha2Code": "BY",
         "Alpha3Code": "BLR",
         "NativeName": "Белару́сь",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "Belgium",
         "Alpha2Code": "BE",
         "Alpha3Code": "BEL",
         "NativeName": "België",
         "Region": "Europe",
-        "SubRegion": "Western Europe",
+        "SubRegion": "Western Europe"
     }, {
         "Name": "Belize",
         "Alpha2Code": "BZ",
         "Alpha3Code": "BLZ",
         "NativeName": "Belize",
         "Region": "Americas",
-        "SubRegion": "Central America",
+        "SubRegion": "Central America"
     }, {
         "Name": "Benin",
         "Alpha2Code": "BJ",
         "Alpha3Code": "BEN",
         "NativeName": "Bénin",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Bermuda",
         "Alpha2Code": "BM",
         "Alpha3Code": "BMU",
         "NativeName": "Bermuda",
         "Region": "Americas",
-        "SubRegion": "Northern America",
+        "SubRegion": "Northern America"
     }, {
         "Name": "Bhutan",
         "Alpha2Code": "BT",
         "Alpha3Code": "BTN",
         "NativeName": "ʼbrug-yul",
         "Region": "Asia",
-        "SubRegion": "Southern Asia",
+        "SubRegion": "Southern Asia"
     }, {
         "Name": "Bolivia (Plurinational State of)",
         "Alpha2Code": "BO",
         "Alpha3Code": "BOL",
         "NativeName": "Bolivia",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Bonaire, Sint Eustatius and Saba",
         "Alpha2Code": "BQ",
         "Alpha3Code": "BES",
         "NativeName": "Bonaire",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Bosnia and Herzegovina",
         "Alpha2Code": "BA",
         "Alpha3Code": "BIH",
         "NativeName": "Bosna i Hercegovina",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Botswana",
         "Alpha2Code": "BW",
         "Alpha3Code": "BWA",
         "NativeName": "Botswana",
         "Region": "Africa",
-        "SubRegion": "Southern Africa",
+        "SubRegion": "Southern Africa"
     }, {
         "Name": "Bouvet Island",
         "Alpha2Code": "BV",
         "Alpha3Code": "BVT",
         "NativeName": "Bouvetøya",
         "Region": "",
-        "SubRegion": "",
+        "SubRegion": ""
     }, {
         "Name": "Brazil",
         "Alpha2Code": "BR",
         "Alpha3Code": "BRA",
         "NativeName": "Brasil",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "British Indian Ocean Territory",
         "Alpha2Code": "IO",
         "Alpha3Code": "IOT",
         "NativeName": "British Indian Ocean Territory",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Brunei Darussalam",
         "Alpha2Code": "BN",
         "Alpha3Code": "BRN",
         "NativeName": "Negara Brunei Darussalam",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Bulgaria",
         "Alpha2Code": "BG",
         "Alpha3Code": "BGR",
         "NativeName": "България",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "Burkina Faso",
         "Alpha2Code": "BF",
         "Alpha3Code": "BFA",
         "NativeName": "Burkina Faso",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Burundi",
         "Alpha2Code": "BI",
         "Alpha3Code": "BDI",
         "NativeName": "Burundi",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Cabo Verde",
         "Alpha2Code": "CV",
         "Alpha3Code": "CPV",
         "NativeName": "Cabo Verde",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Cambodia",
         "Alpha2Code": "KH",
         "Alpha3Code": "KHM",
         "NativeName": "Kâmpŭchéa",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Cameroon",
         "Alpha2Code": "CM",
         "Alpha3Code": "CMR",
         "NativeName": "Cameroon",
         "Region": "Africa",
-        "SubRegion": "Middle Africa",
+        "SubRegion": "Middle Africa"
     }, {
         "Name": "Canada",
         "Alpha2Code": "CA",
         "Alpha3Code": "CAN",
         "NativeName": "Canada",
         "Region": "Americas",
-        "SubRegion": "Northern America",
+        "SubRegion": "Northern America"
     }, {
         "Name": "Cayman Islands",
         "Alpha2Code": "KY",
         "Alpha3Code": "CYM",
         "NativeName": "Cayman Islands",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Central African Republic",
         "Alpha2Code": "CF",
         "Alpha3Code": "CAF",
         "NativeName": "Ködörösêse tî Bêafrîka",
         "Region": "Africa",
-        "SubRegion": "Middle Africa",
+        "SubRegion": "Middle Africa"
     }, {
         "Name": "Chad",
         "Alpha2Code": "TD",
         "Alpha3Code": "TCD",
         "NativeName": "Tchad",
         "Region": "Africa",
-        "SubRegion": "Middle Africa",
+        "SubRegion": "Middle Africa"
     }, {
         "Name": "Chile",
         "Alpha2Code": "CL",
         "Alpha3Code": "CHL",
         "NativeName": "Chile",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "China",
         "Alpha2Code": "CN",
         "Alpha3Code": "CHN",
         "NativeName": "中国",
         "Region": "Asia",
-        "SubRegion": "Eastern Asia",
+        "SubRegion": "Eastern Asia"
     }, {
         "Name": "Christmas Island",
         "Alpha2Code": "CX",
         "Alpha3Code": "CXR",
         "NativeName": "Christmas Island",
         "Region": "Oceania",
-        "SubRegion": "Australia and New Zealand",
+        "SubRegion": "Australia and New Zealand"
     }, {
         "Name": "Cocos (Keeling) Islands",
         "Alpha2Code": "CC",
         "Alpha3Code": "CCK",
         "NativeName": "Cocos (Keeling) Islands",
         "Region": "Oceania",
-        "SubRegion": "Australia and New Zealand",
+        "SubRegion": "Australia and New Zealand"
     }, {
         "Name": "Colombia",
         "Alpha2Code": "CO",
         "Alpha3Code": "COL",
         "NativeName": "Colombia",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Comoros",
         "Alpha2Code": "KM",
         "Alpha3Code": "COM",
         "NativeName": "Komori",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Congo",
         "Alpha2Code": "CG",
         "Alpha3Code": "COG",
         "NativeName": "République du Congo",
         "Region": "Africa",
-        "SubRegion": "Middle Africa",
+        "SubRegion": "Middle Africa"
     }, {
         "Name": "Congo (Democratic Republic of the)",
         "Alpha2Code": "CD",
         "Alpha3Code": "COD",
         "NativeName": "République démocratique du Congo",
         "Region": "Africa",
-        "SubRegion": "Middle Africa",
+        "SubRegion": "Middle Africa"
     }, {
         "Name": "Cook Islands",
         "Alpha2Code": "CK",
         "Alpha3Code": "COK",
         "NativeName": "Cook Islands",
         "Region": "Oceania",
-        "SubRegion": "Polynesia",
+        "SubRegion": "Polynesia"
     }, {
         "Name": "Costa Rica",
         "Alpha2Code": "CR",
         "Alpha3Code": "CRI",
         "NativeName": "Costa Rica",
         "Region": "Americas",
-        "SubRegion": "Central America",
+        "SubRegion": "Central America"
     }, {
         "Name": "Côte d'Ivoire",
         "Alpha2Code": "CI",
         "Alpha3Code": "CIV",
         "NativeName": "Côte d'Ivoire",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Croatia",
         "Alpha2Code": "HR",
         "Alpha3Code": "HRV",
         "NativeName": "Hrvatska",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Cuba",
         "Alpha2Code": "CU",
         "Alpha3Code": "CUB",
         "NativeName": "Cuba",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Curaçao",
         "Alpha2Code": "CW",
         "Alpha3Code": "CUW",
         "NativeName": "Curaçao",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Cyprus",
         "Alpha2Code": "CY",
         "Alpha3Code": "CYP",
         "NativeName": "Κύπρος",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Czech Republic",
         "Alpha2Code": "CZ",
         "Alpha3Code": "CZE",
         "NativeName": "Česká republika",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "Denmark",
         "Alpha2Code": "DK",
         "Alpha3Code": "DNK",
         "NativeName": "Danmark",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Djibouti",
         "Alpha2Code": "DJ",
         "Alpha3Code": "DJI",
         "NativeName": "Djibouti",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Dominica",
         "Alpha2Code": "DM",
         "Alpha3Code": "DMA",
         "NativeName": "Dominica",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Dominican Republic",
         "Alpha2Code": "DO",
         "Alpha3Code": "DOM",
         "NativeName": "República Dominicana",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Ecuador",
         "Alpha2Code": "EC",
         "Alpha3Code": "ECU",
         "NativeName": "Ecuador",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Egypt",
         "Alpha2Code": "EG",
         "Alpha3Code": "EGY",
         "NativeName": "مصر‎",
         "Region": "Africa",
-        "SubRegion": "Northern Africa",
+        "SubRegion": "Northern Africa"
     }, {
         "Name": "El Salvador",
         "Alpha2Code": "SV",
         "Alpha3Code": "SLV",
         "NativeName": "El Salvador",
         "Region": "Americas",
-        "SubRegion": "Central America",
+        "SubRegion": "Central America"
     }, {
         "Name": "Equatorial Guinea",
         "Alpha2Code": "GQ",
         "Alpha3Code": "GNQ",
         "NativeName": "Guinea Ecuatorial",
         "Region": "Africa",
-        "SubRegion": "Middle Africa",
+        "SubRegion": "Middle Africa"
     }, {
         "Name": "Eritrea",
         "Alpha2Code": "ER",
         "Alpha3Code": "ERI",
         "NativeName": "ኤርትራ",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Estonia",
         "Alpha2Code": "EE",
         "Alpha3Code": "EST",
         "NativeName": "Eesti",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Ethiopia",
         "Alpha2Code": "ET",
         "Alpha3Code": "ETH",
         "NativeName": "ኢትዮጵያ",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Falkland Islands (Malvinas)",
         "Alpha2Code": "FK",
         "Alpha3Code": "FLK",
         "NativeName": "Falkland Islands",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Faroe Islands",
         "Alpha2Code": "FO",
         "Alpha3Code": "FRO",
         "NativeName": "Føroyar",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Fiji",
         "Alpha2Code": "FJ",
         "Alpha3Code": "FJI",
         "NativeName": "Fiji",
         "Region": "Oceania",
-        "SubRegion": "Melanesia",
+        "SubRegion": "Melanesia"
     }, {
         "Name": "Finland",
         "Alpha2Code": "FI",
         "Alpha3Code": "FIN",
         "NativeName": "Suomi",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "France",
         "Alpha2Code": "FR",
         "Alpha3Code": "FRA",
         "NativeName": "France",
         "Region": "Europe",
-        "SubRegion": "Western Europe",
+        "SubRegion": "Western Europe"
     }, {
         "Name": "French Guiana",
         "Alpha2Code": "GF",
         "Alpha3Code": "GUF",
         "NativeName": "Guyane française",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "French Polynesia",
         "Alpha2Code": "PF",
         "Alpha3Code": "PYF",
         "NativeName": "Polynésie française",
         "Region": "Oceania",
-        "SubRegion": "Polynesia",
+        "SubRegion": "Polynesia"
     }, {
         "Name": "French Southern Territories",
         "Alpha2Code": "TF",
         "Alpha3Code": "ATF",
         "NativeName": "Territoire des Terres australes et antarctiques françaises",
         "Region": "Africa",
-        "SubRegion": "Southern Africa",
+        "SubRegion": "Southern Africa"
     }, {
         "Name": "Gabon",
         "Alpha2Code": "GA",
         "Alpha3Code": "GAB",
         "NativeName": "Gabon",
         "Region": "Africa",
-        "SubRegion": "Middle Africa",
+        "SubRegion": "Middle Africa"
     }, {
         "Name": "Gambia",
         "Alpha2Code": "GM",
         "Alpha3Code": "GMB",
         "NativeName": "Gambia",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Georgia",
         "Alpha2Code": "GE",
         "Alpha3Code": "GEO",
         "NativeName": "საქართველო",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Germany",
         "Alpha2Code": "DE",
         "Alpha3Code": "DEU",
         "NativeName": "Deutschland",
         "Region": "Europe",
-        "SubRegion": "Western Europe",
+        "SubRegion": "Western Europe"
     }, {
         "Name": "Ghana",
         "Alpha2Code": "GH",
         "Alpha3Code": "GHA",
         "NativeName": "Ghana",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Gibraltar",
         "Alpha2Code": "GI",
         "Alpha3Code": "GIB",
         "NativeName": "Gibraltar",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Greece",
         "Alpha2Code": "GR",
         "Alpha3Code": "GRC",
         "NativeName": "Ελλάδα",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Greenland",
         "Alpha2Code": "GL",
         "Alpha3Code": "GRL",
         "NativeName": "Kalaallit Nunaat",
         "Region": "Americas",
-        "SubRegion": "Northern America",
+        "SubRegion": "Northern America"
     }, {
         "Name": "Grenada",
         "Alpha2Code": "GD",
         "Alpha3Code": "GRD",
         "NativeName": "Grenada",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Guadeloupe",
         "Alpha2Code": "GP",
         "Alpha3Code": "GLP",
         "NativeName": "Guadeloupe",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Guam",
         "Alpha2Code": "GU",
         "Alpha3Code": "GUM",
         "NativeName": "Guam",
         "Region": "Oceania",
-        "SubRegion": "Micronesia",
+        "SubRegion": "Micronesia"
     }, {
         "Name": "Guatemala",
         "Alpha2Code": "GT",
         "Alpha3Code": "GTM",
         "NativeName": "Guatemala",
         "Region": "Americas",
-        "SubRegion": "Central America",
+        "SubRegion": "Central America"
     }, {
         "Name": "Guernsey",
         "Alpha2Code": "GG",
         "Alpha3Code": "GGY",
         "NativeName": "Guernsey",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Guinea",
         "Alpha2Code": "GN",
         "Alpha3Code": "GIN",
         "NativeName": "Guinée",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Guinea-Bissau",
         "Alpha2Code": "GW",
         "Alpha3Code": "GNB",
         "NativeName": "Guiné-Bissau",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Guyana",
         "Alpha2Code": "GY",
         "Alpha3Code": "GUY",
         "NativeName": "Guyana",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Haiti",
         "Alpha2Code": "HT",
         "Alpha3Code": "HTI",
         "NativeName": "Haïti",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Heard Island and McDonald Islands",
         "Alpha2Code": "HM",
         "Alpha3Code": "HMD",
         "NativeName": "Heard Island and McDonald Islands",
         "Region": "",
-        "SubRegion": "",
+        "SubRegion": ""
     }, {
         "Name": "Holy See",
         "Alpha2Code": "VA",
         "Alpha3Code": "VAT",
         "NativeName": "Sancta Sedes",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Honduras",
         "Alpha2Code": "HN",
         "Alpha3Code": "HND",
         "NativeName": "Honduras",
         "Region": "Americas",
-        "SubRegion": "Central America",
+        "SubRegion": "Central America"
     }, {
         "Name": "Hong Kong",
         "Alpha2Code": "HK",
         "Alpha3Code": "HKG",
         "NativeName": "香港",
         "Region": "Asia",
-        "SubRegion": "Eastern Asia",
+        "SubRegion": "Eastern Asia"
     }, {
         "Name": "Hungary",
         "Alpha2Code": "HU",
         "Alpha3Code": "HUN",
         "NativeName": "Magyarország",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "Iceland",
         "Alpha2Code": "IS",
         "Alpha3Code": "ISL",
         "NativeName": "Ísland",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "India",
         "Alpha2Code": "IN",
         "Alpha3Code": "IND",
         "NativeName": "भारत",
         "Region": "Asia",
-        "SubRegion": "Southern Asia",
+        "SubRegion": "Southern Asia"
     }, {
         "Name": "Indonesia",
         "Alpha2Code": "ID",
         "Alpha3Code": "IDN",
         "NativeName": "Indonesia",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Iran (Islamic Republic of)",
         "Alpha2Code": "IR",
         "Alpha3Code": "IRN",
         "NativeName": "ایران",
         "Region": "Asia",
-        "SubRegion": "Southern Asia",
+        "SubRegion": "Southern Asia"
     }, {
         "Name": "Iraq",
         "Alpha2Code": "IQ",
         "Alpha3Code": "IRQ",
         "NativeName": "العراق",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Ireland",
         "Alpha2Code": "IE",
         "Alpha3Code": "IRL",
         "NativeName": "Éire",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Isle of Man",
         "Alpha2Code": "IM",
         "Alpha3Code": "IMN",
         "NativeName": "Isle of Man",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Israel",
         "Alpha2Code": "IL",
         "Alpha3Code": "ISR",
         "NativeName": "יִשְׂרָאֵל",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Italy",
         "Alpha2Code": "IT",
         "Alpha3Code": "ITA",
         "NativeName": "Italia",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Jamaica",
         "Alpha2Code": "JM",
         "Alpha3Code": "JAM",
         "NativeName": "Jamaica",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Japan",
         "Alpha2Code": "JP",
         "Alpha3Code": "JPN",
         "NativeName": "日本",
         "Region": "Asia",
-        "SubRegion": "Eastern Asia",
+        "SubRegion": "Eastern Asia"
     }, {
         "Name": "Jersey",
         "Alpha2Code": "JE",
         "Alpha3Code": "JEY",
         "NativeName": "Jersey",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Jordan",
         "Alpha2Code": "JO",
         "Alpha3Code": "JOR",
         "NativeName": "الأردن",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Kazakhstan",
         "Alpha2Code": "KZ",
         "Alpha3Code": "KAZ",
         "NativeName": "Қазақстан",
         "Region": "Asia",
-        "SubRegion": "Central Asia",
+        "SubRegion": "Central Asia"
     }, {
         "Name": "Kenya",
         "Alpha2Code": "KE",
         "Alpha3Code": "KEN",
         "NativeName": "Kenya",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Kiribati",
         "Alpha2Code": "KI",
         "Alpha3Code": "KIR",
         "NativeName": "Kiribati",
         "Region": "Oceania",
-        "SubRegion": "Micronesia",
+        "SubRegion": "Micronesia"
     }, {
         "Name": "Korea (Democratic People's Republic of)",
         "Alpha2Code": "KP",
         "Alpha3Code": "PRK",
         "NativeName": "북한",
         "Region": "Asia",
-        "SubRegion": "Eastern Asia",
+        "SubRegion": "Eastern Asia"
     }, {
         "Name": "Korea (Republic of)",
         "Alpha2Code": "KR",
         "Alpha3Code": "KOR",
         "NativeName": "대한민국",
         "Region": "Asia",
-        "SubRegion": "Eastern Asia",
+        "SubRegion": "Eastern Asia"
     }, {
         "Name": "Kuwait",
         "Alpha2Code": "KW",
         "Alpha3Code": "KWT",
         "NativeName": "الكويت",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Kyrgyzstan",
         "Alpha2Code": "KG",
         "Alpha3Code": "KGZ",
         "NativeName": "Кыргызстан",
         "Region": "Asia",
-        "SubRegion": "Central Asia",
+        "SubRegion": "Central Asia"
     }, {
         "Name": "Lao People's Democratic Republic",
         "Alpha2Code": "LA",
         "Alpha3Code": "LAO",
         "NativeName": "ສປປລາວ",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Latvia",
         "Alpha2Code": "LV",
         "Alpha3Code": "LVA",
         "NativeName": "Latvija",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Lebanon",
         "Alpha2Code": "LB",
         "Alpha3Code": "LBN",
         "NativeName": "لبنان",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Lesotho",
         "Alpha2Code": "LS",
         "Alpha3Code": "LSO",
         "NativeName": "Lesotho",
         "Region": "Africa",
-        "SubRegion": "Southern Africa",
+        "SubRegion": "Southern Africa"
     }, {
         "Name": "Liberia",
         "Alpha2Code": "LR",
         "Alpha3Code": "LBR",
         "NativeName": "Liberia",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Libya",
         "Alpha2Code": "LY",
         "Alpha3Code": "LBY",
         "NativeName": "‏ليبيا",
         "Region": "Africa",
-        "SubRegion": "Northern Africa",
+        "SubRegion": "Northern Africa"
     }, {
         "Name": "Liechtenstein",
         "Alpha2Code": "LI",
         "Alpha3Code": "LIE",
         "NativeName": "Liechtenstein",
         "Region": "Europe",
-        "SubRegion": "Western Europe",
+        "SubRegion": "Western Europe"
     }, {
         "Name": "Lithuania",
         "Alpha2Code": "LT",
         "Alpha3Code": "LTU",
         "NativeName": "Lietuva",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Luxembourg",
         "Alpha2Code": "LU",
         "Alpha3Code": "LUX",
         "NativeName": "Luxembourg",
         "Region": "Europe",
-        "SubRegion": "Western Europe",
+        "SubRegion": "Western Europe"
     }, {
         "Name": "Macao",
         "Alpha2Code": "MO",
         "Alpha3Code": "MAC",
         "NativeName": "澳門",
         "Region": "Asia",
-        "SubRegion": "Eastern Asia",
+        "SubRegion": "Eastern Asia"
     }, {
         "Name": "Macedonia (the former Yugoslav Republic of)",
         "Alpha2Code": "MK",
         "Alpha3Code": "MKD",
         "NativeName": "Македонија",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Madagascar",
         "Alpha2Code": "MG",
         "Alpha3Code": "MDG",
         "NativeName": "Madagasikara",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Malawi",
         "Alpha2Code": "MW",
         "Alpha3Code": "MWI",
         "NativeName": "Malawi",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Malaysia",
         "Alpha2Code": "MY",
         "Alpha3Code": "MYS",
         "NativeName": "Malaysia",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Maldives",
         "Alpha2Code": "MV",
         "Alpha3Code": "MDV",
         "NativeName": "Maldives",
         "Region": "Asia",
-        "SubRegion": "Southern Asia",
+        "SubRegion": "Southern Asia"
     }, {
         "Name": "Mali",
         "Alpha2Code": "ML",
         "Alpha3Code": "MLI",
         "NativeName": "Mali",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Malta",
         "Alpha2Code": "MT",
         "Alpha3Code": "MLT",
         "NativeName": "Malta",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Marshall Islands",
         "Alpha2Code": "MH",
         "Alpha3Code": "MHL",
         "NativeName": "M̧ajeļ",
         "Region": "Oceania",
-        "SubRegion": "Micronesia",
+        "SubRegion": "Micronesia"
     }, {
         "Name": "Martinique",
         "Alpha2Code": "MQ",
         "Alpha3Code": "MTQ",
         "NativeName": "Martinique",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Mauritania",
         "Alpha2Code": "MR",
         "Alpha3Code": "MRT",
         "NativeName": "موريتانيا",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Mauritius",
         "Alpha2Code": "MU",
         "Alpha3Code": "MUS",
         "NativeName": "Maurice",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Mayotte",
         "Alpha2Code": "YT",
         "Alpha3Code": "MYT",
         "NativeName": "Mayotte",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Mexico",
         "Alpha2Code": "MX",
         "Alpha3Code": "MEX",
         "NativeName": "México",
         "Region": "Americas",
-        "SubRegion": "Central America",
+        "SubRegion": "Central America"
     }, {
         "Name": "Micronesia (Federated States of)",
         "Alpha2Code": "FM",
         "Alpha3Code": "FSM",
         "NativeName": "Micronesia",
         "Region": "Oceania",
-        "SubRegion": "Micronesia",
+        "SubRegion": "Micronesia"
     }, {
         "Name": "Moldova (Republic of)",
         "Alpha2Code": "MD",
         "Alpha3Code": "MDA",
         "NativeName": "Moldova",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "Monaco",
         "Alpha2Code": "MC",
         "Alpha3Code": "MCO",
         "NativeName": "Monaco",
         "Region": "Europe",
-        "SubRegion": "Western Europe",
+        "SubRegion": "Western Europe"
     }, {
         "Name": "Mongolia",
         "Alpha2Code": "MN",
         "Alpha3Code": "MNG",
         "NativeName": "Монгол улс",
         "Region": "Asia",
-        "SubRegion": "Eastern Asia",
+        "SubRegion": "Eastern Asia"
     }, {
         "Name": "Montenegro",
         "Alpha2Code": "ME",
         "Alpha3Code": "MNE",
         "NativeName": "Црна Гора",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Montserrat",
         "Alpha2Code": "MS",
         "Alpha3Code": "MSR",
         "NativeName": "Montserrat",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Morocco",
         "Alpha2Code": "MA",
         "Alpha3Code": "MAR",
         "NativeName": "المغرب",
         "Region": "Africa",
-        "SubRegion": "Northern Africa",
+        "SubRegion": "Northern Africa"
     }, {
         "Name": "Mozambique",
         "Alpha2Code": "MZ",
         "Alpha3Code": "MOZ",
         "NativeName": "Moçambique",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Myanmar",
         "Alpha2Code": "MM",
         "Alpha3Code": "MMR",
         "NativeName": "Myanma",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Namibia",
         "Alpha2Code": "NA",
         "Alpha3Code": "NAM",
         "NativeName": "Namibia",
         "Region": "Africa",
-        "SubRegion": "Southern Africa",
+        "SubRegion": "Southern Africa"
     }, {
         "Name": "Nauru",
         "Alpha2Code": "NR",
         "Alpha3Code": "NRU",
         "NativeName": "Nauru",
         "Region": "Oceania",
-        "SubRegion": "Micronesia",
+        "SubRegion": "Micronesia"
     }, {
         "Name": "Nepal",
         "Alpha2Code": "NP",
         "Alpha3Code": "NPL",
         "NativeName": "नेपाल",
         "Region": "Asia",
-        "SubRegion": "Southern Asia",
+        "SubRegion": "Southern Asia"
     }, {
         "Name": "Netherlands",
         "Alpha2Code": "NL",
         "Alpha3Code": "NLD",
         "NativeName": "Nederland",
         "Region": "Europe",
-        "SubRegion": "Western Europe",
+        "SubRegion": "Western Europe"
     }, {
         "Name": "New Caledonia",
         "Alpha2Code": "NC",
         "Alpha3Code": "NCL",
         "NativeName": "Nouvelle-Calédonie",
         "Region": "Oceania",
-        "SubRegion": "Melanesia",
+        "SubRegion": "Melanesia"
     }, {
         "Name": "New Zealand",
         "Alpha2Code": "NZ",
         "Alpha3Code": "NZL",
         "NativeName": "New Zealand",
         "Region": "Oceania",
-        "SubRegion": "Australia and New Zealand",
+        "SubRegion": "Australia and New Zealand"
     }, {
         "Name": "Nicaragua",
         "Alpha2Code": "NI",
         "Alpha3Code": "NIC",
         "NativeName": "Nicaragua",
         "Region": "Americas",
-        "SubRegion": "Central America",
+        "SubRegion": "Central America"
     }, {
         "Name": "Niger",
         "Alpha2Code": "NE",
         "Alpha3Code": "NER",
         "NativeName": "Niger",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Nigeria",
         "Alpha2Code": "NG",
         "Alpha3Code": "NGA",
         "NativeName": "Nigeria",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Niue",
         "Alpha2Code": "NU",
         "Alpha3Code": "NIU",
         "NativeName": "Niuē",
         "Region": "Oceania",
-        "SubRegion": "Polynesia",
+        "SubRegion": "Polynesia"
     }, {
         "Name": "Norfolk Island",
         "Alpha2Code": "NF",
         "Alpha3Code": "NFK",
         "NativeName": "Norfolk Island",
         "Region": "Oceania",
-        "SubRegion": "Australia and New Zealand",
+        "SubRegion": "Australia and New Zealand"
     }, {
         "Name": "Northern Mariana Islands",
         "Alpha2Code": "MP",
         "Alpha3Code": "MNP",
         "NativeName": "Northern Mariana Islands",
         "Region": "Oceania",
-        "SubRegion": "Micronesia",
+        "SubRegion": "Micronesia"
     }, {
         "Name": "Norway",
         "Alpha2Code": "NO",
         "Alpha3Code": "NOR",
         "NativeName": "Norge",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Oman",
         "Alpha2Code": "OM",
         "Alpha3Code": "OMN",
         "NativeName": "عمان",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Pakistan",
         "Alpha2Code": "PK",
         "Alpha3Code": "PAK",
         "NativeName": "Pakistan",
         "Region": "Asia",
-        "SubRegion": "Southern Asia",
+        "SubRegion": "Southern Asia"
     }, {
         "Name": "Palau",
         "Alpha2Code": "PW",
         "Alpha3Code": "PLW",
         "NativeName": "Palau",
         "Region": "Oceania",
-        "SubRegion": "Micronesia",
+        "SubRegion": "Micronesia"
     }, {
         "Name": "Palestine, State of",
         "Alpha2Code": "PS",
         "Alpha3Code": "PSE",
         "NativeName": "فلسطين",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Panama",
         "Alpha2Code": "PA",
         "Alpha3Code": "PAN",
         "NativeName": "Panamá",
         "Region": "Americas",
-        "SubRegion": "Central America",
+        "SubRegion": "Central America"
     }, {
         "Name": "Papua New Guinea",
         "Alpha2Code": "PG",
         "Alpha3Code": "PNG",
         "NativeName": "Papua Niugini",
         "Region": "Oceania",
-        "SubRegion": "Melanesia",
+        "SubRegion": "Melanesia"
     }, {
         "Name": "Paraguay",
         "Alpha2Code": "PY",
         "Alpha3Code": "PRY",
         "NativeName": "Paraguay",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Peru",
         "Alpha2Code": "PE",
         "Alpha3Code": "PER",
         "NativeName": "Perú",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Philippines",
         "Alpha2Code": "PH",
         "Alpha3Code": "PHL",
         "NativeName": "Pilipinas",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Pitcairn",
         "Alpha2Code": "PN",
         "Alpha3Code": "PCN",
         "NativeName": "Pitcairn Islands",
         "Region": "Oceania",
-        "SubRegion": "Polynesia",
+        "SubRegion": "Polynesia"
     }, {
         "Name": "Poland",
         "Alpha2Code": "PL",
         "Alpha3Code": "POL",
         "NativeName": "Polska",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "Portugal",
         "Alpha2Code": "PT",
         "Alpha3Code": "PRT",
         "NativeName": "Portugal",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Puerto Rico",
         "Alpha2Code": "PR",
         "Alpha3Code": "PRI",
         "NativeName": "Puerto Rico",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Qatar",
         "Alpha2Code": "QA",
         "Alpha3Code": "QAT",
         "NativeName": "قطر",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Republic of Kosovo",
         "Alpha2Code": "XK",
         "Alpha3Code": "KOS",
         "NativeName": "Republika e Kosovës",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "Réunion",
         "Alpha2Code": "RE",
         "Alpha3Code": "REU",
         "NativeName": "La Réunion",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Romania",
         "Alpha2Code": "RO",
         "Alpha3Code": "ROU",
         "NativeName": "România",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "Russian Federation",
         "Alpha2Code": "RU",
         "Alpha3Code": "RUS",
         "NativeName": "Россия",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "Rwanda",
         "Alpha2Code": "RW",
         "Alpha3Code": "RWA",
         "NativeName": "Rwanda",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Saint Barthélemy",
         "Alpha2Code": "BL",
         "Alpha3Code": "BLM",
         "NativeName": "Saint-Barthélemy",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Saint Helena, Ascension and Tristan da Cunha",
         "Alpha2Code": "SH",
         "Alpha3Code": "SHN",
         "NativeName": "Saint Helena",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Saint Kitts and Nevis",
         "Alpha2Code": "KN",
         "Alpha3Code": "KNA",
         "NativeName": "Saint Kitts and Nevis",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Saint Lucia",
         "Alpha2Code": "LC",
         "Alpha3Code": "LCA",
         "NativeName": "Saint Lucia",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Saint Martin (French part)",
         "Alpha2Code": "MF",
         "Alpha3Code": "MAF",
         "NativeName": "Saint-Martin",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Saint Pierre and Miquelon",
         "Alpha2Code": "PM",
         "Alpha3Code": "SPM",
         "NativeName": "Saint-Pierre-et-Miquelon",
         "Region": "Americas",
-        "SubRegion": "Northern America",
+        "SubRegion": "Northern America"
     }, {
         "Name": "Saint Vincent and the Grenadines",
         "Alpha2Code": "VC",
         "Alpha3Code": "VCT",
         "NativeName": "Saint Vincent and the Grenadines",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Samoa",
         "Alpha2Code": "WS",
         "Alpha3Code": "WSM",
         "NativeName": "Samoa",
         "Region": "Oceania",
-        "SubRegion": "Polynesia",
+        "SubRegion": "Polynesia"
     }, {
         "Name": "San Marino",
         "Alpha2Code": "SM",
         "Alpha3Code": "SMR",
         "NativeName": "San Marino",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Sao Tome and Principe",
         "Alpha2Code": "ST",
         "Alpha3Code": "STP",
         "NativeName": "São Tomé e Príncipe",
         "Region": "Africa",
-        "SubRegion": "Middle Africa",
+        "SubRegion": "Middle Africa"
     }, {
         "Name": "Saudi Arabia",
         "Alpha2Code": "SA",
         "Alpha3Code": "SAU",
         "NativeName": "العربية السعودية",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Senegal",
         "Alpha2Code": "SN",
         "Alpha3Code": "SEN",
         "NativeName": "Sénégal",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Serbia",
         "Alpha2Code": "RS",
         "Alpha3Code": "SRB",
         "NativeName": "Србија",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Seychelles",
         "Alpha2Code": "SC",
         "Alpha3Code": "SYC",
         "NativeName": "Seychelles",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Sierra Leone",
         "Alpha2Code": "SL",
         "Alpha3Code": "SLE",
         "NativeName": "Sierra Leone",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Singapore",
         "Alpha2Code": "SG",
         "Alpha3Code": "SGP",
         "NativeName": "Singapore",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Sint Maarten (Dutch part)",
         "Alpha2Code": "SX",
         "Alpha3Code": "SXM",
         "NativeName": "Sint Maarten",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Slovakia",
         "Alpha2Code": "SK",
         "Alpha3Code": "SVK",
         "NativeName": "Slovensko",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "Slovenia",
         "Alpha2Code": "SI",
         "Alpha3Code": "SVN",
         "NativeName": "Slovenija",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Solomon Islands",
         "Alpha2Code": "SB",
         "Alpha3Code": "SLB",
         "NativeName": "Solomon Islands",
         "Region": "Oceania",
-        "SubRegion": "Melanesia",
+        "SubRegion": "Melanesia"
     }, {
         "Name": "Somalia",
         "Alpha2Code": "SO",
         "Alpha3Code": "SOM",
         "NativeName": "Soomaaliya",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "South Africa",
         "Alpha2Code": "ZA",
         "Alpha3Code": "ZAF",
         "NativeName": "South Africa",
         "Region": "Africa",
-        "SubRegion": "Southern Africa",
+        "SubRegion": "Southern Africa"
     }, {
         "Name": "South Georgia and the South Sandwich Islands",
         "Alpha2Code": "GS",
         "Alpha3Code": "SGS",
         "NativeName": "South Georgia",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "South Sudan",
         "Alpha2Code": "SS",
         "Alpha3Code": "SSD",
         "NativeName": "South Sudan",
         "Region": "Africa",
-        "SubRegion": "Middle Africa",
+        "SubRegion": "Middle Africa"
     }, {
         "Name": "Spain",
         "Alpha2Code": "ES",
         "Alpha3Code": "ESP",
         "NativeName": "España",
         "Region": "Europe",
-        "SubRegion": "Southern Europe",
+        "SubRegion": "Southern Europe"
     }, {
         "Name": "Sri Lanka",
         "Alpha2Code": "LK",
         "Alpha3Code": "LKA",
         "NativeName": "śrī laṃkāva",
         "Region": "Asia",
-        "SubRegion": "Southern Asia",
+        "SubRegion": "Southern Asia"
     }, {
         "Name": "Sudan",
         "Alpha2Code": "SD",
         "Alpha3Code": "SDN",
         "NativeName": "السودان",
         "Region": "Africa",
-        "SubRegion": "Northern Africa",
+        "SubRegion": "Northern Africa"
     }, {
         "Name": "Suriname",
         "Alpha2Code": "SR",
         "Alpha3Code": "SUR",
         "NativeName": "Suriname",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Svalbard and Jan Mayen",
         "Alpha2Code": "SJ",
         "Alpha3Code": "SJM",
         "NativeName": "Svalbard og Jan Mayen",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Swaziland",
         "Alpha2Code": "SZ",
         "Alpha3Code": "SWZ",
         "NativeName": "Swaziland",
         "Region": "Africa",
-        "SubRegion": "Southern Africa",
+        "SubRegion": "Southern Africa"
     }, {
         "Name": "Sweden",
         "Alpha2Code": "SE",
         "Alpha3Code": "SWE",
         "NativeName": "Sverige",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "Switzerland",
         "Alpha2Code": "CH",
         "Alpha3Code": "CHE",
         "NativeName": "Schweiz",
         "Region": "Europe",
-        "SubRegion": "Western Europe",
+        "SubRegion": "Western Europe"
     }, {
         "Name": "Syrian Arab Republic",
         "Alpha2Code": "SY",
         "Alpha3Code": "SYR",
         "NativeName": "سوريا",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Taiwan, Province of China",
         "Alpha2Code": "TW",
         "Alpha3Code": "TWN",
         "NativeName": "臺灣",
         "Region": "Asia",
-        "SubRegion": "Eastern Asia",
+        "SubRegion": "Eastern Asia"
     }, {
         "Name": "Tajikistan",
         "Alpha2Code": "TJ",
         "Alpha3Code": "TJK",
         "NativeName": "Тоҷикистон",
         "Region": "Asia",
-        "SubRegion": "Central Asia",
+        "SubRegion": "Central Asia"
     }, {
         "Name": "Tanzania, United Republic of",
         "Alpha2Code": "TZ",
         "Alpha3Code": "TZA",
         "NativeName": "Tanzania",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Thailand",
         "Alpha2Code": "TH",
         "Alpha3Code": "THA",
         "NativeName": "ประเทศไทย",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Timor-Leste",
         "Alpha2Code": "TL",
         "Alpha3Code": "TLS",
         "NativeName": "Timor-Leste",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Togo",
         "Alpha2Code": "TG",
         "Alpha3Code": "TGO",
         "NativeName": "Togo",
         "Region": "Africa",
-        "SubRegion": "Western Africa",
+        "SubRegion": "Western Africa"
     }, {
         "Name": "Tokelau",
         "Alpha2Code": "TK",
         "Alpha3Code": "TKL",
         "NativeName": "Tokelau",
         "Region": "Oceania",
-        "SubRegion": "Polynesia",
+        "SubRegion": "Polynesia"
     }, {
         "Name": "Tonga",
         "Alpha2Code": "TO",
         "Alpha3Code": "TON",
         "NativeName": "Tonga",
         "Region": "Oceania",
-        "SubRegion": "Polynesia",
+        "SubRegion": "Polynesia"
     }, {
         "Name": "Trinidad and Tobago",
         "Alpha2Code": "TT",
         "Alpha3Code": "TTO",
         "NativeName": "Trinidad and Tobago",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Tunisia",
         "Alpha2Code": "TN",
         "Alpha3Code": "TUN",
         "NativeName": "تونس",
         "Region": "Africa",
-        "SubRegion": "Northern Africa",
+        "SubRegion": "Northern Africa"
     }, {
         "Name": "Turkey",
         "Alpha2Code": "TR",
         "Alpha3Code": "TUR",
         "NativeName": "Türkiye",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Turkmenistan",
         "Alpha2Code": "TM",
         "Alpha3Code": "TKM",
         "NativeName": "Türkmenistan",
         "Region": "Asia",
-        "SubRegion": "Central Asia",
+        "SubRegion": "Central Asia"
     }, {
         "Name": "Turks and Caicos Islands",
         "Alpha2Code": "TC",
         "Alpha3Code": "TCA",
         "NativeName": "Turks and Caicos Islands",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Tuvalu",
         "Alpha2Code": "TV",
         "Alpha3Code": "TUV",
         "NativeName": "Tuvalu",
         "Region": "Oceania",
-        "SubRegion": "Polynesia",
+        "SubRegion": "Polynesia"
     }, {
         "Name": "Uganda",
         "Alpha2Code": "UG",
         "Alpha3Code": "UGA",
         "NativeName": "Uganda",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Ukraine",
         "Alpha2Code": "UA",
         "Alpha3Code": "UKR",
         "NativeName": "Україна",
         "Region": "Europe",
-        "SubRegion": "Eastern Europe",
+        "SubRegion": "Eastern Europe"
     }, {
         "Name": "United Arab Emirates",
         "Alpha2Code": "AE",
         "Alpha3Code": "ARE",
         "NativeName": "دولة الإمارات العربية المتحدة",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "United Kingdom of Great Britain and Northern Ireland",
         "Alpha2Code": "GB",
         "Alpha3Code": "GBR",
         "NativeName": "United Kingdom",
         "Region": "Europe",
-        "SubRegion": "Northern Europe",
+        "SubRegion": "Northern Europe"
     }, {
         "Name": "United States Minor Outlying Islands",
         "Alpha2Code": "UM",
         "Alpha3Code": "UMI",
         "NativeName": "United States Minor Outlying Islands",
         "Region": "Americas",
-        "SubRegion": "Northern America",
+        "SubRegion": "Northern America"
     }, {
         "Name": "United States of America",
         "Alpha2Code": "US",
         "Alpha3Code": "USA",
         "NativeName": "United States",
         "Region": "Americas",
-        "SubRegion": "Northern America",
+        "SubRegion": "Northern America"
     }, {
         "Name": "Uruguay",
         "Alpha2Code": "UY",
         "Alpha3Code": "URY",
         "NativeName": "Uruguay",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Uzbekistan",
         "Alpha2Code": "UZ",
         "Alpha3Code": "UZB",
         "NativeName": "O‘zbekiston",
         "Region": "Asia",
-        "SubRegion": "Central Asia",
+        "SubRegion": "Central Asia"
     }, {
         "Name": "Vanuatu",
         "Alpha2Code": "VU",
         "Alpha3Code": "VUT",
         "NativeName": "Vanuatu",
         "Region": "Oceania",
-        "SubRegion": "Melanesia",
+        "SubRegion": "Melanesia"
     }, {
         "Name": "Venezuela (Bolivarian Republic of)",
         "Alpha2Code": "VE",
         "Alpha3Code": "VEN",
         "NativeName": "Venezuela",
         "Region": "Americas",
-        "SubRegion": "South America",
+        "SubRegion": "South America"
     }, {
         "Name": "Viet Nam",
         "Alpha2Code": "VN",
         "Alpha3Code": "VNM",
         "NativeName": "Việt Nam",
         "Region": "Asia",
-        "SubRegion": "South-Eastern Asia",
+        "SubRegion": "South-Eastern Asia"
     }, {
         "Name": "Virgin Islands (British)",
         "Alpha2Code": "VG",
         "Alpha3Code": "VGB",
         "NativeName": "British Virgin Islands",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Virgin Islands (U.S.)",
         "Alpha2Code": "VI",
         "Alpha3Code": "VIR",
         "NativeName": "Virgin Islands of the United States",
         "Region": "Americas",
-        "SubRegion": "Caribbean",
+        "SubRegion": "Caribbean"
     }, {
         "Name": "Wallis and Futuna",
         "Alpha2Code": "WF",
         "Alpha3Code": "WLF",
         "NativeName": "Wallis et Futuna",
         "Region": "Oceania",
-        "SubRegion": "Polynesia",
+        "SubRegion": "Polynesia"
     }, {
         "Name": "Western Sahara",
         "Alpha2Code": "EH",
         "Alpha3Code": "ESH",
         "NativeName": "الصحراء الغربية",
         "Region": "Africa",
-        "SubRegion": "Northern Africa",
+        "SubRegion": "Northern Africa"
     }, {
         "Name": "Yemen",
         "Alpha2Code": "YE",
         "Alpha3Code": "YEM",
         "NativeName": "اليَمَن",
         "Region": "Asia",
-        "SubRegion": "Western Asia",
+        "SubRegion": "Western Asia"
     }, {
         "Name": "Zambia",
         "Alpha2Code": "ZM",
         "Alpha3Code": "ZMB",
         "NativeName": "Zambia",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }, {
         "Name": "Zimbabwe",
         "Alpha2Code": "ZW",
         "Alpha3Code": "ZWE",
         "NativeName": "Zimbabwe",
         "Region": "Africa",
-        "SubRegion": "Eastern Africa",
+        "SubRegion": "Eastern Africa"
     }]
 }
