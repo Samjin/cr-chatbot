@@ -59,5 +59,8 @@ module.exports = function(intentRequest, slots, callback) {
     }],
   }
 
+  // possible to use confirmIntent to add follow up question.
+  // dialogActions.confirmIntent(intentRequest.sessionAttributes, 'Fulfilled', message, genericAttachments)
+
   callback(null, dialogActions.close(intentRequest.sessionAttributes, 'Fulfilled', message, genericAttachments));
 };

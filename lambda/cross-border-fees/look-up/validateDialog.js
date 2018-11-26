@@ -1,85 +1,96 @@
 const fees = require('../fees');
 const countries = require('../countries'); // Modified from https://fabian7593.github.io/CountryAPI/
 const utility = require('../utility');
+const validate = require('../validateDetails');
 const dialogActions = require('./dialogActions');
+const _intersection = require('lodash/intersection');
 
-const availableSupplier = utility.availableGroup(fees).supplier;
-const availablePickup = utility.availableGroup(fees).pickup;
-const availableDropoff = utility.availableGroup(fees).dropoff;
+const availableCategories = utility.availableCategories(fees);
+const availableSupplier = availableCategories.supplier;
+const availablePickup = availableCategories.pickup;
+const availableDropoff = availableCategories.dropoff;
 
-function buildValidationResult(isValid, violatedSlot, messageContent) {
-  if (!messageContent) {
-    return {
-      isValid,
-      violatedSlot,
-    };
-  }
-  return {
-    isValid,
-    violatedSlot,
-    message: {
-      contentType: 'PlainText',
-      content: messageContent
-    },
-  };
-}
+function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, slots) {
+  // validate.bookingNumber(bookingNumber)
+  // validate.supplier(supplier, availableSupplier)
+  // validate.pickupCountry(pickupCountry, availablePickup)
+  // validate.dropoffCountry(pickupCountry, dropoffCountry, availableDropoff)
 
-/*// Wait until booking number api is available
-  let invalidNumber = 'This is an invalid booking number. Please type correct number again.';
-  if (!utility.hasNumber(bookingNumber)) {
-    return buildValidationResult(false, 'bookingNumber', invalidNumber);
+  if (/^0*$/.test(bookingNumber)) { //check if number contains only 0s. This is to prevent potential bugs
+    return validate.buildValidationResult(false, 'bookingNumber', 'Booking number should not contain only zeros. Please try again.');
   }
-  if (bookingNumber.length < 7 || bookingNumber.length > 18) {
-    return buildValidationResult(false, 'bookingNumber', `Booking number is either too short or too long. Please type correct number again.`);
-  }
-  if (bookingNumber.indexOf(' ') > -1) {
-    return buildValidationResult(false, 'bookingNumber', `There should be no space in booking numbers. Please type correct number again.`);
-  }
-}*/
 
-function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry) {
   if (bookingNumber && bookingNumber.trim().indexOf(' ') > -1) {
-    return buildValidationResult(false, 'bookingNumber', `Booking number should not contain space or special characters. Please type correct number again.`);
+    return validate.buildValidationResult(false, 'bookingNumber', `Booking number should not contain space or special characters. Please type correct number again.`);
   }
 
-  if (supplier && availableSupplier.indexOf(supplier.toLowerCase()) === -1) {
-    return buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
+  if (bookingNumber && !utility.hasNumber(bookingNumber)) {
+    return validate.buildValidationResult(false, 'bookingNumber', 'Booking number should have numbers in it. Please try again.');
   }
 
-  if (pickupCountry && availablePickup.indexOf(pickupCountry.toLowerCase()) === -1) {
-    if (!utility.findCountryName(countries, pickupCountry)) {
-      return buildValidationResult(false, 'pickupCountry', `We cannot find the pick up country. Please make sure country name is correct.`);
+  if (supplier && availableSupplier.indexOf(supplier.toLowerCase()) < 0) {
+    return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
+  }
+
+  let foundPickupCountrySynonyms = utility.findCountryNameSynonyms(countries, pickupCountry); //return array or false
+  if (pickupCountry && availablePickup.indexOf(pickupCountry.toLowerCase()) < 0) {
+    // Doesn't match any in country list and fee data
+    if (foundPickupCountrySynonyms === false) {
+      return validate.buildValidationResult(false, 'pickupCountry', `We cannot find the pick up country. Please make sure country name is correct.`);
     }
-    return buildValidationResult(false, 'pickupCountry', `We do not have cross border fee defined for this pick up country.`);
-  }
 
-  if (dropoffCountry && availableDropoff.indexOf(dropoffCountry.toLowerCase()) === -1) {
-    if (!utility.findCountryName(countries, dropoffCountry)) {
-      return buildValidationResult(false, 'dropoffCountry', `We cannot find the pick up country. Please make sure country name is correct.`);
+    // Map synonyms to fees data see if the country matches
+    if (foundPickupCountrySynonyms) {
+      let foundCommonName = _intersection(foundPickupCountrySynonyms, availablePickup)[0]; //undefined or string
+      if (foundCommonName) {
+        // Update slots value to match name in fee details for fulfillment
+        slots.pickupCountry = foundCommonName;
+      } else {
+        // Found in country list but not in fees
+        return validate.buildValidationResult(false, 'pickupCountry', `We do not have cross border fee defined for this country. Please type another country name.`);
+      }
     }
-    return buildValidationResult(false, 'dropoffCountry', `We do not have cross border fee defined for this drop off country.`);
   }
 
-  // Same pickup and dropoff country
+  let foundDropoffCountrySynonyms = utility.findCountryNameSynonyms(countries, dropoffCountry); //array or false
+  if (dropoffCountry && availableDropoff.indexOf(dropoffCountry.toLowerCase()) < 0) {
+    // Doesn't match any in country list and fee data
+    if (foundDropoffCountrySynonyms === false) {
+      return validate.buildValidationResult(false, 'dropoffCountry', `We cannot find the drop off country. Please make sure country name is correct.`);
+    }
+
+    let foundCommonName = _intersection(foundDropoffCountrySynonyms, availableDropoff)[0]; //undefined or string
+    if (foundCommonName) {
+      // Update slots value to match name in fee details for fulfillment
+      slots.dropoffCountry = foundCommonName;
+    } else {
+      // Found in country list but not in fees
+      return validate.buildValidationResult(false, 'dropoffCountry', `We do not have cross border fee defined for this country. Please type another country name.`);
+    }
+  }
+
   if (pickupCountry && dropoffCountry && dropoffCountry.toLowerCase() === pickupCountry.toLowerCase()) {
-    return buildValidationResult(false, 'dropoffCountry', `Your pick up and drop off location are same. Please type a different drop off country name`);
+    return validate.buildValidationResult(false, 'dropoffCountry', `Your pick up and drop off location are same. Please type a different drop off country name`);
   }
-  return buildValidationResult(true, null, null);
+
+  return validate.buildValidationResult(true, null, null);
 }
 
-module.exports = function (intentRequest, slots) {
-  // Get original booking number to catch free text instead
-  // of validated text from lex.
-  let bookingNumberTranscript = null;
-  if (slots.bookingNumber && intentRequest.inputTranscript) {
-    bookingNumberTranscript = intentRequest.inputTranscript;
+module.exports = function(intentRequest, slots) {
+  // Get raw booking number free text instead of validated text from AI.
+  if (slots.bookingNumber === null && slots.supplier === null && slots.pickupCountry === null && slots.dropoffCountry === null) {
+    if (utility.hasNumber(intentRequest.inputTranscript)) {
+      slots.bookingNumber = intentRequest.inputTranscript;
+      console.info(slots.bookingNumber, 'bookingNumber==========================');
+    }
   }
 
   const validationResult = validateSlots(
-    bookingNumberTranscript,
+    slots.bookingNumber,
     slots.supplier,
     slots.pickupCountry,
-    slots.dropoffCountry
+    slots.dropoffCountry,
+    slots
   );
 
   if (!validationResult.isValid) {

@@ -23,18 +23,18 @@ module.exports = {
 
     return slots;
   },
-  availableGroup: function(fees) {
-    let availableGroup = {
+  availableCategories: function(fees) {
+    let availableCategories = {
       supplier: [],
       pickup: [],
       dropoff: []
     }
     fees.forEach((item) => {
-      availableGroup.supplier.push(item['Pickup Supplier'].toLowerCase());
-      availableGroup.pickup.push(item['Pickup Location'].toLowerCase());
-      availableGroup.dropoff.push(item['Destination'].toLowerCase());
+      availableCategories.supplier.push(item['Pickup Supplier'].toLowerCase());
+      availableCategories.pickup.push(item['Pickup Location'].toLowerCase());
+      availableCategories.dropoff.push(item['Destination'].toLowerCase());
     });
-    return availableGroup;
+    return availableCategories;
   },
   hasNumber: function(string) {
     return /\d/.test(string);
@@ -45,24 +45,26 @@ module.exports = {
       genericAttachments: [genericAttachments],
     };
   },
-  findCountryName: function(countries, name) {
+  findCountryNameSynonyms: function(countries, name) {
     if (!name) { return false }
-    let found = false;
+    let validCountryNames = false;
+
     for (var i = 0; i < countries.Response.length; i++) {
       let item = countries.Response[i];
-      let isNameValid = [
+      let synonymsLowercase = [
         item.Name.toLowerCase(),
         item.Alpha2Code.toLowerCase(),
         item.Alpha3Code.toLowerCase(),
         item.NativeName.toLowerCase()
-      ].includes(name.toLowerCase().trim());
+      ];
+      let nameExist = synonymsLowercase.includes(name.toLowerCase().trim());
 
-      if (isNameValid) {
-        found = true;
+      if (nameExist) {
+        validCountryNames = synonymsLowercase;
         break;
       }
     }
 
-    return found;
+    return validCountryNames;
   },
 }
