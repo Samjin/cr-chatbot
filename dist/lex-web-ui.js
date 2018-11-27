@@ -805,11 +805,11 @@ module.exports.f = function (C) {
 
 exports.__esModule = true;
 
-var _iterator = __webpack_require__(141);
+var _iterator = __webpack_require__(139);
 
 var _iterator2 = _interopRequireDefault(_iterator);
 
-var _symbol = __webpack_require__(143);
+var _symbol = __webpack_require__(141);
 
 var _symbol2 = _interopRequireDefault(_symbol);
 
@@ -858,7 +858,7 @@ module.exports = function (name) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_typeof___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_typeof__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_extends__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_extends__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_defineProperty__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_defineProperty__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_defineProperty___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_defineProperty__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_slicedToArray__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_slicedToArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_slicedToArray__);
@@ -911,7 +911,7 @@ if (!envShortName) {
 }
 
 // eslint-disable-next-line import/no-dynamic-require
-var configEnvFile = __webpack_require__(160)("./config." + envShortName + '.json');
+var configEnvFile = __webpack_require__(158)("./config." + envShortName + '.json');
 
 // default config used to provide a base structure for
 // environment and dynamic configs
@@ -1601,16 +1601,13 @@ module.exports = function (exec, skipClosing) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_ToolbarContainer__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_MessageList__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_InputContainer__ = __webpack_require__(132);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_ToolbarContainer__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_MessageList__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_InputContainer__ = __webpack_require__(130);
 
 
 //
@@ -1661,9 +1658,9 @@ License for the specific language governing permissions and limitations under th
 /* harmony default export */ __webpack_exports__["a"] = ({
   name: 'lex-web',
   components: {
-    ToolbarContainer: __WEBPACK_IMPORTED_MODULE_3__components_ToolbarContainer__["a" /* default */],
-    MessageList: __WEBPACK_IMPORTED_MODULE_4__components_MessageList__["a" /* default */],
-    InputContainer: __WEBPACK_IMPORTED_MODULE_5__components_InputContainer__["a" /* default */]
+    ToolbarContainer: __WEBPACK_IMPORTED_MODULE_2__components_ToolbarContainer__["a" /* default */],
+    MessageList: __WEBPACK_IMPORTED_MODULE_3__components_MessageList__["a" /* default */],
+    InputContainer: __WEBPACK_IMPORTED_MODULE_4__components_InputContainer__["a" /* default */]
   },
   data: function data() {
     return {
@@ -1717,11 +1714,11 @@ License for the specific language governing permissions and limitations under th
       document.documentElement.style.overflowY = 'hidden';
     }
     this.initConfig().then(function () {
-      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.all([_this.$store.dispatch('initCredentials', _this.$lexWebUi.awsConfig.credentials), _this.$store.dispatch('initRecorder'), _this.$store.dispatch('initBotAudio', window.Audio ? new Audio() : null)]);
+      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.all([_this.$store.dispatch('initCredentials', _this.$lexWebUi.awsConfig.credentials), _this.$store.dispatch('initRecorder'), _this.$store.dispatch('initBotAudio', window.Audio ? new Audio() : null)]);
     }).then(function () {
-      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.all([_this.$store.dispatch('initMessageList'), _this.$store.dispatch('initPollyClient', _this.$lexWebUi.pollyClient), _this.$store.dispatch('initLexClient', _this.$lexWebUi.lexRuntimeClient)]);
+      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.all([_this.$store.dispatch('initMessageList'), _this.$store.dispatch('initPollyClient', _this.$lexWebUi.pollyClient), _this.$store.dispatch('initLexClient', _this.$lexWebUi.lexRuntimeClient)]);
     }).then(function () {
-      return _this.$store.state.isRunningEmbedded ? _this.$store.dispatch('sendMessageToParentWindow', { event: 'ready' }) : __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
+      return _this.$store.state.isRunningEmbedded ? _this.$store.dispatch('sendMessageToParentWindow', { event: 'ready' }) : __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
     }).then(function () {
       return console.info('sucessfully initialized lex web ui version: ', _this.$store.state.version);
     }).catch(function (error) {
@@ -1819,56 +1816,10 @@ License for the specific language governing permissions and limitations under th
       })
       // avoid merging an empty config
       .then(function (config) {
-        return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys___default()(config).length ? _this2.$store.dispatch('initConfig', config) : __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys___default()(config).length ? _this2.$store.dispatch('initConfig', config) : __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
       }).then(function () {
         return _this2.logRunningMode();
       });
-    },
-    saveTranscripts: function saveTranscripts() {
-      var _this3 = this;
-
-      // Don't save messages if user haven't ask any question
-      if (this.$store.state.messages.length > 1) {
-        this.$store.state.messages.forEach(function (message, i) {
-          if (i === 0) {
-            _this3.transcripts.push('date: ' + message.date, 'Bot initial question: ' + message.text);
-          } else {
-            var messageType = message.type === 'bot' ? 'Bot' : 'User';
-            _this3.transcripts.push(messageType + ': ' + message.text);
-          }
-        });
-        this.mutateTranscript();
-        if (window.location.host.indexOf('local') !== 0) {
-          this.sendEmail();
-        }
-      }
-    },
-    mutateTranscript: function mutateTranscript() {
-      // Insert booking number to index 1
-      // TODO: this needs to be dynamic
-      var bookingQuestion = 'Bot: What’s the number of the booking you’d like me to look up a fee for? ';
-      var lastIndexNum = this.transcripts.lastIndexOf(bookingQuestion);
-      if (lastIndexNum > -1) {
-        for (var i = 0; i < this.transcripts.length; i++) {
-          if (this.transcripts[lastIndexNum + 1].length > 0) {
-            this.transcripts.splice(1, 0, 'Booking-number: ' + this.transcripts[lastIndexNum + 1].replace('User: ', ''));
-            break;
-          }
-        }
-      }
-    },
-    sendEmail: function sendEmail() {
-      var _this4 = this;
-
-      console.info(this.transcripts);
-      var xhr = new XMLHttpRequest();
-      // Use sync post so chrome can process the ajax before session is closed
-      xhr.open('POST', 'https://wc4p5hrrp2.execute-api.us-east-1.amazonaws.com/cr-chatbot-prod', false);
-      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-      xhr.onload = function () {
-        console.info(_this4.responseText);
-      };
-      xhr.send(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(this.transcripts));
     }
   }
 });
@@ -1877,7 +1828,7 @@ License for the specific language governing permissions and limitations under th
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(109), __esModule: true };
+module.exports = { "default": __webpack_require__(107), __esModule: true };
 
 /***/ }),
 /* 64 */
@@ -1973,8 +1924,8 @@ License for the specific language governing permissions and limitations under th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Message__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageLoading__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Message__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageLoading__ = __webpack_require__(126);
 //
 //
 //
@@ -2053,8 +2004,8 @@ License for the specific language governing permissions and limitations under th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__MessageText__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ResponseCard__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__MessageText__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ResponseCard__ = __webpack_require__(122);
 //
 //
 //
@@ -2289,7 +2240,7 @@ or in the "license" file accompanying this file. This file is distributed on an 
 BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, express or implied. See the
 License for the specific language governing permissions and limitations under the License.
 */
-var marked = __webpack_require__(121);
+var marked = __webpack_require__(119);
 
 var renderer = new marked.Renderer();
 
@@ -2554,7 +2505,7 @@ License for the specific language governing permissions and limitations under th
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_RecorderStatus__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_RecorderStatus__ = __webpack_require__(132);
 
 //
 //
@@ -2994,11 +2945,11 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 
 exports.__esModule = true;
 
-var _isIterable2 = __webpack_require__(154);
+var _isIterable2 = __webpack_require__(152);
 
 var _isIterable3 = _interopRequireDefault(_isIterable2);
 
-var _getIterator2 = __webpack_require__(157);
+var _getIterator2 = __webpack_require__(155);
 
 var _getIterator3 = _interopRequireDefault(_getIterator2);
 
@@ -3103,7 +3054,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_aws_sdk_clients_polly__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_aws_sdk_clients_polly___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_aws_sdk_clients_polly__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_LexWeb__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__store__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__store__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config__ = __webpack_require__(45);
 
 
@@ -4082,7 +4033,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_104__;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LexWeb_vue__ = __webpack_require__(62);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1652824e_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4c65e7ec_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__ = __webpack_require__(136);
 function injectStyle (ssrContext) {
   __webpack_require__(106)
 }
@@ -4102,7 +4053,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LexWeb_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1652824e_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4c65e7ec_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LexWeb_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -4122,36 +4073,19 @@ var Component = normalizeComponent(
 /* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(108), __esModule: true };
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var core = __webpack_require__(0);
-var $JSON = core.JSON || (core.JSON = { stringify: JSON.stringify });
-module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
-  return $JSON.stringify.apply($JSON, arguments);
-};
-
-
-/***/ }),
-/* 109 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(110);
+__webpack_require__(108);
 module.exports = __webpack_require__(0).Object.keys;
 
 
 /***/ }),
-/* 110 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 Object.keys(O)
 var toObject = __webpack_require__(24);
 var $keys = __webpack_require__(18);
 
-__webpack_require__(111)('keys', function () {
+__webpack_require__(109)('keys', function () {
   return function keys(it) {
     return $keys(toObject(it));
   };
@@ -4159,7 +4093,7 @@ __webpack_require__(111)('keys', function () {
 
 
 /***/ }),
-/* 111 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // most Object methods by ES6 should accept primitives
@@ -4175,15 +4109,15 @@ module.exports = function (KEY, exec) {
 
 
 /***/ }),
-/* 112 */
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_ToolbarContainer_vue__ = __webpack_require__(64);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_473ee97c_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ToolbarContainer_vue__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_473ee97c_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ToolbarContainer_vue__ = __webpack_require__(112);
 function injectStyle (ssrContext) {
-  __webpack_require__(113)
+  __webpack_require__(111)
 }
 var normalizeComponent = __webpack_require__(6)
 /* script */
@@ -4212,13 +4146,13 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 113 */
+/* 111 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 114 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4228,15 +4162,15 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 115 */
+/* 113 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_MessageList_vue__ = __webpack_require__(65);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0c3eddf6_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_MessageList_vue__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0c3eddf6_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_MessageList_vue__ = __webpack_require__(129);
 function injectStyle (ssrContext) {
-  __webpack_require__(116)
+  __webpack_require__(114)
 }
 var normalizeComponent = __webpack_require__(6)
 /* script */
@@ -4265,21 +4199,21 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 116 */
+/* 114 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 117 */
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Message_vue__ = __webpack_require__(66);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_46cd8705_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Message_vue__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b50c69fa_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Message_vue__ = __webpack_require__(125);
 function injectStyle (ssrContext) {
-  __webpack_require__(118)
+  __webpack_require__(116)
 }
 var normalizeComponent = __webpack_require__(6)
 /* script */
@@ -4292,12 +4226,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-46cd8705"
+var __vue_scopeId__ = "data-v-b50c69fa"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Message_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_46cd8705_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Message_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b50c69fa_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Message_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -4308,21 +4242,21 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 118 */
+/* 116 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 119 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_MessageText_vue__ = __webpack_require__(67);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1b88eba3_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_MessageText_vue__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1b88eba3_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_MessageText_vue__ = __webpack_require__(121);
 function injectStyle (ssrContext) {
-  __webpack_require__(120)
+  __webpack_require__(118)
 }
 var normalizeComponent = __webpack_require__(6)
 /* script */
@@ -4351,13 +4285,13 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 120 */
+/* 118 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 121 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -5749,10 +5683,10 @@ if (true) {
 }
 })(this || (typeof window !== 'undefined' ? window : global));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(122)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(120)))
 
 /***/ }),
-/* 122 */
+/* 120 */
 /***/ (function(module, exports) {
 
 var g;
@@ -5779,7 +5713,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 123 */
+/* 121 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5789,15 +5723,15 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 124 */
+/* 122 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_ResponseCard_vue__ = __webpack_require__(68);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_19ae77ba_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ResponseCard_vue__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_19ae77ba_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ResponseCard_vue__ = __webpack_require__(124);
 function injectStyle (ssrContext) {
-  __webpack_require__(125)
+  __webpack_require__(123)
 }
 var normalizeComponent = __webpack_require__(6)
 /* script */
@@ -5826,13 +5760,13 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 125 */
+/* 123 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 126 */
+/* 124 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5842,7 +5776,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 127 */
+/* 125 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5852,15 +5786,15 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 128 */
+/* 126 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_MessageLoading_vue__ = __webpack_require__(69);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6d624218_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_MessageLoading_vue__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6d624218_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_MessageLoading_vue__ = __webpack_require__(128);
 function injectStyle (ssrContext) {
-  __webpack_require__(129)
+  __webpack_require__(127)
 }
 var normalizeComponent = __webpack_require__(6)
 /* script */
@@ -5889,13 +5823,13 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 129 */
+/* 127 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 130 */
+/* 128 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5905,7 +5839,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 131 */
+/* 129 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5915,15 +5849,15 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 132 */
+/* 130 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_InputContainer_vue__ = __webpack_require__(70);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_62d75cef_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_InputContainer_vue__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_62d75cef_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_InputContainer_vue__ = __webpack_require__(135);
 function injectStyle (ssrContext) {
-  __webpack_require__(133)
+  __webpack_require__(131)
 }
 var normalizeComponent = __webpack_require__(6)
 /* script */
@@ -5952,21 +5886,21 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 133 */
+/* 131 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 134 */
+/* 132 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_RecorderStatus_vue__ = __webpack_require__(71);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_85675648_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_RecorderStatus_vue__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_85675648_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_RecorderStatus_vue__ = __webpack_require__(134);
 function injectStyle (ssrContext) {
-  __webpack_require__(135)
+  __webpack_require__(133)
 }
 var normalizeComponent = __webpack_require__(6)
 /* script */
@@ -5995,13 +5929,13 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 135 */
+/* 133 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 136 */
+/* 134 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6011,7 +5945,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 137 */
+/* 135 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6021,7 +5955,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 138 */
+/* 136 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6031,14 +5965,14 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 139 */
+/* 137 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store_state__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__store_getters__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__store_mutations__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store_actions__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store_state__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__store_getters__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__store_mutations__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store_actions__ = __webpack_require__(164);
 /*
  Copyright 2017-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
@@ -6071,7 +6005,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 });
 
 /***/ }),
-/* 140 */
+/* 138 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6116,6 +6050,7 @@ License for the specific language governing permissions and limitations under th
     slots: {}
   },
   messages: [],
+  transcripts: [],
   polly: {
     outputFormat: 'ogg_vorbis',
     voiceId: __WEBPACK_IMPORTED_MODULE_2__config__["a" /* config */].polly && __WEBPACK_IMPORTED_MODULE_2__config__["a" /* config */].polly.voiceId && typeof __WEBPACK_IMPORTED_MODULE_2__config__["a" /* config */].polly.voiceId === 'string' ? '' + __WEBPACK_IMPORTED_MODULE_2__config__["a" /* config */].polly.voiceId : 'Joanna'
@@ -6148,6 +6083,21 @@ License for the specific language governing permissions and limitations under th
 });
 
 /***/ }),
+/* 139 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(140), __esModule: true };
+
+/***/ }),
+/* 140 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(20);
+__webpack_require__(27);
+module.exports = __webpack_require__(43).f('iterator');
+
+
+/***/ }),
 /* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6157,30 +6107,15 @@ module.exports = { "default": __webpack_require__(142), __esModule: true };
 /* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(20);
-__webpack_require__(27);
-module.exports = __webpack_require__(43).f('iterator');
-
-
-/***/ }),
-/* 143 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(144), __esModule: true };
-
-/***/ }),
-/* 144 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(145);
+__webpack_require__(143);
 __webpack_require__(50);
-__webpack_require__(151);
-__webpack_require__(152);
+__webpack_require__(149);
+__webpack_require__(150);
 module.exports = __webpack_require__(0).Symbol;
 
 
 /***/ }),
-/* 145 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6191,7 +6126,7 @@ var has = __webpack_require__(10);
 var DESCRIPTORS = __webpack_require__(7);
 var $export = __webpack_require__(3);
 var redefine = __webpack_require__(52);
-var META = __webpack_require__(146).KEY;
+var META = __webpack_require__(144).KEY;
 var $fails = __webpack_require__(11);
 var shared = __webpack_require__(34);
 var setToStringTag = __webpack_require__(26);
@@ -6199,16 +6134,16 @@ var uid = __webpack_require__(22);
 var wks = __webpack_require__(1);
 var wksExt = __webpack_require__(43);
 var wksDefine = __webpack_require__(44);
-var enumKeys = __webpack_require__(147);
-var isArray = __webpack_require__(148);
+var enumKeys = __webpack_require__(145);
+var isArray = __webpack_require__(146);
 var anObject = __webpack_require__(5);
 var isObject = __webpack_require__(9);
 var toIObject = __webpack_require__(12);
 var toPrimitive = __webpack_require__(29);
 var createDesc = __webpack_require__(17);
 var _create = __webpack_require__(53);
-var gOPNExt = __webpack_require__(149);
-var $GOPD = __webpack_require__(150);
+var gOPNExt = __webpack_require__(147);
+var $GOPD = __webpack_require__(148);
 var $DP = __webpack_require__(4);
 var $keys = __webpack_require__(18);
 var gOPD = $GOPD.f;
@@ -6421,7 +6356,7 @@ setToStringTag(global.JSON, 'JSON', true);
 
 
 /***/ }),
-/* 146 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var META = __webpack_require__(22)('meta');
@@ -6480,7 +6415,7 @@ var meta = module.exports = {
 
 
 /***/ }),
-/* 147 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
@@ -6501,7 +6436,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 148 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.2.2 IsArray(argument)
@@ -6512,7 +6447,7 @@ module.exports = Array.isArray || function isArray(arg) {
 
 
 /***/ }),
-/* 149 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
@@ -6537,7 +6472,7 @@ module.exports.f = function getOwnPropertyNames(it) {
 
 
 /***/ }),
-/* 150 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var pIE = __webpack_require__(23);
@@ -6559,21 +6494,21 @@ exports.f = __webpack_require__(7) ? gOPD : function getOwnPropertyDescriptor(O,
 
 
 /***/ }),
-/* 151 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(44)('asyncIterator');
 
 
 /***/ }),
-/* 152 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(44)('observable');
 
 
 /***/ }),
-/* 153 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6603,22 +6538,22 @@ exports.default = function (obj, key, value) {
 };
 
 /***/ }),
-/* 154 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(155), __esModule: true };
+module.exports = { "default": __webpack_require__(153), __esModule: true };
 
 /***/ }),
-/* 155 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(27);
 __webpack_require__(20);
-module.exports = __webpack_require__(156);
+module.exports = __webpack_require__(154);
 
 
 /***/ }),
-/* 156 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var classof = __webpack_require__(39);
@@ -6634,22 +6569,22 @@ module.exports = __webpack_require__(0).isIterable = function (it) {
 
 
 /***/ }),
-/* 157 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(158), __esModule: true };
+module.exports = { "default": __webpack_require__(156), __esModule: true };
 
 /***/ }),
-/* 158 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(27);
 __webpack_require__(20);
-module.exports = __webpack_require__(159);
+module.exports = __webpack_require__(157);
 
 
 /***/ }),
-/* 159 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(5);
@@ -6662,13 +6597,13 @@ module.exports = __webpack_require__(0).getIterator = function (it) {
 
 
 /***/ }),
-/* 160 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./config.dev.json": 161,
-	"./config.prod.json": 162,
-	"./config.test.json": 163
+	"./config.dev.json": 159,
+	"./config.prod.json": 160,
+	"./config.test.json": 161
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -6684,28 +6619,28 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 160;
+webpackContext.id = 158;
 
 /***/ }),
-/* 161 */
+/* 159 */
 /***/ (function(module, exports) {
 
 module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"DEV: CarRentals Bot"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
-/* 162 */
+/* 160 */
 /***/ (function(module, exports) {
 
 module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"","pageTitle":"Policy Lookup Bot","toolbarTitle":"CarRentals Bot"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
-/* 163 */
+/* 161 */
 /***/ (function(module, exports) {
 
 module.exports = {"cognito":{"poolId":"us-east-1:5d350da1-897e-47aa-8c62-be35e6778919"},"lex":{"botName":"CR_chatbot","initialText":"","initialSpeechInstruction":"Say 'cross border fees' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Policy Lookup Bot","toolbarTitle":"TEST: CarRentals Bot"},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
-/* 164 */
+/* 162 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6753,7 +6688,7 @@ License for the specific language governing permissions and limitations under th
 });
 
 /***/ }),
-/* 165 */
+/* 163 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7098,25 +7033,69 @@ License for the specific language governing permissions and limitations under th
    */
   setAwsCredsProvider: function setAwsCredsProvider(state, provider) {
     state.awsCreds.provider = provider;
+  },
+
+  /**
+   * Create transcripts per fulfilled session
+   */
+  createTranscript: function createTranscript(state) {
+    if (state.messages.length > 1) {
+      state.transcripts = [];
+      state.messages.forEach(function (message, i) {
+        var lastIndexNum = message.text.indexOf(state.config.lex.initialText);
+        if (lastIndexNum > -1) {
+          // Split array so transcript only keep last fulfillment transcripts
+          state.transcripts.splice(0, i, 'date: ' + message.date, 'Bot initial question: ' + message.text);
+        } else {
+          var messageType = message.type === 'bot' ? 'Bot' : 'User';
+          state.transcripts.push(messageType + ': ' + message.text);
+        }
+      });
+    }
+  },
+  updateTranscript: function updateTranscript(state) {
+    // Take out leftover fulfillment answer
+    for (var i = 0; i < state.transcripts.length; i++) {
+      var lastFulfillmentAnswer = state.transcripts[i].includes('The cross border fee is');
+      if (lastFulfillmentAnswer && i !== state.transcripts.length - 1) {
+        state.transcripts.splice(i, 1);
+        break;
+      }
+    }
+
+    // Create a new 'Booking-number' text
+    // TODO: bookingQuestion needs to be dynamic
+    var bookingQuestion = 'What’s the number of the booking you’d like me to look up a fee for';
+    for (var _i = 0; _i < state.transcripts.length; _i++) {
+      var bookingNumIndex = state.transcripts[_i].includes(bookingQuestion);
+      if (bookingNumIndex && state.transcripts[_i + 1].length) {
+        var bookingNumber = state.transcripts[_i + 1].replace('User', 'Booking-number');
+        state.transcripts.unshift(bookingNumber);
+        break;
+      }
+    }
   }
 });
 
 /***/ }),
-/* 166 */
+/* 164 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_lex_recorder__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store_recorder_handlers__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__assets_silent_ogg__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__assets_silent_ogg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__assets_silent_ogg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__assets_silent_mp3__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__assets_silent_mp3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__assets_silent_mp3__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_lex_client__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_extends__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_extends__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_lex_recorder__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__store_recorder_handlers__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__assets_silent_ogg__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__assets_silent_ogg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__assets_silent_ogg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assets_silent_mp3__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assets_silent_mp3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__assets_silent_mp3__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lib_lex_client__ = __webpack_require__(178);
+
 
 
 /*
@@ -7170,19 +7149,19 @@ var recorder = void 0;
       case 'parentWindow':
         return context.dispatch('getCredentials');
       default:
-        return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.reject(new Error('unknown credential provider'));
+        return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.reject(new Error('unknown credential provider'));
     }
   },
   getConfigFromParent: function getConfigFromParent(context) {
     if (!context.state.isRunningEmbedded) {
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve({});
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve({});
     }
 
     return context.dispatch('sendMessageToParentWindow', { event: 'initIframeConfig' }).then(function (configResponse) {
       if (configResponse.event === 'resolve' && configResponse.type === 'initIframeConfig') {
-        return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve(configResponse.data);
+        return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve(configResponse.data);
       }
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.reject(new Error('invalid config event from parent'));
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.reject(new Error('invalid config event from parent'));
     });
   },
   initConfig: function initConfig(context, configObj) {
@@ -7195,7 +7174,7 @@ var recorder = void 0;
     });
   },
   initLexClient: function initLexClient(context, lexRuntimeClient) {
-    lexClient = new __WEBPACK_IMPORTED_MODULE_6__lib_lex_client__["a" /* default */]({
+    lexClient = new __WEBPACK_IMPORTED_MODULE_7__lib_lex_client__["a" /* default */]({
       botName: context.state.config.lex.botName,
       botAlias: context.state.config.lex.botAlias,
       lexRuntimeClient: lexRuntimeClient
@@ -7208,7 +7187,7 @@ var recorder = void 0;
   },
   initPollyClient: function initPollyClient(context, client) {
     if (!context.state.recState.isRecorderEnabled) {
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
     }
     pollyClient = client;
     context.commit('setPollyVoiceId', context.state.config.polly.voiceId);
@@ -7219,14 +7198,14 @@ var recorder = void 0;
   initRecorder: function initRecorder(context) {
     if (!context.state.config.recorder.enable) {
       context.commit('setIsRecorderEnabled', false);
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
     }
-    recorder = new __WEBPACK_IMPORTED_MODULE_2__lib_lex_recorder__["a" /* default */](context.state.config.recorder);
+    recorder = new __WEBPACK_IMPORTED_MODULE_3__lib_lex_recorder__["a" /* default */](context.state.config.recorder);
 
     return recorder.init().then(function () {
       return recorder.initOptions(context.state.config.recorder);
     }).then(function () {
-      return Object(__WEBPACK_IMPORTED_MODULE_3__store_recorder_handlers__["a" /* default */])(context, recorder);
+      return Object(__WEBPACK_IMPORTED_MODULE_4__store_recorder_handlers__["a" /* default */])(context, recorder);
     }).then(function () {
       return context.commit('setIsRecorderSupported', true);
     }).then(function () {
@@ -7242,10 +7221,10 @@ var recorder = void 0;
   },
   initBotAudio: function initBotAudio(context, audioElement) {
     if (!context.state.recState.isRecorderEnabled || !context.state.config.recorder.enable) {
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
     }
     if (!audioElement) {
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.reject(new Error('invalid audio element'));
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.reject(new Error('invalid audio element'));
     }
     audio = audioElement;
 
@@ -7256,10 +7235,10 @@ var recorder = void 0;
     // Can't default to mp3 as it is not supported by some Android browsers
     if (audio.canPlayType('audio/ogg') !== '') {
       context.commit('setAudioContentType', 'ogg');
-      silentSound = __WEBPACK_IMPORTED_MODULE_4__assets_silent_ogg___default.a;
+      silentSound = __WEBPACK_IMPORTED_MODULE_5__assets_silent_ogg___default.a;
     } else if (audio.canPlayType('audio/mp3') !== '') {
       context.commit('setAudioContentType', 'mp3');
-      silentSound = __WEBPACK_IMPORTED_MODULE_5__assets_silent_mp3___default.a;
+      silentSound = __WEBPACK_IMPORTED_MODULE_6__assets_silent_mp3___default.a;
     } else {
       console.error('init audio could not find supportted audio type');
       console.warn('init audio can play mp3 [%s]', audio.canPlayType('audio/mp3'));
@@ -7278,16 +7257,16 @@ var recorder = void 0;
     // autoplay will be set as a response to a clik
     audio.autoplay = false;
 
-    return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+    return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
   },
   reInitBot: function reInitBot(context) {
-    return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve().then(function () {
+    return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve().then(function () {
       return context.state.config.ui.pushInitialTextOnRestart ? context.dispatch('pushMessage', {
         text: context.state.config.lex.initialText,
         type: 'bot'
-      }) : __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+      }) : __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
     }).then(function () {
-      return context.state.config.lex.reInitSessionAttributesOnRestart ? context.commit('setLexSessionAttributes', context.state.config.lex.sessionAttributes) : __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+      return context.state.config.lex.reInitSessionAttributesOnRestart ? context.commit('setLexSessionAttributes', context.state.config.lex.sessionAttributes) : __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
     });
   },
 
@@ -7307,16 +7286,16 @@ var recorder = void 0;
       console.error('getAudioUrl createObjectURL error', err);
       var errorMessage = 'There was an error processing the audio ' + ('response: (' + err + ')');
       var error = new Error(errorMessage);
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.reject(error);
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.reject(error);
     }
 
-    return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve(url);
+    return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve(url);
   },
   setAudioAutoPlay: function setAudioAutoPlay(context) {
     if (audio.autoplay) {
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
     }
-    return new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+    return new __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
       audio.play();
       // eslint-disable-next-line no-param-reassign
       audio.onended = function () {
@@ -7331,7 +7310,7 @@ var recorder = void 0;
     });
   },
   playAudio: function playAudio(context, url) {
-    return new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve) {
+    return new __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a(function (resolve) {
       audio.onloadedmetadata = function () {
         context.commit('setIsBotSpeaking', true);
         context.dispatch('playAudioHandler').then(function () {
@@ -7342,7 +7321,7 @@ var recorder = void 0;
     });
   },
   playAudioHandler: function playAudioHandler(context) {
-    return new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+    return new __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
       var enablePlaybackInterrupt = context.state.config.lex.enablePlaybackInterrupt;
 
 
@@ -7448,18 +7427,18 @@ var recorder = void 0;
     if (context.state.recState.isMicMuted === true) {
       console.warn('recording while muted');
       context.dispatch('stopConversation');
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.reject(new Error('The microphone seems to be muted.'));
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.reject(new Error('The microphone seems to be muted.'));
     }
 
     context.commit('startRecording', recorder);
-    return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+    return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
   },
   stopRecording: function stopRecording(context) {
     context.commit('stopRecording', recorder);
   },
   getRecorderVolume: function getRecorderVolume(context) {
     if (!context.state.recState.isRecorderEnabled) {
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
     }
     return recorder.volume;
   },
@@ -7484,7 +7463,7 @@ var recorder = void 0;
       return synthReq.promise();
     }).then(function (data) {
       var blob = new Blob([data.AudioStream], { type: data.ContentType });
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve(blob);
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve(blob);
     });
   },
   pollySynthesizeSpeech: function pollySynthesizeSpeech(context, text) {
@@ -7498,10 +7477,10 @@ var recorder = void 0;
   },
   interruptSpeechConversation: function interruptSpeechConversation(context) {
     if (!context.state.recState.isConversationGoing && !context.state.botAudio.isSpeaking) {
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
     }
 
-    return new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+    return new __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
       context.dispatch('stopConversation').then(function () {
         return context.dispatch('stopRecording');
       }).then(function () {
@@ -7544,7 +7523,9 @@ var recorder = void 0;
       });
     }).then(function () {
       if (context.state.lex.dialogState === 'Fulfilled') {
-        context.dispatch('reInitBot');
+        context.dispatch('sendEmail').then(function () {
+          context.dispatch('reInitBot');
+        });
       }
     }).catch(function (error) {
       var errorMessage = context.state.config.ui.showErrorDetails ? ' ' + error : '';
@@ -7562,7 +7543,7 @@ var recorder = void 0;
     }).then(function (data) {
       context.commit('setIsLexProcessing', false);
       return context.dispatch('updateLexState', data).then(function () {
-        return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve(data);
+        return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve(data);
       });
     }).catch(function (error) {
       context.commit('setIsLexProcessing', false);
@@ -7588,7 +7569,7 @@ var recorder = void 0;
       return context.dispatch('updateLexState', lexResponse).then(function () {
         return context.dispatch('processLexContentResponse', lexResponse);
       }).then(function (blob) {
-        return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve(blob);
+        return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve(blob);
       });
     }).catch(function (error) {
       context.commit('setIsLexProcessing', false);
@@ -7601,13 +7582,13 @@ var recorder = void 0;
         dialogState = lexData.dialogState;
 
 
-    return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve().then(function () {
+    return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve().then(function () {
       if (!audioStream || !audioStream.length) {
         var text = dialogState === 'ReadyForFulfillment' ? 'All done' : 'There was an error';
         return context.dispatch('pollyGetBlob', text);
       }
 
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve(new Blob([audioStream], { type: contentType }));
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve(new Blob([audioStream], { type: contentType }));
     });
   },
   updateLexState: function updateLexState(context, lexState) {
@@ -7631,14 +7612,36 @@ var recorder = void 0;
         }
       } catch (e) {
         var error = new Error('error parsing appContext in sessionAttributes: ' + e);
-        return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.reject(error);
+        return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.reject(error);
       }
     }
-    context.commit('updateLexState', __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({}, lexStateDefault, lexState));
+    context.commit('updateLexState', __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_extends___default()({}, lexStateDefault, lexState));
     if (context.state.isRunningEmbedded) {
       context.dispatch('sendMessageToParentWindow', { event: 'updateLexState', state: context.state.lex });
     }
-    return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve();
+    return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve();
+  },
+  sendEmail: function sendEmail(context) {
+    // Don't save messages if user haven't ask any question
+    context.commit('createTranscript');
+    context.commit('updateTranscript');
+    if (window.location.host.indexOf('local') !== 0) {
+      return context.dispatch('callEmailAPI');
+    }
+    console.info(context.state.transcripts, 'LOCAL TRANSCRIPTS==========================');
+  },
+  callEmailAPI: function callEmailAPI(context) {
+    var _this = this;
+
+    var xhr = new XMLHttpRequest();
+    // Use sync post so chrome can process the ajax before session is closed
+    xhr.open('POST', 'https://wc4p5hrrp2.execute-api.us-east-1.amazonaws.com/cr-chatbot-prod', false);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.onload = function () {
+      console.info(_this.responseText);
+    };
+    xhr.send(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(context.state.transcripts));
+    console.info(context.state.transcripts, 'Email==========================');
   },
 
 
@@ -7673,14 +7676,14 @@ var recorder = void 0;
     var credsExpirationDate = new Date(expireTime);
     var now = Date.now();
     if (credsExpirationDate > now) {
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve(awsCredentials);
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve(awsCredentials);
     }
     return context.dispatch('sendMessageToParentWindow', { event: 'getCredentials' }).then(function (credsResponse) {
       if (credsResponse.event === 'resolve' && credsResponse.type === 'getCredentials') {
-        return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve(credsResponse.data);
+        return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve(credsResponse.data);
       }
       var error = new Error('invalid credential event from parent');
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.reject(error);
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.reject(error);
     }).then(function (creds) {
       var _creds$data$Credentia = creds.data.Credentials,
           AccessKeyId = _creds$data$Credentia.AccessKeyId,
@@ -7696,7 +7699,7 @@ var recorder = void 0;
         identityId: IdentityId,
         expired: false,
         getPromise: function getPromise() {
-          return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.resolve(awsCredentials);
+          return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.resolve(awsCredentials);
         }
       };
 
@@ -7727,10 +7730,10 @@ var recorder = void 0;
     if (!context.state.isRunningEmbedded) {
       var error = 'sendMessage called when not running embedded';
       console.warn(error);
-      return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a.reject(error);
+      return __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a.reject(error);
     }
 
-    return new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+    return new __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
       var messageChannel = new MessageChannel();
       messageChannel.port1.onmessage = function (evt) {
         messageChannel.port1.close();
@@ -7746,6 +7749,23 @@ var recorder = void 0;
     });
   }
 });
+
+/***/ }),
+/* 165 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(166), __esModule: true };
+
+/***/ }),
+/* 166 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var core = __webpack_require__(0);
+var $JSON = core.JSON || (core.JSON = { stringify: JSON.stringify });
+module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
+  return $JSON.stringify.apply($JSON, arguments);
+};
+
 
 /***/ }),
 /* 167 */

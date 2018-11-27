@@ -262,6 +262,6 @@ export default {
 
 .response-card {
   justify-content: center;
-  width: 85vw;
+  width: 65vw;
 }
 </style>

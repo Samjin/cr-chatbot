@@ -31,6 +31,7 @@ import Vuetify from 'vuetify';
 import Page from '@/components/Page';
 import { Loader as LexWebUi } from '@/lex-web-ui';
 
+// TODO: update flowerLogo
 import flowerLogo from '../node_modules/material-design-icons/maps/2x_web/ic_local_florist_white_18dp.png';
 
 function getToolbarLogo() {

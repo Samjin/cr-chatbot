@@ -46,21 +46,21 @@ module.exports = function(intentRequest, slots, callback) {
 
   // responseCard prop
   let genericAttachments = {
-    title: 'Can I help you to lookup another cross border fee?',
+    title: 'Can I help you to look up another cross border fee?',
     imageUrl: null,
     subTitle: null,
     attachmentLinkUrl: null,
     buttons: [{
       "text": "Yes",
-      "value": "cross border fees",
+      "value": "Restart cross border fees",
     }, {
       "text": "No",
-      "value": "trigger stop intent",
+      "value": "no",
     }],
   }
 
-  // possible to use confirmIntent to add follow up question.
-  // dialogActions.confirmIntent(intentRequest.sessionAttributes, 'Fulfilled', message, genericAttachments)
-
   callback(null, dialogActions.close(intentRequest.sessionAttributes, 'Fulfilled', message, genericAttachments));
+
+  // possible to use confirmIntent to add follow up question?
+  // return Promise.resolve(dialogActions.confirmIntent(intentRequest.sessionAttributes, 'ConfirmIntent', message, genericAttachments));
 };

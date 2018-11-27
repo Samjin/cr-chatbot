@@ -17,19 +17,29 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
   // validate.dropoffCountry(pickupCountry, dropoffCountry, availableDropoff)
 
   if (/^0*$/.test(bookingNumber)) { //check if number contains only 0s. This is to prevent potential bugs
-    return validate.buildValidationResult(false, 'bookingNumber', 'Booking number should not contain only zeros. Please try again.');
+    return validate.buildValidationResult(false, 'bookingNumber', 'Booking number should not be all zeros. Please try again.');
   }
 
   if (bookingNumber && bookingNumber.trim().indexOf(' ') > -1) {
-    return validate.buildValidationResult(false, 'bookingNumber', `Booking number should not contain space or special characters. Please type correct number again.`);
+    return validate.buildValidationResult(false, 'bookingNumber', `Booking number must not contain space or special characters. Please type correct number again.`);
   }
 
   if (bookingNumber && !utility.hasNumber(bookingNumber)) {
-    return validate.buildValidationResult(false, 'bookingNumber', 'Booking number should have numbers in it. Please try again.');
+    return validate.buildValidationResult(false, 'bookingNumber', 'Booking number must have numbers in it. Please try again.');
   }
 
-  if (supplier && availableSupplier.indexOf(supplier.toLowerCase()) < 0) {
-    return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
+  if (supplier) {
+    availableSupplier.forEach(item => {
+      let supplierBreakdownNames = item.trim().split(' ')
+      if (supplierBreakdownNames.length) {
+        if (supplierBreakdownNames.indexOf(supplier.toLowerCase()) < 0) {
+          return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
+        }
+      }
+      if (item.indexOf(supplier.toLowerCase()) < 0) {
+        return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
+      }
+    })
   }
 
   let foundPickupCountrySynonyms = utility.findCountryNameSynonyms(countries, pickupCountry); //return array or false

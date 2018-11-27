@@ -318,4 +318,49 @@ export default {
   setAwsCredsProvider(state, provider) {
     state.awsCreds.provider = provider;
   },
+  /**
+   * Create transcripts per fulfilled session
+   */
+  createTranscript(state) {
+    if (state.messages.length > 1) {
+      state.transcripts = []
+      state.messages.forEach((message, i) => {
+        let lastIndexNum = message.text.indexOf(state.config.lex.initialText);
+        if (lastIndexNum > -1) {
+          // Split array so transcript only keep last fulfillment transcripts
+          state.transcripts.splice(
+            0, i,
+            `date: ${message.date}`,
+            `Bot initial question: ${message.text}`,
+          )
+        } else {
+          let messageType = message.type === 'bot' ? 'Bot' : 'User';
+          state.transcripts.push(`${messageType}: ${message.text}`);
+        }
+      });
+    }
+  },
+  updateTranscript(state) {
+    // Take out leftover fulfillment answer
+    for (let i = 0; i < state.transcripts.length; i++) {
+      let lastFulfillmentAnswer = state.transcripts[i].includes('The cross border fee is');
+      if (lastFulfillmentAnswer && (i !== state.transcripts.length - 1)) {
+        state.transcripts.splice(i, 1)
+        break;
+      }
+    }
+
+    // Create a new 'Booking-number' text
+    // TODO: bookingQuestion needs to be dynamic
+    let bookingQuestion = 'What’s the number of the booking you’d like me to look up a fee for';
+    for (let i = 0; i < state.transcripts.length; i++) {
+      let bookingNumIndex = state.transcripts[i].includes(bookingQuestion);
+      if (bookingNumIndex && state.transcripts[i + 1].length) {
+        let bookingNumber = state.transcripts[i + 1].replace('User', 'Booking-number');
+        state.transcripts.unshift(bookingNumber);
+        break;
+      }
+    }
+  },
+
 };

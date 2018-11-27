@@ -194,7 +194,7 @@ export default {
             context.state.config.lex.sessionAttributes,
           ) :
           Promise.resolve()
-      ));
+      ))
   },
 
   /***********************************************************************
@@ -452,7 +452,10 @@ export default {
       ))
       .then(() => {
         if (context.state.lex.dialogState === 'Fulfilled') {
-          context.dispatch('reInitBot');
+          context.dispatch('sendEmail')
+          .then(() => {
+            context.dispatch('reInitBot')
+          })
         }
       })
       .catch((error) => {
@@ -569,6 +572,26 @@ export default {
       );
     }
     return Promise.resolve();
+  },
+  sendEmail(context) {
+    // Don't save messages if user haven't ask any question
+    context.commit('createTranscript');
+    context.commit('updateTranscript')
+    if (window.location.host.indexOf('local') !== 0) {
+      return context.dispatch('callEmailAPI');
+    }
+    console.info(context.state.transcripts, 'LOCAL TRANSCRIPTS==========================');
+  },
+  callEmailAPI(context) {
+    let xhr = new XMLHttpRequest();
+    // Use sync post so chrome can process the ajax before session is closed
+    xhr.open('POST', 'https://wc4p5hrrp2.execute-api.us-east-1.amazonaws.com/cr-chatbot-prod', false);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.onload = () => {
+      console.info(this.responseText);
+    };
+    xhr.send(JSON.stringify(context.state.transcripts));
+    console.info(context.state.transcripts, 'Email==========================');
   },
 
   /***********************************************************************

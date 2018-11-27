@@ -241,52 +241,6 @@ export default {
         ))
         .then(() => this.logRunningMode());
     },
-    saveTranscripts() {
-      // Don't save messages if user haven't ask any question
-      if (this.$store.state.messages.length > 1) {
-        this.$store.state.messages.forEach((message, i) => {
-          if (i === 0) {
-            this.transcripts.push(
-              `date: ${message.date}`,
-              `Bot initial question: ${message.text}`,
-              )
-          } else {
-            let messageType = message.type === 'bot' ? 'Bot' : 'User';
-            this.transcripts.push(`${messageType}: ${message.text}`);
-          }
-        });
-        this.mutateTranscript();
-        if (window.location.host.indexOf('local') !== 0) {
-          this.sendEmail();
-        }
-      }
-    },
-    mutateTranscript() {
-      // Insert booking number to index 1
-      // TODO: this needs to be dynamic
-      let bookingQuestion = 'Bot: What’s the number of the booking you’d like me to look up a fee for? ';
-      let lastIndexNum = this.transcripts.lastIndexOf(bookingQuestion);
-      if (lastIndexNum > -1) {
-        for (let i = 0; i < this.transcripts.length; i++) {
-          if (this.transcripts[lastIndexNum + 1].length > 0) {
-            this.transcripts.splice(1, 0, `Booking-number: ${this.transcripts[lastIndexNum + 1].replace('User: ', '')}`);
-            break;
-          }
-        }
-      }
-    },
-    sendEmail() {
-      console.info(this.transcripts);
-      let xhr = new XMLHttpRequest();
-      // Use sync post so chrome can process the ajax before session is closed
-      xhr.open('POST', 'https://wc4p5hrrp2.execute-api.us-east-1.amazonaws.com/cr-chatbot-prod', false);
-      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-      xhr.onload = () => {
-        console.info(this.responseText);
-      };
-      xhr.send(JSON.stringify(this.transcripts));
-    },
-
   },
 };
 </script>

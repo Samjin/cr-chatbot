@@ -10,7 +10,8 @@
   "ui": {
     "parentOrigin": "",
     "toolbarTitle": "CarRentals Bot",
-    "toolbarLogo": ""
+    "toolbarLogo": "",
+    "pushInitialTextOnRestart": true
   },
   "polly": {
     "voiceId": "Salli"

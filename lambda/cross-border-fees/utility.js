@@ -40,7 +40,9 @@ module.exports = {
     return /\d/.test(string);
   },
   getResponseCard: function(genericAttachments) {
+    //set 1 to make card visible on UI.
     return {
+      version: '0',
       contentType: 'application/vnd.amazonaws.card.generic',
       genericAttachments: [genericAttachments],
     };

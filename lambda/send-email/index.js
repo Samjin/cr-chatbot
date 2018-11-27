@@ -2,8 +2,8 @@ var AWS = require('aws-sdk')
 AWS.config.update({region: 'us-east-1'});
 var ses = new AWS.SES()
 
-var RECEIVER = 'bezhang@carrentals.com'
-var SENDER = 'criteng@expedia.com'
+var RECEIVER = 'cbchatbot@l-a7v9ucfmwj4gvou6qfs9e8ihjxgxmbatdn64a8melg92ku2yy.61-z8h3eac.na34.apex.salesforce.com'
+var SENDER = 'critops@expedia.com'
 
 exports.handler = function (event, context) {
   sendEmail(event, function (err, data) {
@@ -19,6 +19,8 @@ function sendEmail (event, done) {
         RECEIVER
       ],
       BccAddresses: [
+        'bezhang@carrentals.com',
+        'sjin@carrentals.com'
       ],
     },
     Message: {
