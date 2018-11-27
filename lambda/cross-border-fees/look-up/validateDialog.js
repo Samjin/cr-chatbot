@@ -20,7 +20,7 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
     return validate.buildValidationResult(false, 'bookingNumber', 'Booking number should not be all zeros. Please try again.');
   }
 
-  if (bookingNumber && bookingNumber.trim().indexOf(' ') > -1) {
+  if (bookingNumber && bookingNumber.trim().indexOf(' ') >= 0) {
     return validate.buildValidationResult(false, 'bookingNumber', `Booking number must not contain space or special characters. Please type correct number again.`);
   }
 
@@ -31,7 +31,7 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
   if (supplier) {
     availableSupplier.forEach(supplierName => {
       // multiple words
-      if (supplierName.indexOf(' ') > 0) {
+      if (supplierName.indexOf(' ') >= 0) {
         let supplierNameBreakdown = supplierName.split(' ');
         if (supplierNameBreakdown.indexOf(supplier.toLowerCase()) < 0) {
           return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
