@@ -30,9 +30,9 @@ module.exports = {
       dropoff: []
     }
     fees.forEach((item) => {
-      availableCategories.supplier.push(item['Pickup Supplier'].toLowerCase());
-      availableCategories.pickup.push(item['Pickup Location'].toLowerCase());
-      availableCategories.dropoff.push(item['Destination'].toLowerCase());
+      availableCategories.supplier.push(item['Pickup Supplier'].toLowerCase().trim());
+      availableCategories.pickup.push(item['Pickup Location'].toLowerCase().trim());
+      availableCategories.dropoff.push(item['Destination'].toLowerCase().trim());
     });
     return availableCategories;
   },

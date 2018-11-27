@@ -1,7 +1,7 @@
 const fees = require('../fees');
 const countries = require('../countries'); // Modified from https://fabian7593.github.io/CountryAPI/
 const utility = require('../utility');
-const validate = require('../validateDetails');
+const validate = require('./validateDetails');
 const dialogActions = require('./dialogActions');
 const _intersection = require('lodash/intersection');
 
@@ -29,14 +29,18 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
   }
 
   if (supplier) {
-    availableSupplier.forEach(item => {
-      let supplierBreakdownNames = item.trim().split(' ')
-      if (supplierBreakdownNames.length) {
-        if (supplierBreakdownNames.indexOf(supplier.toLowerCase()) < 0) {
+    availableSupplier.forEach(supplierName => {
+      // multiple words
+      if (supplierName.indexOf(' ') > 0) {
+        let supplierNameBreakdown = supplierName.split(' ');
+        if (supplierNameBreakdown.indexOf(supplier.toLowerCase()) < 0) {
           return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
         }
+        // If matches one of the word, use convert supplier name to full name that fee uses
+        slots.supplier = supplierName;
       }
-      if (item.indexOf(supplier.toLowerCase()) < 0) {
+      // one word
+      if (supplierName !== supplier.toLowerCase()) {
         return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
       }
     })
