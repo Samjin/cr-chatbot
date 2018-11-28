@@ -29,21 +29,23 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
   }
 
   if (supplier) {
+    if (supplier.length < 2) {
+      return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
+    }
+    // Multiple words: convert to full supplier name if matches one
     availableSupplier.forEach(supplierName => {
-      // multiple words
       if (supplierName.indexOf(' ') >= 0) {
         let supplierNameBreakdown = supplierName.split(' ');
-        if (supplierNameBreakdown.indexOf(supplier.toLowerCase()) < 0) {
-          return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
+        if (supplierNameBreakdown.indexOf(supplier.toLowerCase()) >= 0) {
+          slots.supplier = supplierName;
+          supplier = supplierName;
         }
-        // If matches one of the word, use convert supplier name to full name that fee uses
-        slots.supplier = supplierName;
-      }
-      // one word
-      if (supplierName !== supplier.toLowerCase()) {
-        return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
       }
     })
+    // One word
+    if (availableSupplier.indexOf(supplier.toLowerCase()) < 0) {
+      return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
+    }
   }
 
   let foundPickupCountrySynonyms = utility.findCountryNameSynonyms(countries, pickupCountry); //return array or false
@@ -95,7 +97,6 @@ module.exports = function(intentRequest, slots) {
   if (slots.bookingNumber === null && slots.supplier === null && slots.pickupCountry === null && slots.dropoffCountry === null) {
     if (utility.hasNumber(intentRequest.inputTranscript)) {
       slots.bookingNumber = intentRequest.inputTranscript;
-      console.info(slots.bookingNumber, 'bookingNumber==========================');
     }
   }
 
