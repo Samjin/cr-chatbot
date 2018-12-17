@@ -47,7 +47,7 @@ module.exports = {
       genericAttachments: [genericAttachments],
     };
   },
-  findCountryNameSynonyms: function(countries, name) {
+  findCountryNameByCode: function(countries, name) {
     if (!name) { return false }
     let validCountryNames = false;
 
@@ -57,8 +57,10 @@ module.exports = {
         item.Name.toLowerCase(),
         item.Alpha2Code.toLowerCase(),
         item.Alpha3Code.toLowerCase(),
-        item.NativeName.toLowerCase()
       ];
+      if (item.CustomCode) {
+        synonymsLowercase.push(item.CustomCode.toLowerCase())
+      }
       let nameExist = synonymsLowercase.includes(name.toLowerCase().trim());
 
       if (nameExist) {

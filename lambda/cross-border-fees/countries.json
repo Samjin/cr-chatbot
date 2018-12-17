@@ -1176,10 +1176,11 @@
         "Alpha3Code": "ARE",
         "NativeName": "دولة الإمارات العربية المتحدة"
     }, {
-        "Name": "United Kingdom of Great Britain and Northern Ireland",
+        "Name": "United Kingdom",
         "Alpha2Code": "GB",
         "Alpha3Code": "GBR",
-        "NativeName": "United Kingdom"
+        "NativeName": "United Kingdom",
+        "CustomCode": "UK"
     }, {
         "Name": "United States Minor Outlying Islands",
         "Alpha2Code": "UM",

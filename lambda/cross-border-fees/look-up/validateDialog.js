@@ -48,7 +48,7 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
     }
   }
 
-  let foundPickupCountrySynonyms = utility.findCountryNameSynonyms(countries, pickupCountry); //return array or false
+  let foundPickupCountrySynonyms = utility.findCountryNameByCode(countries, pickupCountry); //return array or false
   if (pickupCountry && availablePickup.indexOf(pickupCountry.toLowerCase()) < 0) {
     // Doesn't match any in country list and fee data
     if (foundPickupCountrySynonyms === false) {
@@ -68,7 +68,7 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
     }
   }
 
-  let foundDropoffCountrySynonyms = utility.findCountryNameSynonyms(countries, dropoffCountry); //array or false
+  let foundDropoffCountrySynonyms = utility.findCountryNameByCode(countries, dropoffCountry); //array or false
   if (dropoffCountry && availableDropoff.indexOf(dropoffCountry.toLowerCase()) < 0) {
     // Doesn't match any in country list and fee data
     if (foundDropoffCountrySynonyms === false) {
