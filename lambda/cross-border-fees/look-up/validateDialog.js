@@ -35,7 +35,7 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
     let foundSupplier = false;
     let foundSupplierFullName = availableSuppliers.indexOf(supplier.toLowerCase());
     
-    // Check one word name first: convert to full supplier name if any name equals user's input
+    // Find user's exact input supplier name.
     if (foundSupplierFullName >= 0) {
       slots.supplier = supplier.toLowerCase();
       supplier = supplier.toLowerCase();
