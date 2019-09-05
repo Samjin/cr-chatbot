@@ -4,11 +4,12 @@ const dialogActions = require('./dialogActions');
 function getPolicyMessage(supplier, pickupCountry, dropoffCountry) {
   let feeAnswer;
   for (let i = 0; i < fees.length; i++) {
-    let supplierName = fees[i]['Pickup Supplier'].toLowerCase().includes(supplier.toLowerCase());
-    let pickupCountryName = fees[i]['Pickup Location'].toLowerCase().includes(pickupCountry.toLowerCase());
-    let dropoffCountryName = fees[i]['Destination'].toLowerCase().includes(dropoffCountry.toLowerCase());
+    let eachObj = fees[i];
+    let supplierName = eachObj['Pickup Supplier'].toLowerCase().includes(supplier.toLowerCase());
+    let pickupCountryName = eachObj['Pickup Location'].toLowerCase().includes(pickupCountry.toLowerCase());
+    let dropoffCountryName = eachObj['Destination'].toLowerCase().includes(dropoffCountry.toLowerCase());
     if( supplierName && pickupCountryName && dropoffCountryName ) {
-      let feeAmount = fees[i]['Fee'];
+      let feeAmount = eachObj['Fee'];
       let feeAtCounter = false;
 
       // If fee is Free of charge
@@ -22,8 +23,8 @@ function getPolicyMessage(supplier, pickupCountry, dropoffCountry) {
 
       feeAnswer = [
         feeAtCounter ? `${feeAmount}. ` : `The cross border fee is ${feeAmount}. `,
-        `${fees[i]['Notes 1']} `,
-        `${fees[i]['Notes 2']} `,
+        `${eachObj['Notes 1']} `,
+        `${eachObj['Notes 2']} `,
         `Thank you.`
       ].join(' ');
 

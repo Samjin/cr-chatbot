@@ -1,5 +1,8 @@
-﻿Pickup Supplier,Pickup Location,Supplier ID,Destination,Fee,Notes 1,Notes 2
-,,,,,,
+Pickup Supplier,Pickup Location,Supplier ID,Destination,Fee,Notes 1,Notes 2
+AutoVia,Italy,725136,Italy,"o	From 1 day to 3 days: 16,39 + vat per day;
+o	From 4 days to 6 days: 13,11+ vat per day;
+o	From 7 to….: 81.96 + vat forfeit.","•	It's permitted to drive in the following Countries: GERMANIA, SAN MARINO, FRANCIA, SPAGNA, SVIZZERA, AUSTRIA, CROAZIA, SLOVENIA, BELGIO, LIECHTENSTEIN, LUSSEMBURGO, PAESI BASSI •	It's forbidden to drive in these Countries: Albania, Bulgaria, Estonia, Greece, Iraq, Morocco, Poland, Czech Republic, Islamic Republic of Iran, Slovak Republic, Romania, Serbia, Tunisia, Turkey, Hungary, Malta and Cyprus.
+",
 AirAuto,Portugal,505093,Spain,40 EUR,,
 Alamo,Argentina,34549, Brazil,66.87 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel to and within Bolivia and Paraguay is not permitted.
 Alamo,Argentina,34549,Chile,66.87 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel to and within Bolivia and Paraguay is not permitted.
@@ -419,20 +422,20 @@ Centauro FF,Portugal,662220,Andorra,73.18 EUR,You must ensure that you get autho
 Centauro,Portugal,642927,Spain,73.18 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Centauro,Portugal,642927,France,73.18 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Centauro,Portugal,642927,Andorra,73.18 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Germany,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Austria,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Belgium,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Spain,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,France,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Greece,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Hungary,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Italy,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Luxembourg,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Netherlands,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Poland,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Portugal,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,Switzerland,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Dollar,Germany,630212,United Kingdom,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Germany,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Austria,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Belgium,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Spain,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,France,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Greece,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Hungary,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Italy,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Luxembourg,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Netherlands,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Poland,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Portugal,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,Switzerland,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Dollar,Germany,630212,United Kingdom,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Dollar,Netherlands,589566,Germany,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Dollar,Netherlands,589566,Austria,100 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Dollar,Netherlands,589566,Belgium,25 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
@@ -656,7 +659,7 @@ Flizzr,Switzerland,662505,Slovenia,Please enquire at the car rental company when
 Flizzr,Switzerland,662505,Sweden,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Flizzr,Switzerland,662505,Switzerland,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Flizzr,Switzerland,662505,Andorra,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Global Rent A Car,Austria,691002,Germany,25 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Global Rent A Car,Austria,691002,Germany,10 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Global Rent A Car,Austria,691002,Belgium,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Global Rent A Car,Austria,691002,Spain,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Global Rent A Car,Austria,691002,Croatia,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
@@ -666,8 +669,8 @@ Global Rent A Car,Austria,691002,Finland,45 EUR,You must ensure that you get aut
 Global Rent A Car,Austria,691002,France,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Global Rent A Car,Austria,691002,Hungary,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Global Rent A Car,Austria,691002,Ireland,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Global Rent A Car,Austria,691002,Italy,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Global Rent A Car,Austria,691002,Lithuania,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Global Rent A Car,Austria,691002,Italy,10 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Global Rent A Car,Austria,691002,Lichtenstein,10 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Global Rent A Car,Austria,691002,Luxembourg,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Global Rent A Car,Austria,691002,Netherlands,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Global Rent A Car,Austria,691002,Norway,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
@@ -802,8 +805,29 @@ Globaldrive,Germany,383839,United Kingdom,45 EUR,You must ensure that you get au
 Globaldrive,Germany,383839,Andorra,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Globaldrive,Germany,383839,Monaco,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Globaldrive,Germany,383839,Liechtenstein,20 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Goldcar Europa,Italy,524685,France,80 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Goldcar Europa,Italy,524685,Switzerland,80 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Goldcar Europa,Olbia and Cagliari,524685,"Carloforte, Calasetta,Maddalena, Caprera, Asinara &Sant’Antioco Islands",No extra charge,"You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+Goldcar Europa,Olbia and Cagliari,524685,Corsica island,"9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+Goldcar Europa,Sicily,524685,Sardinia Island,No extra charge,"You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR.Malta,Malta,655286,Gozoisland,No extra charge,"You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+Goldcar Europa,"Bari, Bergamo, Bologna, Pisa, Rome
+Ciampino, Rome Fiumicino, Milan
+Linate, Venice, Milan Malpensa,
+Treviso, Florence and Verona",524685,"Switzerland, France, Croatia and Slovenia",From 1 to 3 days: 40€ per vehicle            From 4 days to 7 days: 60€ per vehicle       From 8 days onwards: 80€ per vehicle,"You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
 Greenmotion,Latvia,619936,Estonia,24.80 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Greenmotion,Latvia,619936,Lithuania,24.80 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Greenmotion,Lithuania,619937,Estonia,24.80 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
@@ -836,7 +860,7 @@ Hertz,Austria,364342,Croatia,18.5 EUR,You must ensure that you get authorisation
 Hertz,Austria,364342,Czech Republic,18.5 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ," Travel within / to these countries is not permitted: Bulgaria, Estonia, Latvia, Lithuania, Romania, Switzerland."
 Hertz,Austria,364342,Hungary,18.5 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ," Travel within / to these countries is not permitted: Bulgaria, Estonia, Latvia, Lithuania, Romania, Switzerland."
 Hertz,Austria,364342,Poland,18.5 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ," Travel within / to these countries is not permitted: Bulgaria, Estonia, Latvia, Lithuania, Romania, Switzerland."
-Hertz,Austria,364342,Slovakia,18.5 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ," Travel within / to these countries is not permitted: Bulgaria, Estonia, Latvia, Lithuania, Romania, Switzerland."
+Hertz,Austria,364342,Slovakia,16 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ," Travel within / to these countries is not permitted: Bulgaria, Estonia, Latvia, Lithuania, Romania, Switzerland."
 Hertz,Austria,364342,Slovenia,18.5 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ," Travel within / to these countries is not permitted: Bulgaria, Estonia, Latvia, Lithuania, Romania, Switzerland."
 International Car,Portugal,671887,Spain,30 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Interrent,Germany,n/a,Austria,20 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
@@ -907,6 +931,17 @@ Keddy,Germany,589514,Switzerland,Free Of Charge,You must ensure that you get aut
 Keddy,Germany,589514,United Kingdom,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Keddy,Germany,589514,Liechtenstein,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Megadrive,Austria,485264,Germany,25 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625684,Austria,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625685,Bulgaria,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625686,Croatia,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625687,Czech Republic,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625688,Greece,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625689,Hungary,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625690,Macedonia,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625691,Montenegro,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625692,Serbia,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625693,Slovakia,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Klasswagen,Romania,625694,Slovenia,120 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Megadrive,Austria,485264,Belgium,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Megadrive,Austria,485264,Spain,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Megadrive,Austria,485264,Croatia,45 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
@@ -1024,8 +1059,12 @@ Prestigio Rent A Car,Croatia,676518,Montenegro,100 EUR,You must ensure that you 
 Prestigio Rent A Car,Croatia,676518,Romania,100 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Prestigio Rent A Car,Croatia,676518,Serbia,100 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Prestigio Rent A Car,Croatia,676518,Kosovo,100 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Rhodium,France,613134,Spain,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
-Rhodium,France,613134,Italy,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Rhodium,France,613134,Spain,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"f Clients want to use the rented vehicle in one of the following regions–Aragon, Asturias, Cantabria, Catalonia, Navarra, Basque Country, Andorra, Monaco or Corsica – they must take out an additional insurance of 9 euros a day. In any case, the set rate for this is 25 euros and the maximum is 90 euros.
+
+If Clients want to drive the vehicle in Switzerland or Italy, they must take out extra insurance coverage, which costs 40 euros per vehicle for a stay of 1 to 3 days and 60 euros per vehicle of 4 to 7 days. For 8 days or more, the insurance coverange shall cost 80 euros per vehicle."
+Rhodium,France,613134,Italy,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"f Clients want to use the rented vehicle in one of the following regions–Aragon, Asturias, Cantabria, Catalonia, Navarra, Basque Country, Andorra, Monaco or Corsica – they must take out an additional insurance of 9 euros a day. In any case, the set rate for this is 25 euros and the maximum is 90 euros.
+
+If Clients want to drive the vehicle in Switzerland or Italy, they must take out extra insurance coverage, which costs 40 euros per vehicle for a stay of 1 to 3 days and 60 euros per vehicle of 4 to 7 days. For 8 days or more, the insurance coverange shall cost 80 euros per vehicle."
 Rhodium,France,613134,Switzerland,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Right Cars,Poland,659845,Germany,76.19 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Right Cars,Poland,659845,Austria,76.19 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
@@ -1067,29 +1106,75 @@ Sternrent,Netherlands,364672,Portugal,Please enquire at the car rental company w
 Sternrent,Netherlands,364672,Slovenia,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Sternrent,Netherlands,364672,Sweden,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Sternrent,Netherlands,364672,United Kingdom,Please enquire at the car rental company when you pick up your vehicle,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Germany,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Austria,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Belgium,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Spain,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Croatia,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Denmakr,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Finland,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,France,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Ireland,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Luxemburg,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Netherlands,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Norway,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Portugal,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Slovenia,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Sweden,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,Switzerland,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505092,Andorra,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505093,Monaco,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505094,Liechtenstein,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Sicily by Car,Italy,505091,United Kingdom,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Surprice Car Rental,Portugal,704404,Spain,24.4 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Surprice Car Rental,Spain,706932,Belgium,20 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Surprice Car Rental,Spain,706932,France,20 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Surprice Car Rental,Spain,706932,Italy,20 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Surprice Car Rental,Spain,706932,Portugal,20 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+Surprice Car Rental,Romania,480295,Germany,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Austria,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Belgium,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Bulgaria,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Spain,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Croatia,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Cyprus,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Czech Republic,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Denmark,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Estonia,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Finland,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,France,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Greece,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Hungary,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Ireland,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Italy,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Latvia,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Lithuania,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Luxembourg,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Malta,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,The Netherlands,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Norway,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Poland,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Portugal,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Slovakia,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
+Surprice Car Rental,Romania,480295,Slovenia,95 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within these countries is not permitted: Bosnia and herzegovina ,Israel ,Republic of moldova ,Morocco ,Tunisia ,Turkey ,Ukraine ,Russian federation."
 Tempest,South Africa,614375,Namibia,87.44 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within / to these countries is not permitted: Zambia, Malawi,  Angola."
 Tempest,South Africa,614375,Zimbabwe,87.44 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within / to these countries is not permitted: Zambia, Malawi,  Angola."
 Tempest,South Africa,614375,Mozambique,87.44 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within / to these countries is not permitted: Zambia, Malawi,  Angola."
 Tempest,South Africa,614375,Swaziland ,87.44 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within / to these countries is not permitted: Zambia, Malawi,  Angola."
 Tempest,South Africa,614375,Lesotho,87.44 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within / to these countries is not permitted: Zambia, Malawi,  Angola."
 Tempest,South Africa,614375,Botswana,87.44 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,"Travel within / to these countries is not permitted: Zambia, Malawi,  Angola."
-Thrifty,Germany,630586,Austria,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,Belgium,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,Spain,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,France,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,Greece,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,Italy,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,Luxembourg,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,Netherlands,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,Poland,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,Portugal,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,Switzerland,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
-Thrifty,Germany,630586,United Kingdom,40 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,Austria,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,Belgium,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,Spain,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,France,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,Greece,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,Italy,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,Luxembourg,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,Netherlands,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,Poland,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,Portugal,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,Switzerland,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
+Thrifty,Germany,630586,United Kingdom,50 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Sweden is not permitted
 Thrifty,Namibia,506659,Mozambique,44.79 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,Travel within / to Zimbabwe is not permitted
 Thrifty,Namibia,506659,Swaziland ,44.79 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Thrifty,Namibia,506659,Lesotho,44.79 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
@@ -1111,3 +1196,117 @@ Truche Location,France,447458,Portugal,Free Of Charge,You must ensure that you g
 Truche Location,France,447458,United Kingdom,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Truche Location,France,447458,Monaco,Free Of Charge,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
 Turisprime,Portugal,656573,Spain,35 EUR,You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle. ,
+TOP Rent a Car,Bulgaria,489309,"Turkey (only European part), Greece, Romania, Macedonia  and Serbia ","1. EDMR, EWMR 50€                                                                                      2.  EDAH,  CDMR, CFMR	60 €                                                                     3. EDAR, HDMV, DDMV, FWMR, IVMR, IDAR, FDAR	80 €
+4. FVMR, FWAR, CFAR, IFAR	100 €
+5. FFAR, FFAD, LDAR	120€",The mentioned fee is for 1 country only. For each additional country the fee is increased by 50%. The driver should provide us with a copy of his driving license and ID card by e-mail at least 3 business days prior arrival. The required security deposit is double. ,
+GOLDCAR EUROPA FF.Croatia,"Zagreb, Split or Dubrovnik",627571,"Slovenia, Bosnia and Serbia and Italia","69 HRK per day, minimum charge of 191  HRK an maximum charge of 686 HRK","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+SIXT.Bosnia & Herzegovina,Bosnia,630495,"Hezergovina, Hungary, Montenegro,",HRK an maximum charge of 686 HRK,Not listed countries are prohibited for Cross Border Rentals.A written permission issued by the Sixt branch is mandatory to cross the border.,
+GOLDCAR EUROPA FF.Croatia,"Zagreb, Split or Dubrovnik",627571,Travel through the Neum Corridor to the north of Croatia,95 HRK per rental (free for collection at Dubrovnik),"You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA FF.Croatia,Dubrovnik,627571,"Travel to Hvar, Brac, Korcula, Solta, Mljet,Lastovo, Rab & Cres Islands",95 HRK per rental,"You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA FF.Croatia,Split,627571,"Travel to Hvar, Brac, Korcula, Solta, Mljet,Lastovo, Rab & Cres Islands",175 HRK per rental,"You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.spain,"Madrid, Bilbao, Santander,Santiago & Oviedo",35367,"Travel to Portuguese provinces: Minho,Tras‐os‐Montes e Alto Douro, Douro,Litoral, Beira Alta, Beira Litoral & Beira,Baixa","9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.spain,"Gerona, Reus, Bilbao,Santander, Santiago, Oviedo,Barcelona, Zaragoza & Pamplona",35367,Travel to France/Andorra,"9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.spain,"Granada, Seville, Malaga,Almeria, Marbella, Jerez & Sancti Petri",35367,Travel to Portugal and Gibraltar,"9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.spain,Gibraltar,35367,Portugal,"9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.Portugal,Oporto,523360,"Galicia, Asturias, Cantabria &
+Basque Country","9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.Portugal,"Faro,Lisbon,Oporto",523360,Andalucia,"9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.Portugal,Madeira,523360,Porto Santo island,"9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.Portugal,Ponta Delgada,523360,Santa Maria and Terceira Islands,"9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.Portugal,Terceira,523360,"Flores, Corvo, Graciosa, Sao Jorge, Pico, Faial, Santa Maria y Sao,Miguel Islands","9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA,"Biarritz, Nice, Marseille,Mulhouse, Bordeaux & Toulouse",610717,"Aragon, Asturias, Cantabria,Catalonia, Galicia, Navarre & Basque Country, Andora,Monaco,Corsica","9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA,"Biarritz, Nice, Marseille,Mulhouse, Bordeaux & Toulouse",610717,Switzerland & Italy,"From 1 to 3 days: 40€ per vehicle, From 4 days to 7 days: 60€ per vehicle, From 8 days onwards: 80€ per vehicle","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA,Mulhouse,610717,"Austria, Germany, Italy &Switzerland","9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.Netherlands,Amsterdam,639624,Belgium and Luxembourg,"9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.Netherlands,Amsterdam,639624,Germany,15€ per day with a maximum charge of 150€,"You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.Greece,Kefalonia & Santorini,609744,Outside the island to other Greece islands and to Greece Mainland,No extra charge,"You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.Serbia,Belgrade,692711,"Austria, Hungary, Bulgary, Croatia,Slovenia, Bosnia, Macedonia, Albany,Romania, Greece, Germany, Italy, France,Czech Republic and Slovakia","829 RSD* per day, minimum charge of 3100
+RSD* an maximum charge of 5000 RSD*","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.spain,"Las Palmas, Lanzarote,Tenerife South, Tenerife North &Fuerteventura",35367,Canary islands,"9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+GOLDCAR EUROPA.spain,"Mallorca Airport, Paseo Maritimo Office, Menorca & Ibiza",35367,Balearic Islands,"9€ per day, minimum charge of 25€ and maximum charge of 90€","You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",
+Rentis.Lituania,Lituania,619567,"Cross border  Baltic states ( Latvia, Estonia) and Poland",50 EUR per rental,"You must ensure that you get authorisation for cross border travel from the local car rental company when you pick up your vehicle.  Please, have in mind that the prices are calculated based on the whole rental period (not only the days travelling outside)
+Cars collected on an island are not allowed to be taken to mainland unless there is expressed permission in the table above
+Cars collected on mainland are not allowed to be taken to any island unless there is expressed permission in the table above
+The cross border locations not stated above are not permitted",Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Germany,61.98 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Austria,78.51 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Belgium,24.79 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Spain,165.29 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Denmark,82.64 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Finland,330.58 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,France,66.12 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Ireland,371.9 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Italy,185.95 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Luxembourg,37.19 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Norway,227.27 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Portugal,206.61 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Sweden,309.92 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Switzerland,70.25 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,United Kingdom,330.58 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!
+GREEN MOTION.Netherlands,Netherlands,586937,Andorra,123.97 EUR excl. VAT,,Russia/Belarus/Ukrain not permitted!

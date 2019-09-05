@@ -6,13 +6,13 @@ const dialogActions = require('./dialogActions');
 const _intersection = require('lodash/intersection');
 
 const availableCategories = utility.availableCategories(fees);
-const availableSupplier = availableCategories.supplier;
+const availableSuppliers = availableCategories.supplier;
 const availablePickup = availableCategories.pickup;
 const availableDropoff = availableCategories.dropoff;
 
 function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, slots) {
   // validate.bookingNumber(bookingNumber)
-  // validate.supplier(supplier, availableSupplier)
+  // validate.supplier(supplier, availableSuppliers)
   // validate.pickupCountry(pickupCountry, availablePickup)
   // validate.dropoffCountry(pickupCountry, dropoffCountry, availableDropoff)
 
@@ -32,18 +32,29 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
     if (supplier.length < 2) {
       return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
     }
-    // Multiple words: convert to full supplier name if matches one
-    availableSupplier.forEach(supplierName => {
-      if (supplierName.indexOf(' ') >= 0) {
-        let supplierNameBreakdown = supplierName.split(' ');
-        if (supplierNameBreakdown.indexOf(supplier.toLowerCase()) >= 0) {
-          slots.supplier = supplierName;
-          supplier = supplierName;
+    let foundSupplier = false;
+    let foundSupplierFullName = availableSuppliers.indexOf(supplier.toLowerCase());
+    
+    // Check one word name first: convert to full supplier name if any name equals user's input
+    if (foundSupplierFullName >= 0) {
+      slots.supplier = supplier.toLowerCase();
+      supplier = supplier.toLowerCase();
+      foundSupplier = true;
+    } else {
+      // Multiple words: convert to full supplier name if any name includes user's input
+      availableSuppliers.forEach(supplierName => {
+        if (supplierName.indexOf(' ') >= 0) {
+          let supplierNameBreakdown = supplierName.split(' ');
+          if (supplierNameBreakdown.indexOf(supplier.toLowerCase()) >= 0) {
+            slots.supplier = supplierName;
+            supplier = supplierName;
+            foundSupplier = true;
+          }
         }
-      }
-    })
-    // One word
-    if (availableSupplier.indexOf(supplier.toLowerCase()) < 0) {
+      })
+    }
+
+    if (!foundSupplier) {
       return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
     }
   }
