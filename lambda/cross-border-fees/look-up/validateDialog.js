@@ -16,25 +16,39 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
   // validate.pickupCountry(pickupCountry, availablePickup)
   // validate.dropoffCountry(pickupCountry, dropoffCountry, availableDropoff)
 
-  if (/^0*$/.test(bookingNumber)) { //check if number contains only 0s. This is to prevent potential bugs
-    return validate.buildValidationResult(false, 'bookingNumber', 'Booking number should not be all zeros. Please try again.');
+  //check if number contains only 0s. This is to prevent potential bugs
+  if (/^0*$/.test(bookingNumber)) { 
+    return validate.buildValidationResult(
+      false,
+      'bookingNumber',
+      'Booking number should not be all zeros. Please try again.');
   }
 
   if (bookingNumber && bookingNumber.trim().indexOf(' ') >= 0) {
-    return validate.buildValidationResult(false, 'bookingNumber', `Booking number must not contain space or special characters. Please type correct number again.`);
+    return validate.buildValidationResult(
+      false,
+      'bookingNumber',
+      'Booking number must not contain space or special characters. Please type correct number again.');
   }
 
   if (bookingNumber && !utility.hasNumber(bookingNumber)) {
-    return validate.buildValidationResult(false, 'bookingNumber', 'Booking number must have numbers in it. Please try again.');
+    return validate.buildValidationResult(
+      false,
+      'bookingNumber',
+      'Booking number must have numbers in it. Please try again.');
   }
 
   if (supplier) {
     if (supplier.length < 2) {
-      return validate.buildValidationResult(false, 'supplier', `We cannot find the supplier. Please make sure supplier name is correct.`);
+      return validate.buildValidationResult(
+        false,
+        'supplier',
+        'We cannot find the supplier. Please make sure supplier name is correct.');
     }
+    
     let foundSupplier = false;
     let foundSupplierFullName = availableSuppliers.indexOf(supplier.toLowerCase());
-    
+
     // Find user's exact input supplier name.
     if (foundSupplierFullName >= 0) {
       slots.supplier = supplier.toLowerCase();
@@ -103,7 +117,7 @@ function validateSlots(bookingNumber, supplier, pickupCountry, dropoffCountry, s
   return validate.buildValidationResult(true, null, null);
 }
 
-module.exports = function(intentRequest, slots) {
+module.exports = function (intentRequest, slots) {
   // Get raw booking number free text instead of validated text from AI.
   if (slots.bookingNumber === null && slots.supplier === null && slots.pickupCountry === null && slots.dropoffCountry === null) {
     if (utility.hasNumber(intentRequest.inputTranscript)) {

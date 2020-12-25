@@ -1,6 +1,6 @@
 This project includes both front and backend code.
 
-Convert xlsx to csv using https://github.com/dilshod/xlsx2csv
+Convert xlsx to csv using https://github.com/dilshod/xlsx2csv to 
     1. xlsx2csv fees.xlsx > fees.csv
     2. csvtojson fees.csv > fees.json
 
@@ -12,7 +12,7 @@ Workflow:
     1. Go to Amazon Lex cr-chatbot project
     2. Update cross-border-fees folder to s3://cr-chatbot/artifacts/cross-border-fees.zip which will then refresh Lambda.
        Delete old file from build/ path using 
-            rm build/out/cross-border-fees.zip
+            rm out/cross-border-fees.zip
             make upload-cross-border-fees-zip
     3. Test bot before "Publish" to prod.
 
